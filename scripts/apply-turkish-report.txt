@@ -1,4 +1,0 @@
-Apply Turkish resources report - 12/28/2025 16:07:52\n
-XML replacements: 0
-Kotlin/Java mappings: 0 -> C:\Users\Acer\AndroidStudioProjects\hesapgunlugu\scripts\turkish-mapping.json
-\nDetails:\n
