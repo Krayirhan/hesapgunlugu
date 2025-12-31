@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf_filename">finans_rapor_%1$s.pdf</string>
+    <string name="pdf_report_title_default">Finansal Rapor</string>
+    <string name="pdf_generated_on">Oluşturulma: %1$s</string>
+    <string name="pdf_summary_title">Özet</string>
+    <string name="pdf_total_income">Toplam Gelir: %1$s</string>
+    <string name="pdf_total_expense">Toplam Gider: %1$s</string>
+    <string name="pdf_net_balance">Net Bakiye: %1$s</string>
+    <string name="pdf_transactions_title">İşlemler</string>
+    <string name="pdf_column_date">Tarih</string>
+    <string name="pdf_column_title">Başlık</string>
+    <string name="pdf_column_category">Kategori</string>
+    <string name="pdf_column_amount">Tutar</string>
+    <string name="pdf_page_label">Sayfa %1$d</string>
+    <string name="pdf_error_uri_create">URI oluşturulamadı</string>
+    <string name="pdf_error_output_stream">OutputStream açılamadı</string>
+    <string name="pdf_error_create">PDF oluşturulurken hata oluştu</string>
+    <string name="log_pdf_export_success">PDF başarıyla dışa aktarıldı: %1$s</string>
+    <string name="log_pdf_export_failed">PDF dışa aktarma başarısız</string>
+</resources>

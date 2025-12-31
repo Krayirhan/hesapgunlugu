@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close">Kapat</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+    <string name="debug_menu_title">Debug Menüsü</string>
+    <string name="debug_app_info_title">Uygulama Bilgisi</string>
+    <string name="debug_package_name">Paket Adı</string>
+    <string name="debug_version_label">Sürüm</string>
+    <string name="debug_version_value">%1$s (%2$d)</string>
+    <string name="debug_build_type_label">Derleme Türü</string>
+    <string name="debug_build_type_debug">debug</string>
+    <string name="debug_build_type_release">release</string>
+    <string name="debug_debuggable_label">Debug</string>
+    <string name="debug_device_info_title">Cihaz Bilgisi</string>
+    <string name="debug_device_model">Model</string>
+    <string name="debug_device_android">Android</string>
+    <string name="debug_device_android_value">%1$s (API %2$d)</string>
+    <string name="debug_device_abi">ABI</string>
+    <string name="debug_database_title">Veritabanı</string>
+    <string name="debug_database_location">Konum</string>
+    <string name="debug_database_size">Boyut</string>
+    <string name="debug_database_version">Sürüm</string>
+    <string name="debug_memory_title">Bellek</string>
+    <string name="debug_memory_used">Kullanılan</string>
+    <string name="debug_memory_total">Toplam</string>
+    <string name="debug_memory_max">Maks</string>
+    <string name="debug_memory_free">Boş</string>
+    <string name="debug_memory_value_mb">%1$d MB</string>
+    <string name="debug_runtime_title">Çalışma Zamanı</string>
+    <string name="debug_runtime_now">Şu an</string>
+    <string name="debug_unknown">Bilinmiyor</string>
+    <string name="debug_not_available">Mevcut değil</string>
+    <string name="debug_file_size_bytes">%1$d B</string>
+    <string name="debug_file_size_kb">%1$d KB</string>
+    <string name="debug_file_size_mb">%1$d MB</string>
+</resources>

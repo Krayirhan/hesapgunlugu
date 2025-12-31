@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>BracesOnIfStatements:ScreenshotTest.kt$ScreenshotTest$if</ID>
+    <ID>ClassOrdering:MyApplication.kt$MyApplication$override val workManagerConfiguration: Configuration get() = Configuration.Builder() .setWorkerFactory(workerFactory) .setMinimumLoggingLevel(if (BuildConfig.DEBUG) android.util.Log.DEBUG else android.util.Log.ERROR) .build()</ID>
+    <ID>ClassOrdering:NotificationHelperImpl.kt$NotificationHelperImpl$Companion</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@Composable private fun MainContent(themeViewModel: ThemeViewModel)</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$MainActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>ExpressionBodySyntax:AppModule.kt$AppModule$return database.notificationDao()</ID>
+    <ID>ExpressionBodySyntax:AppModule.kt$AppModule$return database.recurringRuleDao()</ID>
+    <ID>ExpressionBodySyntax:AppModule.kt$AppModule$return database.recurringTransactionDao()</ID>
+    <ID>ExpressionBodySyntax:AppModule.kt$AppModule$return database.scheduledPaymentDao()</ID>
+    <ID>ExpressionBodySyntax:AppModule.kt$AppModule$return database.transactionDao()</ID>
+    <ID>ExpressionBodySyntax:ExtensionsTest.kt$return String.format("%,.2f", this)</ID>
+    <ID>ExpressionBodySyntax:ExtensionsTest.kt$return if (isEmpty()) this else this[0].uppercaseChar() + substring(1)</ID>
+    <ID>ExpressionBodySyntax:ExtensionsTest.kt$return if (length &lt;= maxLength) this else "${take(maxLength)}..."</ID>
+    <ID>ExpressionBodySyntax:FakeRecurringRuleRepository.kt$FakeRecurringRuleRepository$return rules.filter { it.scheduledPaymentId == scheduledPaymentId }</ID>
+    <ID>ExpressionBodySyntax:FakeScheduledPaymentRepository.kt$FakeScheduledPaymentRepository$return payments.value.find { it.id == id }</ID>
+    <ID>ExpressionBodySyntax:PasswordStrengthCheckerTest.kt$PasswordStrengthChecker$return pin.all { it == pin[0] }</ID>
+    <ID>ExpressionBodySyntax:PasswordStrengthCheckerTest.kt$PasswordStrengthChecker$return pin.length in 4..8</ID>
+    <ID>ExpressionBodySyntax:RecurringTransactionWorkerTest.kt$RecurringTransactionWorkerTest$return transaction.isActive &amp;&amp; transaction.nextExecutionDate &lt;= currentTime</ID>
+    <ID>FunctionNaming:AppNavGraph.kt$@Composable fun AppNavGraph( navController: NavHostController, innerPadding: PaddingValues )</ID>
+    <ID>FunctionNaming:MainActivity.kt$@Composable private fun IntegrityBlockedScreen(reason: String)</ID>
+    <ID>FunctionNaming:MainActivity.kt$@Composable private fun IntegrityCheckingScreen()</ID>
+    <ID>FunctionNaming:MainActivity.kt$@Composable private fun MainContent(themeViewModel: ThemeViewModel)</ID>
+    <ID>ImplicitDefaultLocale:ExtensionsTest.kt$String.format("%,.2f", this)</ID>
+    <ID>ImplicitDefaultLocale:ScreenshotTest.kt$ScreenshotTest$String.format("%,.2f", balance)</ID>
+    <ID>LongMethod:AppNavGraph.kt$@Composable fun AppNavGraph( navController: NavHostController, innerPadding: PaddingValues )</ID>
+    <ID>LongMethod:AuthViewModel.kt$AuthViewModel$fun onGoogleSignInResult(data: Intent?)</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun MainContent(themeViewModel: ThemeViewModel)</ID>
+    <ID>LongMethod:MainActivity.kt$MainActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongParameterList:RecurringTransactionWorkerTest.kt$RecurringTransactionWorkerTest$( id: Int = 1, title: String = "Test Recurring", amount: Double = 100.0, type: String = "EXPENSE", category: String = "Test", emoji: String = "💰", frequency: String = "MONTHLY", startDate: Long = System.currentTimeMillis(), endDate: Long? = null, lastExecutionDate: Long? = null, nextExecutionDate: Long = System.currentTimeMillis(), isActive: Boolean = true, createdAt: Long = System.currentTimeMillis() )</ID>
+    <ID>LongParameterList:ScheduledViewModelTest.kt$ScheduledViewModelTest$( id: Long = 1, title: String = "Test", amount: Double = 100.0, isIncome: Boolean = false, isRecurring: Boolean = false, daysFromNow: Int = 3 )</ID>
+    <ID>LongParameterList:TestFixtures.kt$TestFixtures$( id: Int = 1, title: String = "Test Transaction", amount: Double = 100.0, type: TransactionType = TransactionType.EXPENSE, category: String = "Test Category", emoji: String = "💰", date: Date = fixedNow )</ID>
+    <ID>LongParameterList:TestFixtures.kt$TestFixtures$( id: Long = 1, title: String = "Netflix", amount: Double = 99.99, isIncome: Boolean = false, isRecurring: Boolean = true, frequency: String = "Aylık", dueDate: Date = fixedNow, emoji: String = "📺", isPaid: Boolean = false, category: String = "Abonelik", createdAt: Date = fixedNow )</ID>
+    <ID>MagicNumber:FinanceWidget.kt$FinanceWidgetReceiver.Companion$1_000</ID>
+    <ID>MagicNumber:FinanceWidget.kt$FinanceWidgetReceiver.Companion$1_000_000</ID>
+    <ID>MagicNumber:NotificationHelperImpl.kt$NotificationHelperImpl$100</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$11</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$12</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$17</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$18</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$22</ID>
+    <ID>MagicNumber:StringProviderImpl.kt$StringProviderImpl$5</ID>
+    <ID>MatchingDeclarationName:FinanceWidget.kt$FinanceWidgetReceiver : AppWidgetProvider</ID>
+    <ID>MaxLineLength:GetStatisticsUseCaseTest.kt$GetStatisticsUseCaseTest$TestFixtures.createExpenseTransaction(id = 1, amount = 500.0, category = "Market").copy(date = calendar.time)</ID>
+    <ID>MaxLineLength:GetStatisticsUseCaseTest.kt$GetStatisticsUseCaseTest$TestFixtures.createExpenseTransaction(id = 2, amount = 300.0, category = "Market").copy(date = calendar.time)</ID>
+    <ID>MaxLineLength:GetStatisticsUseCaseTest.kt$GetStatisticsUseCaseTest$TestFixtures.createExpenseTransaction(id = 3, amount = 1000.0, category = "Fatura").copy(date = calendar.time)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$showBiometric = securityState.isBiometricEnabled &amp;&amp; securityViewModel.canUseBiometric()</ID>
+    <ID>MaxLineLength:MainActivity.kt$is Route.History</ID>
+    <ID>MaxLineLength:MainActivity.kt$is Route.Home</ID>
+    <ID>MaxLineLength:MainActivity.kt$is Route.Scheduled</ID>
+    <ID>MaxLineLength:MainActivity.kt$is Route.Settings</ID>
+    <ID>MaxLineLength:MainActivity.kt$is Route.Statistics</ID>
+    <ID>MaxLineLength:RecurringTransactionWorker.kt$RecurringTransactionWorker$private suspend</ID>
+    <ID>TooGenericExceptionCaught:AuthViewModel.kt$AuthViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CrashReportingManager.kt$CrashReportingManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RecurringTransactionWorker.kt$RecurringTransactionWorker$e: Exception</ID>
+    <ID>TooGenericExceptionThrown:DomainResultTest.kt$DomainResultTest$throw RuntimeException("Test error")</ID>
+    <ID>TooManyFunctions:StringProviderImpl.kt$StringProviderImpl : StringProvider</ID>
+    <ID>TooManyFunctions:UseCaseModule.kt$UseCaseModule</ID>
+    <ID>TrailingWhitespace:AcraSanitizer.kt$com.hesapgunlugu.app.core.error.AcraSanitizer.kt</ID>
+    <ID>TrailingWhitespace:AppModule.kt$com.hesapgunlugu.app.di.AppModule.kt</ID>
+    <ID>TrailingWhitespace:AppNavGraph.kt$com.hesapgunlugu.app.feature.common.navigation.AppNavGraph.kt</ID>
+    <ID>TrailingWhitespace:AuthViewModel.kt$com.hesapgunlugu.app.auth.AuthViewModel.kt</ID>
+    <ID>TrailingWhitespace:CheckBudgetWarningUseCaseTest.kt$com.hesapgunlugu.app.domain.usecase.home.CheckBudgetWarningUseCaseTest.kt</ID>
+    <ID>TrailingWhitespace:CrashReportingManager.kt$com.hesapgunlugu.app.core.crash.CrashReportingManager.kt</ID>
+    <ID>TrailingWhitespace:HistoryViewModelTest.kt$com.hesapgunlugu.app.feature.history.HistoryViewModelTest.kt</ID>
+    <ID>TrailingWhitespace:HomeViewModelTest.kt$com.hesapgunlugu.app.feature.home.HomeViewModelTest.kt</ID>
+    <ID>TrailingWhitespace:MainActivity.kt$com.hesapgunlugu.app.MainActivity.kt</ID>
+    <ID>TrailingWhitespace:MyApplication.kt$com.hesapgunlugu.app.MyApplication.kt</ID>
+    <ID>TrailingWhitespace:NotificationHelperImpl.kt$com.hesapgunlugu.app.core.common.NotificationHelperImpl.kt</ID>
+    <ID>TrailingWhitespace:PinVerificationResultTest.kt$com.hesapgunlugu.app.core.security.PinVerificationResultTest.kt</ID>
+    <ID>TrailingWhitespace:RecurringTransactionWorker.kt$com.hesapgunlugu.app.worker.RecurringTransactionWorker.kt</ID>
+    <ID>TrailingWhitespace:RecurringTransactionWorkerTest.kt$com.hesapgunlugu.app.worker.RecurringTransactionWorkerTest.kt</ID>
+    <ID>TrailingWhitespace:SecurityManagerTest.kt$com.hesapgunlugu.app.core.security.SecurityManagerTest.kt</ID>
+    <ID>TrailingWhitespace:StatisticsViewModelTest.kt$com.hesapgunlugu.app.feature.statistics.StatisticsViewModelTest.kt</ID>
+    <ID>TrailingWhitespace:StringProviderImpl.kt$com.hesapgunlugu.app.core.common.StringProviderImpl.kt</ID>
+    <ID>TrailingWhitespace:TransactionRepositoryTest.kt$com.hesapgunlugu.app.data.repository.TransactionRepositoryTest.kt</ID>
+    <ID>TrailingWhitespace:UseCaseModule.kt$com.hesapgunlugu.app.di.UseCaseModule.kt</ID>
+    <ID>UnderscoresInNumericLiterals:BackupEncryptionTest.kt$BackupEncryptionTest$100000</ID>
+    <ID>UnderscoresInNumericLiterals:TransactionMapperTest.kt$TransactionMapperTest$1703424000000L</ID>
+    <ID>UndocumentedPublicClass:AppModule.kt$AppModule</ID>
+    <ID>UndocumentedPublicClass:AuthModule.kt$AuthModule</ID>
+    <ID>UndocumentedPublicClass:AuthViewModel.kt$AuthViewModel : ViewModel</ID>
+    <ID>UndocumentedPublicClass:CommonModule.kt$CommonModule</ID>
+    <ID>UndocumentedPublicClass:DispatcherModule.kt$DefaultDispatcher</ID>
+    <ID>UndocumentedPublicClass:DispatcherModule.kt$MainDispatcher</ID>
+    <ID>UndocumentedPublicClass:FinanceWidget.kt$FinanceWidgetReceiver$Companion</ID>
+    <ID>UndocumentedPublicClass:MainActivity.kt$MainActivity : FragmentActivity</ID>
+    <ID>UndocumentedPublicClass:MyApplication.kt$MyApplication : ApplicationProvider</ID>
+    <ID>UndocumentedPublicClass:NotificationHelperImpl.kt$NotificationHelperImpl$Companion</ID>
+    <ID>UndocumentedPublicClass:RecurringTransactionWorker.kt$RecurringTransactionWorker$Companion</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Calendar : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Home : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Notifications : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Privacy : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Scheduled : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Settings : Screen</ID>
+    <ID>UndocumentedPublicClass:Screen.kt$Screen$Statistics : Screen</ID>
+    <ID>UndocumentedPublicClass:TimeModule.kt$TimeModule</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideDatabase(@ApplicationContext context: Context): AppDatabase</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideNotificationDao(database: AppDatabase): NotificationDao</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideRecurringRuleDao(database: AppDatabase): RecurringRuleDao</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideRecurringTransactionDao(database: AppDatabase): RecurringTransactionDao</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideScheduledPaymentDao(database: AppDatabase): ScheduledPaymentDao</ID>
+    <ID>UndocumentedPublicFunction:AppModule.kt$AppModule$@Provides @Singleton fun provideTransactionDao(database: AppDatabase): TransactionDao</ID>
+    <ID>UndocumentedPublicFunction:AuthModule.kt$AuthModule$@Provides @Singleton fun provideFirebaseAuth(@ApplicationContext context: Context): FirebaseAuth</ID>
+    <ID>UndocumentedPublicFunction:AuthModule.kt$AuthModule$@Provides @Singleton fun provideGoogleSignInClient( @ApplicationContext context: Context, gso: GoogleSignInOptions ): GoogleSignInClient</ID>
+    <ID>UndocumentedPublicFunction:AuthModule.kt$AuthModule$@Provides @Singleton fun provideGoogleSignInOptions(@ApplicationContext context: Context): GoogleSignInOptions</ID>
+    <ID>UndocumentedPublicFunction:AuthViewModel.kt$AuthViewModel$fun clearError()</ID>
+    <ID>UndocumentedPublicFunction:AuthViewModel.kt$AuthViewModel$fun getSignInIntent(): Intent</ID>
+    <ID>UndocumentedPublicFunction:AuthViewModel.kt$AuthViewModel$fun onGoogleSignInResult(data: Intent?)</ID>
+    <ID>UndocumentedPublicFunction:AuthViewModel.kt$AuthViewModel$fun signOut()</ID>
+    <ID>UndocumentedPublicFunction:CommonModule.kt$CommonModule$@Binds @Singleton abstract fun bindAppInfoProvider( impl: AppInfoProviderImpl ): AppInfoProvider</ID>
+    <ID>UndocumentedPublicFunction:CommonModule.kt$CommonModule$@Binds @Singleton abstract fun bindNotificationHelper( impl: NotificationHelperImpl ): NotificationHelper</ID>
+    <ID>UndocumentedPublicFunction:CommonModule.kt$CommonModule$@Binds @Singleton abstract fun bindRecurringRuleRepository( impl: RecurringRuleRepositoryImpl ): RecurringRuleRepository</ID>
+    <ID>UndocumentedPublicFunction:CommonModule.kt$CommonModule$@Binds @Singleton abstract fun bindSettingsRepository( impl: SettingsRepositoryImpl ): SettingsRepository</ID>
+    <ID>UndocumentedPublicFunction:CommonModule.kt$CommonModule$@Binds @Singleton abstract fun bindStringProvider( impl: StringProviderImpl ): StringProvider</ID>
+    <ID>UndocumentedPublicFunction:DispatcherModule.kt$DispatcherModule$@Provides @Singleton @DefaultDispatcher fun provideDefaultDispatcher(): CoroutineDispatcher</ID>
+    <ID>UndocumentedPublicFunction:DispatcherModule.kt$DispatcherModule$@Provides @Singleton @IoDispatcher fun provideIoDispatcher(): CoroutineDispatcher</ID>
+    <ID>UndocumentedPublicFunction:DispatcherModule.kt$DispatcherModule$@Provides @Singleton @MainDispatcher fun provideMainDispatcher(): CoroutineDispatcher</ID>
+    <ID>UndocumentedPublicFunction:TimeModule.kt$TimeModule$@Provides @Singleton fun provideTimeProvider(): TimeProvider</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideAddRecurringRuleUseCase( repository: RecurringRuleRepository ): AddRecurringRuleUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideAddScheduledPaymentUseCase( repository: ScheduledPaymentRepository ): AddScheduledPaymentUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideAddTransactionUseCase( repository: TransactionRepository ): AddTransactionUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideDeleteScheduledPaymentUseCase( repository: ScheduledPaymentRepository ): DeleteScheduledPaymentUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideDeleteTransactionUseCase( repository: TransactionRepository ): DeleteTransactionUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideGetPlannedOccurrencesUseCase( scheduledPaymentRepository: ScheduledPaymentRepository, recurringRuleRepository: RecurringRuleRepository ): GetPlannedOccurrencesUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideGetScheduledPaymentsUseCase( repository: ScheduledPaymentRepository ): GetScheduledPaymentsUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideGetTransactionsByDateRangeUseCase( repository: TransactionRepository ): GetTransactionsByDateRangeUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideGetTransactionsUseCase( repository: TransactionRepository ): GetTransactionsUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideGetUserSettingsUseCase( repository: SettingsRepository ): GetUserSettingsUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideMarkPaymentAsPaidUseCase( scheduledPaymentRepository: ScheduledPaymentRepository, transactionRepository: TransactionRepository, recurringRuleRepository: RecurringRuleRepository ): MarkPaymentAsPaidUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideUpdateCategoryBudgetUseCase( repository: SettingsRepository ): UpdateCategoryBudgetUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideUpdateMonthlyLimitUseCase( repository: SettingsRepository ): UpdateMonthlyLimitUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideUpdateThemeUseCase( repository: SettingsRepository ): UpdateThemeUseCase</ID>
+    <ID>UndocumentedPublicFunction:UseCaseModule.kt$UseCaseModule$@Provides @ViewModelScoped fun provideUpdateTransactionUseCase( repository: TransactionRepository ): UpdateTransactionUseCase</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val displayName: String? = null</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val email: String? = null</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val error: String? = null</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val isLoading: Boolean = false</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val isSignedIn: Boolean = false</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val isSyncing: Boolean = false</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthUiState$val photoUrl: String? = null</ID>
+    <ID>UndocumentedPublicProperty:AuthViewModel.kt$AuthViewModel$val state: StateFlow&lt;AuthUiState&gt; = _state.asStateFlow()</ID>
+    <ID>UndocumentedPublicProperty:MainActivity.kt$MainActivity$@Inject lateinit var onboardingManager: OnboardingManager</ID>
+    <ID>UndocumentedPublicProperty:MainActivity.kt$MainActivity$@Inject lateinit var playIntegrityManager: PlayIntegrityManager</ID>
+    <ID>UndocumentedPublicProperty:MainActivity.kt$MainActivity$@Inject lateinit var rootDetector: RootDetector</ID>
+    <ID>UndocumentedPublicProperty:MyApplication.kt$MyApplication$@Inject lateinit var workManagerInitializer: WorkManagerInitializer</ID>
+    <ID>UndocumentedPublicProperty:MyApplication.kt$MyApplication$@Inject lateinit var workerFactory: HiltWorkerFactory</ID>
+    <ID>UndocumentedPublicProperty:RecurringTransactionWorker.kt$RecurringTransactionWorker.Companion$const val WORK_NAME = "recurring_transaction_worker"</ID>
+    <ID>UndocumentedPublicProperty:RecurringTransactionWorker.kt$RecurringTransactionWorker.Companion$val REPEAT_INTERVAL = TimeUnit.HOURS.toMillis(24) // Günde bir</ID>
+    <ID>UndocumentedPublicProperty:Screen.kt$Screen$@StringRes val titleRes: Int</ID>
+    <ID>UndocumentedPublicProperty:Screen.kt$Screen$val route: String</ID>
+    <ID>UndocumentedPublicProperty:Screen.kt$Screen$val selectedIcon: ImageVector</ID>
+    <ID>UndocumentedPublicProperty:Screen.kt$Screen$val unselectedIcon: ImageVector</ID>
+    <ID>UnnecessaryParentheses:RecurringTransactionWorkerTest.kt$RecurringTransactionWorkerTest$(transaction.endDate ?: Long.MAX_VALUE)</ID>
+    <ID>UnusedImports:AddTransactionUseCaseTest.kt$import com.hesapgunlugu.app.core.domain.model.Transaction</ID>
+    <ID>UnusedImports:AddTransactionUseCaseTest.kt$import com.hesapgunlugu.app.core.domain.model.TransactionType</ID>
+    <ID>UnusedImports:AddTransactionUseCaseTest.kt$import java.util.Date</ID>
+    <ID>UnusedImports:ExtensionsTest.kt$import java.util.Calendar</ID>
+    <ID>UnusedImports:ExtensionsTest.kt$import java.util.Date</ID>
+    <ID>UnusedImports:GetStatisticsUseCaseTest.kt$import com.hesapgunlugu.app.core.domain.model.TransactionType</ID>
+    <ID>UnusedImports:MarkPaymentAsPaidUseCaseTest.kt$import com.hesapgunlugu.app.core.domain.model.ScheduledPayment</ID>
+    <ID>UnusedImports:RecurringTransactionWorkerTest.kt$import com.hesapgunlugu.app.core.domain.model.TransactionType</ID>
+    <ID>UnusedImports:ScheduledViewModelTest.kt$import io.mockk.verify</ID>
+    <ID>UnusedImports:SecurityManagerTest.kt$import org.junit.Before</ID>
+    <ID>UnusedParameter:MainActivity.kt$themeViewModel: ThemeViewModel</ID>
+    <ID>UnusedPrivateProperty:AppNavGraph.kt$val args = backStackEntry.toRoute&lt;Route.CategoryDetail&gt;()</ID>
+    <ID>UnusedPrivateProperty:PasswordStrengthCheckerTest.kt$PasswordStrengthCheckerTest$val mediumPin = "1357"</ID>
+    <ID>WildcardImport:AddScheduledPaymentUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:AddTransactionUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:BackupEncryptionTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:CheckBudgetWarningUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:DeleteScheduledPaymentUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:DeleteTransactionUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:DomainResultTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:ErrorHandlerTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:ExampleUnitTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:ExtensionsTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:GetScheduledPaymentsUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:GetStatisticsUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:GetTransactionsUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:HistoryViewModelTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:HomeViewModelTest.kt$import com.hesapgunlugu.app.core.domain.usecase.transaction.*</ID>
+    <ID>WildcardImport:HomeViewModelTest.kt$import io.mockk.*</ID>
+    <ID>WildcardImport:HomeViewModelTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:PasswordStrengthCheckerTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:PinVerificationResultTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:RecurringTransactionWorkerTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:SecurityManagerTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:StatisticsViewModelTest.kt$import io.mockk.*</ID>
+    <ID>WildcardImport:StatisticsViewModelTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:TransactionMapperTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:TransactionRepositoryImplTest.kt$import io.mockk.*</ID>
+    <ID>WildcardImport:TransactionRepositoryImplTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:TransactionRepositoryTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:UpdateTransactionUseCaseTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:UseCaseModule.kt$import com.hesapgunlugu.app.core.domain.usecase.*</ID>
+    <ID>WildcardImport:UseCaseModule.kt$import com.hesapgunlugu.app.core.domain.usecase.scheduled.*</ID>
+    <ID>WildcardImport:UseCaseModule.kt$import com.hesapgunlugu.app.core.domain.usecase.transaction.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

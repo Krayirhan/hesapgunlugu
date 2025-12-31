@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_title_1">Take Control of Your Finances</string>
+    <string name="onboarding_desc_1">Track your income and expenses easily. Always know where your money goes.</string>
+    <string name="onboarding_title_2">Detailed Statistics</string>
+    <string name="onboarding_desc_2">Analyze your spending with charts. Discover saving opportunities with category reports.</string>
+    <string name="onboarding_title_3">Secure and Private</string>
+    <string name="onboarding_desc_3">Your data is stored securely on your device. Protect your privacy with a PIN.</string>
+    <string name="onboarding_title_4">Reach Your Goals</string>
+    <string name="onboarding_desc_4">Set budget limits and track scheduled payments. Get one step closer to your financial goals!</string>
+
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+</resources>

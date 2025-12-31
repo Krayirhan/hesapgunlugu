@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="delete_confirmation_keywords">
+        <item>SİL</item>
+        <item>SIL</item>
+        <item>DELETE</item>
+    </string-array>
+    <string-array name="language_codes">
+        <item>tr</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="language_names">
+        <item>@string/language_name_tr</item>
+        <item>@string/language_name_en</item>
+    </string-array>
+</resources>

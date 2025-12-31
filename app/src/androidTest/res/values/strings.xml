@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_transaction_title">Test İşlem</string>
+    <string name="test_user_name">Test Kullanıcı</string>
+    <string name="test_error_message">Test hata mesajı</string>
+    <string name="test_title_simple">Test</string>
+    <string name="test_item_title_coffee">Kahve</string>
+    <string name="test_export_format_csv">CSV</string>
+
+    <string name="test_amount_150">150</string>
+    <string name="test_amount_5000">5000</string>
+    <string name="test_amount_8000">8000</string>
+    <string name="test_amount_100">100</string>
+    <string name="test_amount_10000">10000</string>
+
+    <string name="test_email_label">E-posta</string>
+    <string name="test_invalid_email">Geçersiz e-posta</string>
+    <string name="test_show_dialog">İletişim formunu göster</string>
+    <string name="test_custom_action_button_desc">Özel işlem düğmesi</string>
+    <string name="test_custom_button_label">Devam</string>
+    <string name="test_item_label">Öğe</string>
+</resources>

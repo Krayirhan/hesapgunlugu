@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf_filename">financial_report_%1$s.pdf</string>
+    <string name="pdf_report_title_default">Financial Report</string>
+    <string name="pdf_generated_on">Generated: %1$s</string>
+    <string name="pdf_summary_title">Summary</string>
+    <string name="pdf_total_income">Total Income: %1$s</string>
+    <string name="pdf_total_expense">Total Expense: %1$s</string>
+    <string name="pdf_net_balance">Net Balance: %1$s</string>
+    <string name="pdf_transactions_title">Transactions</string>
+    <string name="pdf_column_date">Date</string>
+    <string name="pdf_column_title">Title</string>
+    <string name="pdf_column_category">Category</string>
+    <string name="pdf_column_amount">Amount</string>
+    <string name="pdf_page_label">Page %1$d</string>
+    <string name="pdf_error_uri_create">Failed to create URI</string>
+    <string name="pdf_error_output_stream">Failed to open OutputStream</string>
+    <string name="pdf_error_create">Failed to create PDF</string>
+    <string name="log_pdf_export_success">PDF exported successfully: %1$s</string>
+    <string name="log_pdf_export_failed">PDF export failed</string>
+</resources>

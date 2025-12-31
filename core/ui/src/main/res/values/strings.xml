@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Hata Yönetimi -->
+    <string name="error_generic_unknown">Bilinmeyen bir hata oluştu</string>
+    <string name="error_title">Hata</string>
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="error_occurred">Bir hata oluştu</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="refresh">Yenile</string>
+    <string name="network_error_title">Bağlantı Hatası</string>
+    <string name="network_error_description">İnternet bağlantınızı kontrol edin</string>
+
+    <!-- Karşılama / Giriş -->
+    <string name="greeting_hello">Merhaba</string>
+    <string name="auth_default_user">Kullanıcı</string>
+    <string name="auth_sign_in">Giriş Yap</string>
+    <string name="auth_sign_out">Çıkış Yap</string>
+
+    <!-- Dashboard -->
+    <string name="total_balance">Toplam Bakiye</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="total_income">Toplam Gelir</string>
+    <string name="total_expense">Toplam Gider</string>
+    <string name="balance_short">Bakiye</string>
+    <string name="savings_short">Tasarruf</string>
+    <string name="budget_short">Bütçe</string>
+
+    <!-- İşlem Kategorileri -->
+    <string name="category_salary">Maaş</string>
+    <string name="category_rent_income">Kira Geliri</string>
+    <string name="category_investment">Yatırım</string>
+    <string name="category_side_job">Ek İş</string>
+    <string name="category_other">Diğer</string>
+    <string name="category_market">Market</string>
+    <string name="category_bills">Fatura</string>
+    <string name="category_transport">Ulaşım</string>
+    <string name="category_food">Yemek</string>
+    <string name="category_rent">Kira</string>
+    <string name="category_gift">Hediye</string>
+    <string name="category_sales">Satış</string>
+    <string name="category_subscription">Abonelik</string>
+    <string name="category_loan">Kredi</string>
+    <string name="category_insurance">Sigorta</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_health">Sağlık</string>
+    <string name="category_clothing">Giyim</string>
+
+    <!-- Bütçe Bileşenleri -->
+    <string name="add_category_budget">Kategori Bütçesi Ekle</string>
+    <string name="select_category">Kategori Seçin</string>
+    <string name="monthly_limit">Aylık Limit</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="update">Güncelle</string>
+    <string name="edit_budget">Bütçe Düzenle</string>
+    <string name="limit_amount">Limit Tutarı</string>
+    <string name="spent">Harcanan</string>
+    <string name="remaining">Kalan</string>
+    <string name="budget_exceeded">Bütçe Aşıldı</string>
+    <string name="monthly_spending_title">Aylık Harcama</string>
+    <string name="limit_exceeded">Limit aşıldı!</string>
+    <string name="category_budgets">Kategori Bütçeleri</string>
+    <string name="add_category">Kategori Ekle</string>
+    <string name="no_category_budget_yet">Henüz kategori bütçesi yok</string>
+
+    <!-- Planlı İşlemler -->
+    <string name="add_scheduled_transaction">Planlı İşlem Ekle</string>
+    <string name="upcoming_payments">Yaklaşan Ödemeler</string>
+    <string name="recurring_incomes">Düzenli Gelirler</string>
+    <string name="recurrence_frequency">Tekrarlama Sıklığı</string>
+    <string name="payment_day_of_month">Ödeme Günü (Ayın)</string>
+    <string name="payment_day_of_week">Ödeme Günü (Hafta)</string>
+    <string name="enter_category_name">Kategori Adı Giriniz</string>
+    <string name="description">Açıklama</string>
+    <string name="amount">Tutar</string>
+    <string name="no_scheduled_payments">Planlı ödeme yok</string>
+    <string name="add_scheduled_payment_action">Planlı İşlem Ekle</string>
+    <string name="frequency_weekly">Haftalık</string>
+    <string name="frequency_monthly">Aylık</string>
+    <string name="frequency_yearly">Yıllık</string>
+    <string name="day_number_label">%1$d.</string>
+
+    <!-- İşlem Formu -->
+    <string name="category">Kategori</string>
+    <string name="title">Başlık</string>
+    <string name="date">Tarih</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="add_transaction_action">İşlem Ekle</string>
+    <string name="edit_transaction">İşlemi Düzenle</string>
+    <string name="new_transaction">Yeni İşlem Ekle</string>
+
+    <!-- Boş Durumlar -->
+    <string name="no_transactions_yet">Henüz işlem yok</string>
+    <string name="add_first_transaction">İlk işleminizi ekleyin</string>
+    <string name="no_search_results">Sonuç bulunamadı</string>
+    <string name="no_statistics">İstatistik yok</string>
+    <string name="no_expenses_yet">Henüz harcama yok</string>
+    <string name="empty_transactions_description">İlk işleminizi ekleyerek başlayın.\nGelir ve giderlerinizi kolayca takip edin.</string>
+    <string name="empty_scheduled_description">Düzenli ödemelerinizi ve gelirlerinizi\nplanlayarak otomatikleştirin.</string>
+    <string name="empty_notifications_title">Bildirim Yok</string>
+    <string name="empty_notifications_description">Önemli finansal olaylar ve hatırlatmalar\nburada görünecek.</string>
+    <string name="no_search_results_description">"%1$s" için sonuç yok.\nFarklı bir arama deneyin.</string>
+    <string name="no_statistics_description">Bu dönem için yeterli veri yok.\nİşlem ekleyerek istatistiklerinizi görün.</string>
+
+    <!-- Grafikler ve İstatistikler -->
+    <string name="weekly_income_expense">Haftalık Gelir/Gider</string>
+    <string name="monthly_balance_trend">Aylık Bakiye Trendi</string>
+    <string name="category_distribution">Kategori Dağılımı</string>
+    <string name="monthly_comparison">Aylık Karşılaştırma</string>
+    <string name="trend_analysis">Trend Analizi</string>
+    <string name="calendar_previous_month">Önceki ay</string>
+    <string name="calendar_next_month">Sonraki ay</string>
+
+    <!-- Finansal Görüşler -->
+    <string name="financial_health">Finansal Sağlık</string>
+    <string name="weekly_trend">Haftalık Trend</string>
+    <string name="savings_rate">Tasarruf Oranı</string>
+    <string name="most">En Çok</string>
+    <string name="financial_insights_title">Finansal İçgörüler</string>
+    <string name="score_label_excellent">Mükemmel</string>
+    <string name="score_label_good">İyi</string>
+    <string name="score_label_average">Orta</string>
+    <string name="score_label_needs_improvement">Gelişmeli</string>
+    <string name="trend_increasing">Artıyor</string>
+    <string name="trend_decreasing">Azalıyor</string>
+    <string name="trend_stable">Dengede</string>
+    <string name="daily_avg_short">Günlük Ort.</string>
+    <string name="savings_rate_reco_excellent">Harika! Tasarruf hedefini aştın</string>
+    <string name="savings_rate_reco_good">Çok iyi! Hedef %20+</string>
+    <string name="savings_rate_reco_ok">İyi gidiyor! Hedef %20</string>
+    <string name="savings_rate_reco_keep_going">Devam et! Hedef %20</string>
+    <string name="savings_rate_reco_warning">Dikkat! Harcamaları azalt</string>
+    <string name="savings_rate_emoji_excellent">💚</string>
+    <string name="savings_rate_emoji_good">💪</string>
+    <string name="savings_rate_emoji_ok">👍</string>
+    <string name="savings_rate_emoji_low">🙂</string>
+    <string name="savings_rate_emoji_negative">⚠️</string>
+    <string name="insight_emoji_success">✅</string>
+    <string name="insight_emoji_warning">⚠️</string>
+    <string name="insight_emoji_alert">🚨</string>
+    <string name="insight_emoji_info">ℹ️</string>
+    <string name="insight_emoji_reminder">🔔</string>
+    <string name="quick_actions_title">Hızlı İşlemler</string>
+    <string name="quick_action_add_transaction">İşlem Ekle</string>
+    <string name="quick_action_reports">Raporlar</string>
+    <string name="quick_action_history">Geçmiş</string>
+    <string name="quick_action_scheduled">Planlı</string>
+    <string name="savings_goal_title">Hedef: %1$s</string>
+    <string name="savings_current_label">Mevcut</string>
+    <string name="savings_target_label">Hedef</string>
+    <string name="daily_target_label">Günlük hedef:</string>
+    <string name="daily_target_format">%1$s%2$s/gün</string>
+
+    <!-- İşlem Öğesi -->
+    <string name="edit">Düzenle</string>
+    <string name="delete">Sil</string>
+    <string name="confirm_delete_transaction">"%1$s" işlemini silmek istediğinize emin misiniz?</string>
+    <string name="delete_transaction_title">İşlemi Sil</string>
+    <string name="transaction_item_description">Tür: %1$s, Başlık: %2$s, Tutar: %3$s, Kategori: %4$s, Tarih: %5$s</string>
+    <string name="transaction_item_double_tap">Detaylar için çift dokunun</string>
+    <string name="category_with_value">Kategori: %1$s</string>
+    <string name="transaction_amount_with_sign">%1$s%2$s</string>
+    <string name="preview_title_market_shopping">Market Alışverişi</string>
+    <string name="preview_title_salary">Maaş</string>
+    <string name="preview_title_electric_bill">Elektrik Faturası</string>
+
+    <!-- Para Birimi -->
+    <string name="currency_symbol">₺</string>
+    <string name="currency_code_try">TL</string>
+    <string name="amount_with_currency">%1$s %2$s</string>
+    <string name="amount_pair">%1$s / %2$s</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_amount_description">%1$s: %2$s %3$s</string>
+    <string name="accessibility_date_description">Tarih: %1$s</string>
+    <string name="accessibility_percentage_description">%1$s: %2$d yüzde</string>
+    <string name="accessibility_progress_state">%1$.0f / %2$.0f</string>
+    <string name="accessibility_transaction_description">Tür: %1$s, Başlık: %2$s, %3$s: %4$s, %5$s: %6$s</string>
+    <string name="accessibility_button_action">%1$s, %2$s</string>
+    <string name="accessibility_label_value">%1$s: %2$s</string>
+    <string name="accessibility_positive_state">Pozitif</string>
+    <string name="accessibility_negative_state">Negatif</string>
+    <string name="accessibility_chart_suffix">grafiği</string>
+    <string name="accessibility_chart_description">%1$s %2$s. %3$s</string>
+    <string name="accessibility_state_on">Açık</string>
+    <string name="accessibility_state_off">Kapalı</string>
+    <string name="accessibility_selected">Seçili</string>
+    <string name="accessibility_not_selected">Seçili değil</string>
+    <string name="accessibility_hint_prefix">İpucu</string>
+    <string name="accessibility_error_prefix">Hata</string>
+    <string name="accessibility_list_position">%1$s, %2$d / %3$d</string>
+    <string name="accessibility_percentage_format">Yüzde %d</string>
+    <string name="accessibility_completed_format">Yüzde %d tamamlandı</string>
+    <string name="accessibility_success_prefix">Başarı</string>
+    <string name="accessibility_warning_prefix">Uyarı</string>
+    <string name="accessibility_info_prefix">Bilgi</string>
+    <string name="accessibility_alert_message">%1$s: %2$s</string>
+    <string name="accessibility_negative_prefix">eksi</string>
+    <string name="accessibility_negative_amount">%1$s %2$s</string>
+    <string name="accessibility_amount_with_currency">%1$s %2$s</string>
+    <string name="accessibility_value_current">Mevcut değer: %1$s</string>
+    <string name="accessibility_value_range">Aralık: %1$s</string>
+
+    <!-- Header -->
+    <string name="notifications">Bildirimler</string>
+
+    <!-- Financial Health Card -->
+    <string name="health_excellent">Mükemmel durumdasın!</string>
+    <string name="health_good">İyi gidiyorsun!</string>
+    <string name="health_fair">Dikkatli ol</string>
+    <string name="health_needs_attention">Dikkat gerekiyor</string>
+    <string name="savings_label">Tasarruf</string>
+    <string name="trend_label">Trend</string>
+
+    <!-- Upcoming Payments Card -->
+    <string name="upcoming_payments_title">Yaklaşan Ödemeler</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="no_upcoming_payments_home">Yaklaşan ödeme yok</string>
+    <string name="this_week_total">Bu hafta toplam</string>
+    <string name="overdue">Gecikmiş</string>
+</resources>

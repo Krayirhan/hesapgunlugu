@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EditScheduledPaymentDialog -->
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="transaction_title">Title</string>
+    <string name="amount_currency">Amount (%1$s)</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="delete_transaction_title">Delete Transaction</string>
+    <string name="delete_transaction_confirm">Are you sure you want to delete "%1$s"?</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_scheduled_payment_title">Edit Scheduled Transaction</string>
+    <string name="recurrence_frequency_title">Recurrence Frequency</string>
+    <string name="close">Close</string>
+    <string name="preview_title_netflix">Netflix</string>
+
+    <!-- Scheduled Header -->
+    <string name="scheduled_header_title">Scheduled Transactions</string>
+    <string name="scheduled_header_subtitle">Payments and subscriptions</string>
+
+    <!-- Summary Cards -->
+    <string name="scheduled_summary_upcoming_label">Upcoming</string>
+    <string name="scheduled_summary_monthly_label">Monthly</string>
+    <string name="payment_due_today">Payment due today!</string>
+
+    <!-- RecurringItem -->
+    <string name="recurring_add">Add Recurrence Rule</string>
+
+    <!-- RecurringRuleDialog -->
+    <string name="repeat_period">Repeat Period</string>
+    <string name="daily">Daily</string>
+    <string name="weekly_label">Weekly</string>
+    <string name="monthly_label">Monthly</string>
+    <string name="yearly_label">Yearly</string>
+    <string name="interval_placeholder">Enter interval</string>
+    <string name="day_of_month_label">Day of Month</string>
+    <string name="repeat_count_label">Max Occurrences</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="auto_transaction_info">Transactions will be created automatically at the specified interval.</string>
+    <string name="recurring_rule_title">Set Automatic Recurrence</string>
+    <string name="recurrence_every">Every %1$s</string>
+
+    <!-- ScheduledSummaryCards -->
+    <string name="upcoming_payments">Upcoming Payments</string>
+    <string name="recurring_payments">Recurring Payments</string>
+    <string name="upcoming_payment_notification">Payment Reminder</string>
+
+    <!-- ScheduledScreen -->
+    <string name="next_7_days">Next 7 days</string>
+    <string name="no_upcoming_payments">No upcoming payments</string>
+    <string name="recurring_incomes">Recurring Incomes</string>
+    <string name="your_regular_income_sources">Your regular income sources</string>
+    <string name="no_recurring_income_added">No recurring income added</string>
+    <string name="recurring_expenses">Recurring Expenses</string>
+    <string name="subscriptions_and_regular_payments">Subscriptions and regular payments</string>
+    <string name="no_recurring_expense_added">No recurring expense added</string>
+
+    <!-- Empty State -->
+    <string name="empty_state_add_hint">Tap the + button to add</string>
+
+    <!-- ScheduledPaymentItem -->
+    <string name="mark_as_paid_short">Pay</string>
+
+    <!-- Overdue Payments -->
+    <string name="overdue_payments">Overdue Payments</string>
+    <string name="pay_all_overdue">Pay All</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="and_more_payments">and %d more payments…</string>
+    <plurals name="overdue_payments_count">
+        <item quantity="one">%d overdue payment</item>
+        <item quantity="other">%d overdue payments</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">%d day overdue</item>
+        <item quantity="other">%d days overdue</item>
+    </plurals>
+    <plurals name="payment_due_in_days">
+        <item quantity="one">Payment due in %d day</item>
+        <item quantity="other">Payment due in %d days</item>
+    </plurals>
+
+    <!-- Monthly Fixed Expenses -->
+    <string name="monthly_fixed_expenses">Monthly Fixed Expenses</string>
+    <string name="fixed_expenses_label">Fixed Expenses</string>
+    <string name="remaining_budget_label">Remaining Budget</string>
+    <string name="fixed_expenses_warning">Fixed expenses use %d%% of your budget</string>
+</resources>

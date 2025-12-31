@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Account Diary</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_scheduled">Scheduled</string>
+    <string name="nav_statistics">Statistics</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_message">Welcome</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="see_all">See All</string>
+    <string name="no_transactions">No transactions yet</string>
+    <string name="add_first_transaction">Add your first transaction</string>
+    <string name="add_transaction_fab">Add transaction</string>
+    <string name="budget_status">Budget Status</string>
+    <string name="monthly_spending_limit">Your monthly spending limit</string>
+    <string name="monthly_spending_limit_subtitle">Monthly spending limit</string>
+    <string name="last_5_transactions">Last 5 transactions</string>
+    <string name="no_transaction_yet">No transactions yet</string>
+
+    <!-- Transaction Form -->
+    <string name="add_transaction">Add Transaction</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="transaction_title">Title</string>
+    <string name="transaction_amount">Amount</string>
+    <string name="transaction_category">Category</string>
+    <string name="transaction_date">Date</string>
+    <string name="transaction_type_income">Income</string>
+    <string name="transaction_type_expense">Expense</string>
+    <string name="add_transaction_action">Add Transaction</string>
+    <string name="transaction_details">Transaction Details</string>
+
+    <!-- Common Actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="share">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="undo">Undo</string>
+    <string name="clear">Clear</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="skip">Skip</string>
+    <string name="loading">Loading...</string>
+
+    <!-- Form Labels -->
+    <string name="title">Title</string>
+    <string name="title_label">Title</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="amount_currency">Amount (%s)</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="note">Note</string>
+    <string name="name">Name</string>
+    <string name="name_label">Name</string>
+    <string name="balance">Balance</string>
+    <string name="total">Total</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date_range">Date Range</string>
+
+    <!-- Categories -->
+    <string name="category_market">Groceries</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_food">Food</string>
+    <string name="category_health">Health</string>
+    <string name="category_clothing">Clothing</string>
+    <string name="category_education">Education</string>
+    <string name="category_rent">Rent</string>
+    <string name="category_salary">Salary</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_freelance">Freelance</string>
+    <string name="category_other">Other</string>
+    <string name="category_rent_income">Rent Income</string>
+    <string name="category_side_job">Side Job</string>
+    
+    <!-- Category Management -->
+    <string name="add_category">Add Category</string>
+    <string name="your_categories">Your Categories</string>
+    <string name="default_category">Default</string>
+    <string name="new_category">New Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="enter_category_name">Enter Category Name</string>
+    <string name="select_category">Select Category</string>
+    <string name="all_categories">All Categories</string>
+    <string name="category_management">Category Management</string>
+    
+    <!-- Budget -->
+    <string name="category_budgets">Category Budgets</string>
+    <string name="add_category_budget">Add Category Budget</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="monthly_limit">Monthly Limit</string>
+    <string name="limit_amount">Limit Amount</string>
+    <string name="set_limit">Set Limit</string>
+    <string name="spent">Spent</string>
+    <string name="remaining">Remaining</string>
+    <string name="budget_exceeded">Budget Exceeded</string>
+    <string name="no_category_budget_yet">No category budget added yet</string>
+    <string name="budget_warning">Budget Warning</string>
+    <string name="budget_alert_threshold">Budget Alert Threshold</string>
+    <string name="budget_alert_question">At what percentage of your budget would you like to receive an alert?</string>
+    <string name="quick_select">Quick Select</string>
+    <string name="spending_analysis">Spending Analysis</string>
+    
+    <!-- History Screen -->
+    <string name="search_desc">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="calendar">Calendar</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string name="calendar_view">Calendar View</string>
+    <string name="list_view">List View</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="no_transactions_yet">No transactions yet</string>
+    <string name="no_transactions_desc">No transactions to display</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="account_movements">Account Movements</string>
+    <string name="all_income_expense">All your income and expenses</string>
+    <string name="search_transaction">Search transaction...</string>
+    <string name="no_transactions_month">No transactions in %s</string>
+    <string name="not_found">\'%s\' not found</string>
+    <string name="filter_by_category">Filter by category</string>
+    <string name="filter_by_type">Filter by type</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_by_date">By date</string>
+    <string name="sort_by_amount">By amount</string>
+    <string name="sort_ascending">Ascending</string>
+    <string name="sort_descending">Descending</string>
+    <string name="all_types">All</string>
+    <string name="month_summary">This month: %1$s income, %2$s expense</string>
+
+    <!-- Scheduled Payments -->
+    <string name="scheduled_payments">Scheduled Payments</string>
+    <string name="recurring_incomes">Recurring Incomes</string>
+    <string name="recurring_expenses">Recurring Expenses</string>
+    <string name="add_scheduled">Add Scheduled Payment</string>
+    <string name="add_scheduled_transaction">Add new scheduled transaction</string>
+    <string name="add_scheduled_payment_action">Add Scheduled Transaction</string>
+    <string name="payment_frequency">Repeat Frequency</string>
+    <string name="recurrence_frequency">Recurrence Frequency</string>
+    <string name="payment_due_date">Due Date</string>
+    <string name="payment_day_of_month">Payment Day (of Month)</string>
+    <string name="days_left">%d days left</string>
+    <string name="days_remaining">%d days</string>
+    <string name="due_today">Today</string>
+    <string name="overdue">Overdue</string>
+    <string name="mark_as_paid">Mark as paid</string>
+    <string name="no_scheduled_payments">No scheduled payments</string>
+    <string name="total_upcoming">Total Upcoming</string>
+    <string name="total_recurring">Total Recurring</string>
+    <string name="upcoming_payments">Upcoming Payments</string>
+    <string name="upcoming_7_days">Next 7 days</string>
+    <string name="recurring_income_sources">Your regular income sources</string>
+    <string name="subscriptions_regular">Subscriptions and regular payments</string>
+    <string name="no_upcoming_payment">No upcoming payments</string>
+    <string name="no_recurring_income">No recurring income added</string>
+    <string name="no_recurring_expense">No recurring expense added</string>
+    <string name="next_payment">Next Payment</string>
+    <string name="recurring_add">Add automatic repeat</string>
+    <string name="upcoming_payment_notification">Upcoming payment notification</string>
+    <string name="recurring_payments">Recurring Payments</string>
+    <string name="payment_reminder">Payment Reminder</string>
+    <string name="upcoming_payment">Upcoming Payment</string>
+    
+    <!-- Frequency -->
+    <string name="frequency_weekly">Weekly</string>
+    <string name="frequency_monthly">Monthly</string>
+    <string name="frequency_yearly">Yearly</string>
+    <string name="repeat_period">Repeat Period</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="weekly_label">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="monthly_label">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="yearly_label">Yearly</string>
+    <string name="every_period">Every %1$s</string>
+    <string name="interval_placeholder">1</string>
+    <string name="day_of_month_label">Day of month (1-31)</string>
+    <string name="repeat_count_label">How many times to repeat? (optional)</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="auto_transaction_info">Automatic transactions will be created and checked daily</string>
+
+    <!-- Statistics -->
+    <string name="statistics">Statistics</string>
+    <string name="your_financial_analysis">Your financial analysis</string>
+    <string name="period_weekly">Weekly</string>
+    <string name="period_monthly">Monthly</string>
+    <string name="period_yearly">Yearly</string>
+    <string name="income_expense_chart">Income/Expense Chart</string>
+    <string name="category_distribution">Category Distribution</string>
+    <string name="category_based_spending">Spending by Category</string>
+    <string name="month_comparison">Month Comparison</string>
+    <string name="weekly_comparison">Weekly comparison</string>
+    <string name="this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="spending_increased">Spending increased by %s</string>
+    <string name="spending_decreased">Spending decreased by %s</string>
+    <string name="spending_up">Spending up %s</string>
+    <string name="spending_down">Spending down %s</string>
+    <string name="trend_analysis">Trend Analysis</string>
+    <string name="compared_to_last_month">Compared to last month</string>
+    <string name="no_data_yet">No data yet</string>
+    <string name="add_transactions_to_see">Add transactions to see your statistics</string>
+    <string name="income_icon">Income icon</string>
+    <string name="expense_icon">Expense icon</string>
+    <string name="monthly_trend">Monthly Trend</string>
+    <string name="weekly_trend">Weekly Trend</string>
+    <string name="increase_trend">Increase trend</string>
+    <string name="decrease_trend">Decrease trend</string>
+    <string name="income_vs_expense">Income vs Expense</string>
+    <string name="weekly_income_expense">Weekly Income/Expense</string>
+    <string name="monthly_balance_trend">Monthly Balance Trend</string>
+    <string name="no_statistics">No Statistics</string>
+    <string name="no_expenses_yet">No expenses yet</string>
+    <string name="savings_rate">Savings Rate</string>
+    <string name="most">Most</string>
+    <string name="financial_health">Financial Health</string>
+    <string name="health_score">Health Score</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="user_name">Username</string>
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="currency">Currency</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="import_data_desc">Import</string>
+    <string name="financial_management">Financial Management</string>
+    <string name="current_limit">Current: %s</string>
+    <string name="appearance_theme">Appearance and Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="light_theme_desc">Bright and clean look</string>
+    <string name="light_theme_subtitle">Bright and clean look</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="dark_theme_desc">Easy on the eyes dark mode</string>
+    <string name="dark_theme_subtitle">Easy on the eyes dark mode</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="push_notifications_desc">Push notifications</string>
+    <string name="budget_reminders">Budget and reminders</string>
+    <string name="app_lock_desc">App lock</string>
+    <string name="fingerprint_desc">Fingerprint</string>
+    <string name="quick_login">Quick login</string>
+    <string name="pin_change_desc">Change PIN</string>
+    <string name="export_desc">Export</string>
+    <string name="data_management">Data Management</string>
+    <string name="export_json">Export Data</string>
+    <string name="export_json_desc">Backup in JSON format</string>
+    <string name="export_data_subtitle">Backup in JSON format</string>
+    <string name="import_json">Import Data</string>
+    <string name="import_json_desc">Restore from backup</string>
+    <string name="import_data_subtitle">Restore from backup</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="clear_all_data">Delete all data</string>
+    <string name="clear_data_subtitle">Delete all data</string>
+    <string name="application">Application</string>
+    <string name="notification_center">Notification center</string>
+    <string name="gdpr_info">GDPR and privacy information</string>
+    <string name="help_support">Help and Support</string>
+    <string name="help_support_desc">FAQ and contact</string>
+    <string name="faq_contact">FAQ and contact</string>
+    <string name="personal_account">Personal Account</string>
+    <string name="user_placeholder">User</string>
+    <string name="enter_new_limit">Enter your new monthly spending limit.</string>
+    <string name="new_monthly_limit">Enter your new monthly spending limit.</string>
+    <string name="notification_permission_required">Notification permission required</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="delete_all_data">Clear Data</string>
+    <string name="delete_all_data_desc">Delete all data</string>
+    <string name="about_version">About</string>
+    <string name="about_version_desc">Version 1.0.0</string>
+    <string name="privacy_gdpr">Privacy Policy</string>
+    <string name="privacy_gdpr_desc">GDPR and privacy information</string>
+    <string name="help_support_faq">Help and Support</string>
+    <string name="help_support_faq_desc">FAQ and contact</string>
+    <string name="go_to_option">Go to %1$s option</string>
+
+    <!-- Currency -->
+    <string name="currency_selection">Currency</string>
+    <string name="currency_try">Turkish Lira (₺)</string>
+    <string name="currency_tl">Turkish Lira (₺)</string>
+    <string name="currency_usd">US Dollar ($)</string>
+    <string name="currency_eur">Euro (€)</string>
+    <string name="currency_gbp">British Pound (£)</string>
+    <string name="currency_format">%s ₺</string>
+    <string name="currency_symbol">₺</string>
+    <string name="currency_short_million_format">%.1fM ₺</string>
+    <string name="currency_short_thousand_format">%.1fK ₺</string>
+    <string name="currency_short_default_format">%.0f ₺</string>
+
+    <!-- User Profile -->
+    <string name="change_name">Change Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_display_name">Enter your display name.</string>
+    <string name="name_updated">Name updated</string>
+
+    <!-- Security -->
+    <string name="security">Security</string>
+    <string name="app_lock">App Lock</string>
+    <string name="app_lock_title">App Lock</string>
+    <string name="enable_biometric">Fingerprint / Face</string>
+    <string name="enable_pin">PIN Lock</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="pin_setup">Set PIN</string>
+    <string name="pin_confirm">Confirm PIN</string>
+    <string name="enter_pin_4_digit">Enter 4-digit PIN</string>
+    <string name="enter_4_digit_pin">Enter 4-digit PIN</string>
+    <string name="reenter_pin">Re-enter your PIN</string>
+    <string name="pin_label">PIN</string>
+    <string name="pin_mismatch">PIN does not match</string>
+    <string name="pins_do_not_match">PINs do not match</string>
+    <string name="pin_must_be_4_digits">PIN must be 4 digits</string>
+    <string name="wrong_pin">Wrong PIN</string>
+    <string name="pin_active">PIN active</string>
+    <string name="pin_not_set">PIN not set</string>
+    <string name="fast_login">Fast login</string>
+    <string name="biometric_title">Authentication</string>
+    <string name="biometric_subtitle">Login using your fingerprint</string>
+    <string name="biometric_failed">Authentication failed</string>
+    <string name="biometric_not_available">Biometric authentication not available</string>
+    <string name="fingerprint_face">Fingerprint / Face</string>
+    <string name="fingerprint_face_unlock">Fingerprint / Face</string>
+
+    <!-- Import/Export Dialog -->
+    <string name="import_data_title">Import Data</string>
+    <string name="import_data_question">How should the data from the backup file be imported?</string>
+    <string name="add_to_existing">Add to existing data</string>
+    <string name="replace_all_data">Delete existing data and replace</string>
+    <string name="replace_existing">Delete existing data and replace</string>
+
+    <!-- Data Deletion -->
+    <string name="delete_data">Delete Data</string>
+    <string name="delete_placeholder">DELETE</string>
+    <string name="permanently_delete_all_data">PERMANENTLY DELETE ALL DATA</string>
+
+    <!-- Notifications -->
+    <string name="no_notifications">No notifications</string>
+    <string name="mark_all_read">Mark all as read</string>
+    <string name="clear_all">Clear all</string>
+    <string name="notification_channel_budget">Budget Alerts</string>
+    <string name="notification_channel_budget_desc">Notifications for budget warnings and alerts</string>
+    <string name="notification_channel_payment">Payment Reminders</string>
+    <string name="notification_channel_payment_desc">Notifications for scheduled payment reminders</string>
+    <string name="notification_channel_general">General Notifications</string>
+    <string name="notification_channel_general_desc">General app notifications</string>
+    <string name="budget_warning_title">Budget Warning: %1$s</string>
+    <string name="budget_warning_message">You\'ve spent %1$d%% of your %2$s budget (%3$s / %4$s).</string>
+    <string name="budget_warning_exceeded_title">Budget exceeded!</string>
+    <string name="budget_warning_exceeded_message">You exceeded your monthly limit (%1$s).</string>
+    <string name="budget_warning_critical_title">Critical warning</string>
+    <string name="budget_warning_critical_message">You have reached %1$d%% of the limit. Be careful!</string>
+    <string name="budget_warning_warning_title">Budget warning</string>
+    <string name="budget_warning_warning_message">You have reached %1$d%% of the limit.</string>
+
+    <!-- Pull to Refresh -->
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="refreshing">Refreshing...</string>
+
+    <!-- Success Messages -->
+    <string name="transaction_added">Transaction added</string>
+    <string name="transaction_updated">Transaction updated</string>
+    <string name="transaction_deleted">Transaction deleted</string>
+    <string name="scheduled_added">Scheduled transaction added</string>
+    <string name="scheduled_deleted">Scheduled transaction deleted</string>
+    <string name="payment_completed">Payment completed</string>
+    <string name="payments_completed">%d payments completed</string>
+    <string name="some_payments_failed">%d payments failed</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="category_budget_updated">Budget updated</string>
+    <string name="category_budget_added">Category budget added</string>
+
+    <!-- Error Messages -->
+    <string name="error_generic">An error occurred</string>
+    <string name="error_generic_unknown">An unknown error occurred</string>
+    <string name="error_title">Error</string>
+    <string name="error_occurred">An Error Occurred</string>
+    <string name="error_loading">Error loading</string>
+    <string name="error_saving">Error saving</string>
+    <string name="error_deleting">Error deleting</string>
+    <string name="error_network">Check your internet connection</string>
+    <string name="error_database">Database error</string>
+    <string name="error_empty_title">Title cannot be empty</string>
+    <string name="error_invalid_amount">Invalid amount</string>
+    <string name="error_select_category">Select a category</string>
+    <string name="error_statistics_load">Could not load statistics</string>
+    <string name="action_retry">Retry</string>
+    <string name="no_search_results">No Results Found</string>
+
+    <!-- Confirmations -->
+    <string name="confirm_delete">Are you sure you want to delete?</string>
+    <string name="delete_confirm">Delete Confirmation</string>
+    <string name="confirm_delete_transaction">Are you sure you want to delete "%1$s"?</string>
+    <string name="delete_transaction_title">Delete Transaction</string>
+    <string name="delete_transaction_confirm">Are you sure you want to delete "%1$s"? This action cannot be undone.</string>
+    <string name="confirm_discard">Do you want to discard changes?</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Take Control of Your Finances</string>
+    <string name="onboarding_desc_1">Easily track your income and expenses. Always know where your money goes.</string>
+    <string name="onboarding_title_2">Detailed Statistics</string>
+    <string name="onboarding_desc_2">Analyze your spending with charts. Discover savings opportunities with category-based reports.</string>
+    <string name="onboarding_title_3">Safe and Private</string>
+    <string name="onboarding_desc_3">Your data is securely stored on your device. Ensure your privacy with PIN protection.</string>
+    <string name="onboarding_title_4">Reach Your Goals</string>
+    <string name="onboarding_desc_4">Set budget limits and track your planned payments. Get one step closer to your financial goals!</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Quick Actions -->
+    <string name="quick_actions">Quick Actions</string>
+    <string name="quick_actions_subtitle">One-tap access</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="transfer_between_accounts">Between accounts</string>
+    <string name="qr_pay">Pay with QR</string>
+    <string name="quick_payment">Quick Payment</string>
+    <string name="pay_bills">Pay Bills</string>
+    <string name="bills_description">Electric, water, gas</string>
+    <string name="reports">Reports</string>
+    <string name="detailed_analysis">Detailed analysis</string>
+
+    <!-- Dashboard -->
+    <string name="total_assets">Total Assets</string>
+    <string name="cash_flow">Cash Flow</string>
+
+    <!-- Days of Week -->
+    <string name="day_monday">Mon</string>
+    <string name="day_tuesday">Tue</string>
+    <string name="day_wednesday">Wed</string>
+    <string name="day_thursday">Thu</string>
+    <string name="day_friday">Fri</string>
+    <string name="day_saturday">Sat</string>
+    <string name="day_sunday">Sun</string>
+
+    <!-- Widget -->
+    <string name="widget_description">View your balance, income and expense summary on home screen</string>
+    <string name="widget_name">Finance Summary</string>
+
+    <!-- Crash Reporting -->
+    <string name="crash_dialog_title">App Error</string>
+    <string name="crash_dialog_text">Sorry, the app encountered an unexpected error. You can help us improve the app by sending an error report. The report contains no personal data.</string>
+    <string name="crash_dialog_ok">Send Report</string>
+    <string name="crash_dialog_cancel">Cancel</string>
+    <string name="crash_toast_text">An error occurred. Report saved.</string>
+
+    <!-- Greeting Messages -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Good night</string>
+    <string name="greeting_hello">Hello</string>
+    
+    <!-- Auth -->
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_sign_out">Sign Out</string>
+    <string name="auth_signed_in_as">Signed in as:</string>
+    <string name="auth_default_user">User</string>
+
+    <!-- Accessibility -->
+    <string name="cd_add_button">Add new transaction</string>
+    <string name="cd_add_button_state">Opens add new transaction screen</string>
+    <string name="cd_back_button">Go back</string>
+    <string name="cd_close_button">Close</string>
+    <string name="cd_delete_button">Delete</string>
+    <string name="cd_edit_button">Edit</string>
+    <string name="cd_income_icon">Income icon</string>
+    <string name="cd_expense_icon">Expense icon</string>
+    <string name="cd_calendar_icon">Calendar icon</string>
+    <string name="cd_settings_icon">Settings icon</string>
+    <string name="cd_notification_icon">Notification icon</string>
+    <string name="cd_biometric_button">Login with fingerprint</string>
+    <string name="cd_pin_input">PIN input</string>
+    <string name="cd_category_icon">%s category icon</string>
+    <string name="cd_transaction_item">%1$s: %2$s TL</string>
+    <string name="cd_balance_card">Total balance %s TL</string>
+    <string name="cd_income_card">Total income %s TL</string>
+    <string name="cd_expense_card">Total expense %s TL</string>
+    <string name="cd_menu_button">Open menu</string>
+    <string name="cd_search_button">Search</string>
+    <string name="cd_filter_button">Apply filter</string>
+    <string name="cd_chart">Chart</string>
+    <string name="cd_progress_bar">Progress bar, %d percent</string>
+    <string name="cd_loading">Loading</string>
+    <string name="cd_refresh">Refresh</string>
+    <string name="cd_date_picker">Select date</string>
+    <string name="cd_amount_input">Amount input</string>
+    <string name="cd_title_input">Title input</string>
+    <string name="cd_swipe_to_delete">Swipe to delete</string>
+    <string name="cd_tap_to_edit">Tap to edit</string>
+    <string name="cd_budget_warning">Budget warning</string>
+    <string name="cd_budget_exceeded">Budget exceeded</string>
+    
+    <!-- Accessibility States -->
+    <string name="a11y_state_on">On</string>
+    <string name="a11y_state_off">Off</string>
+    <string name="a11y_state_selected">Selected</string>
+    <string name="a11y_state_not_selected">Not selected</string>
+    <string name="a11y_state_expanded">expanded</string>
+    <string name="a11y_state_collapsed">collapsed</string>
+    <string name="a11y_dropdown">dropdown</string>
+    <string name="a11y_date_picker">date picker</string>
+    <string name="a11y_required_field">required field</string>
+    <string name="a11y_current_value">current value: %s</string>
+    <string name="a11y_hint">hint: %s</string>
+    <string name="a11y_error">error: %s</string>
+    <string name="a11y_percentage_complete">%d percent complete</string>
+    <string name="a11y_success">Success: %s</string>
+    <string name="a11y_warning">Warning: %s</string>
+    <string name="a11y_error_prefix">Error: %s</string>
+    <string name="a11y_info">Info: %s</string>
+    <string name="a11y_chart_description">%1$s chart. %2$s</string>
+    <string name="a11y_list_position">%1$s, %2$d of %3$d</string>
+</resources>

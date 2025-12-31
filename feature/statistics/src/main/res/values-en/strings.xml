@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Statistics Screen -->
+    <string name="statistics">Statistics</string>
+    <string name="your_financial_analysis">Your financial analysis</string>
+
+    <!-- Period Selector -->
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="period_selector">Period selector: %s</string>
+
+    <!-- Income Expense Summary -->
+    <string name="income_icon">Income icon</string>
+    <string name="expense_icon">Expense icon</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="income_expense_summary">Income/Expense Summary</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+
+    <!-- Charts -->
+    <string name="category_distribution">Category Distribution</string>
+    <string name="income_vs_expense">Income vs Expense</string>
+    <string name="weekly_comparison">Weekly Comparison</string>
+    <string name="income_expense_comparison">Comparison of income and expense for the last 7 days</string>
+
+    <!-- Trend Analysis -->
+    <string name="monthly_trend">Monthly Trend</string>
+    <string name="this_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="increase_trend">Increasing trend</string>
+    <string name="decrease_trend">Decreasing trend</string>
+    <string name="trend_increase_message">Your expenses increased by %1$d%%</string>
+    <string name="trend_decrease_message">Your expenses decreased by %1$d%%</string>
+
+    <!-- Empty States -->
+    <string name="no_data_yet">No Data Yet</string>
+    <string name="empty_statistics_description">Your statistics will appear here as you add transactions</string>
+    <string name="empty_statistics_tip">You can add income/expense from the home page</string>
+    <string name="no_data">No Data</string>
+    <string name="no_cash_flow_data">No income and expense data available</string>
+    <string name="no_category_data">No category-based spending data</string>
+    <string name="no_chart_data">Not enough data for chart</string>
+    <string name="no_trend_data">No data for trend analysis</string>
+
+    <!-- Category Breakdown -->
+    <string name="category_based_spending">Category-Based Spending</string>
+
+    <!-- Category Names -->
+    <string name="category_food">Food</string>
+    <string name="category_transportation">Transportation</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_health">Health</string>
+
+    <!-- Accessibility -->
+    <string name="bar_chart">Bar Chart</string>
+
+    <!-- Cash Flow Card -->
+    <string name="cash_flow_title">Cash Flow</string>
+    <string name="income_label">Income</string>
+    <string name="expense_label">Expense</string>
+    <string name="net_flow_label">Net Flow</string>
+
+    <!-- Top Spending Category -->
+    <string name="top_spending_label">Top Spending</string>
+    <string name="percentage_of_total">%d%% of total expenses</string>
+    <string name="planned_vs_actual_expense_title">Planned vs Actual Expense</string>
+    <string name="planned_vs_actual_income_title">Planned vs Actual Income</string>
+    <string name="planned_vs_actual_subtitle">Weekly planned vs actual comparison</string>
+    <string name="planned_label">Planned</string>
+    <string name="actual_label">Actual</string>
+</resources>

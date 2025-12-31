@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recurring_payments">Tekrarlayan Ödemeler</string>
+    <string name="recurring_payments_description">Otomatik ödeme hatırlatıcıları</string>
+    <string name="recurring_payments_processed">Tekrarlayan ödemeler işlendi</string>
+    <string name="payment_reminder">Ödeme Hatırlatıcısı</string>
+    <string name="upcoming_payment_reminder">Yaklaşan bir ödemeniz var</string>
+</resources>

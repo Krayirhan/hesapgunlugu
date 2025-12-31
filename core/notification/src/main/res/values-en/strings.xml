@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recurring_payments">Recurring Payments</string>
+    <string name="recurring_payments_description">Automatic payment reminders</string>
+    <string name="recurring_payments_processed">Recurring payments processed</string>
+    <string name="payment_reminder">Payment Reminder</string>
+    <string name="upcoming_payment_reminder">You have an upcoming payment</string>
+</resources>

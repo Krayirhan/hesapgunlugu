@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="privacy_title">Gizlilik Politikası</string>
+    <string name="privacy_back">Geri</string>
+
+    <string name="privacy_section_1_title">1. Veri Toplama</string>
+    <string name="privacy_section_1_content">Uygulamamız aşağıdaki verileri toplar:\n\n- Finansal işlem kayıtları (başlık, tutar, kategori, tarih)\n- PIN kodu (şifreli olarak saklanır)\n- Biyometrik kimlik doğrulama tercihleri\n- Uygulama ayarları ve tercihleri\n\nTÜM VERİLER YALNIZCA CİHAZINIZDA SAKLANIR.\nVeriler sunucularımıza gönderilmez.</string>
+
+    <string name="privacy_section_2_title">2. Veri Kullanımı</string>
+    <string name="privacy_section_2_content">Toplanan verileri yalnızca aşağıdaki amaçlar için kullanırız:\n\n- Finansal işlemlerinizi takip etmek\n- Gelir/gider analizi sunmak\n- Uygulama deneyiminizi kişiselleştirmek\n- Güvenlik ve kimlik doğrulama sağlamak\n\nVerileriniz üçüncü taraflarla ASLA paylaşılmaz.</string>
+
+    <string name="privacy_section_3_title">3. Veri Güvenliği</string>
+    <string name="privacy_section_3_content">Veri güvenliğiniz için:\n\n- PIN kodları AES-256 şifreleme ile korunur\n- Biyometrik kimlik doğrulama Android Keystore kullanır\n- Veritabanı SQLCipher ile şifrelenebilir (opsiyonel)\n- Tüm veriler cihazınızda saklanır\n\nİnternet bağlantısı gerekmez, veriler bulutta tutulmaz.</string>
+
+    <string name="privacy_section_4_title">4. Kullanıcı Hakları (GDPR/KVKK)</string>
+    <string name="privacy_section_4_content">Verileriniz üzerinde tam kontrole sahipsiniz:\n\n- Erişim hakkı: Tüm verilerinizi görüntüleyebilirsiniz\n- Düzeltme hakkı: Verilerinizi istediğiniz zaman düzenleyebilirsiniz\n- Silme hakkı: \"Tüm Verileri Sil\" seçeneğiyle tüm verilerinizi kalıcı olarak silebilirsiniz\n- Veri taşınabilirliği: Verilerinizi CSV olarak dışa aktarabilirsiniz\n\nVeri silme işlemi GERİ ALINAMAZ.</string>
+
+    <string name="privacy_section_5_title">5. İzinler</string>
+    <string name="privacy_section_5_content">Uygulama aşağıdaki izinleri isteyebilir:\n\n- Bildirim izni: Hatırlatma bildirimleri için\n- Biyometrik izin: Parmak izi/yüz tanıma için\n- Depolama izni: CSV dışa aktarma için (Android 12 ve altı)\n\nTüm izinler İSTEĞE BAĞLIDIR ve uygulama temel işlevlerini bu izinler olmadan da çalıştırabilir.</string>
+
+    <string name="privacy_section_6_title">6. Çerezler ve Takip</string>
+    <string name="privacy_section_6_content">Bu uygulama:\n\n- Çerez KULLANMAZ\n- Kullanıcı davranışını İZLEMEZ\n- Analitik hizmetler KULLANMAZ\n- Reklam GÖSTERMEZ\n\nTamamen reklamsız ve izleme olmayan bir deneyim sunar.</string>
+
+    <string name="privacy_section_7_title">7. Çocukların Gizliliği</string>
+    <string name="privacy_section_7_content">Uygulamamız 13 yaş altındaki çocuklardan bilerek veri toplamaz.\n\nEbeveyn izni olmadan 13 yaş altı kullanıcılar tarafından kullanılmamalıdır.</string>
+
+    <string name="privacy_section_8_title">8. Politika Değişiklikleri</string>
+    <string name="privacy_section_8_content">Bu gizlilik politikası zaman zaman güncellenebilir.\n\nÖnemli değişiklikler uygulama içi bildirimlerle duyurulur.\n\nSon güncelleme: %1$s</string>
+
+    <string name="privacy_section_9_title">9. İletişim</string>
+    <string name="privacy_section_9_content">Gizlilikle ilgili sorular için:\n\nE-posta: privacy@HesapGunlugu.com\n\n48 saat içinde yanıtlamaya çalışırız.</string>
+</resources>

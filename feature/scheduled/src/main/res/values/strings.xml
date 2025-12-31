@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EditScheduledPaymentDialog -->
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="transaction_title">Başlık</string>
+    <string name="amount_currency">Tutar (%1$s)</string>
+    <string name="delete">Sil</string>
+    <string name="save">Kaydet</string>
+    <string name="delete_transaction_title">İşlemi Sil</string>
+    <string name="delete_transaction_confirm">"%1$s" işlemini silmek istediğinize emin misiniz?</string>
+    <string name="cancel">İptal</string>
+    <string name="edit_scheduled_payment_title">Planlı İşlemi Düzenle</string>
+    <string name="recurrence_frequency_title">Tekrar Sıklığı</string>
+    <string name="close">Kapat</string>
+    <string name="preview_title_netflix">Netflix</string>
+
+    <!-- Scheduled Header -->
+    <string name="scheduled_header_title">Planlı İşlemler</string>
+    <string name="scheduled_header_subtitle">Ödemeler ve abonelikler</string>
+
+    <!-- Summary Cards -->
+    <string name="scheduled_summary_upcoming_label">Yaklaşan</string>
+    <string name="scheduled_summary_monthly_label">Aylık</string>
+    <string name="payment_due_today">Bugün ödeme günü!</string>
+
+    <!-- RecurringItem -->
+    <string name="recurring_add">Tekrarlama Kuralı Ekle</string>
+
+    <!-- RecurringRuleDialog -->
+    <string name="repeat_period">Tekrar Periyodu</string>
+    <string name="daily">Günlük</string>
+    <string name="weekly_label">Haftalık</string>
+    <string name="monthly_label">Aylık</string>
+    <string name="yearly_label">Yıllık</string>
+    <string name="interval_placeholder">Aralık girin</string>
+    <string name="day_of_month_label">Ayın Günü</string>
+    <string name="repeat_count_label">Maksimum Tekrar</string>
+    <string name="unlimited">Sınırsız</string>
+    <string name="auto_transaction_info">İşlemler belirtilen aralıklarda otomatik olarak oluşturulacak.</string>
+    <string name="recurring_rule_title">Otomatik Tekrar Ayarla</string>
+    <string name="recurrence_every">Her %1$s</string>
+
+    <!-- ScheduledSummaryCards -->
+    <string name="upcoming_payments">Yaklaşan Ödemeler</string>
+    <string name="recurring_payments">Tekrarlayan Ödemeler</string>
+    <string name="upcoming_payment_notification">Ödeme Hatırlatıcısı</string>
+
+    <!-- ScheduledScreen -->
+    <string name="next_7_days">Önümüzdeki 7 gün</string>
+    <string name="no_upcoming_payments">Yaklaşan ödeme yok</string>
+    <string name="recurring_incomes">Düzenli Gelirler</string>
+    <string name="your_regular_income_sources">Düzenli gelir kaynaklarınız</string>
+    <string name="no_recurring_income_added">Tekrarlayan gelir eklenmemiş</string>
+    <string name="recurring_expenses">Düzenli Giderler</string>
+    <string name="subscriptions_and_regular_payments">Abonelikler ve düzenli ödemeler</string>
+    <string name="no_recurring_expense_added">Tekrarlayan gider eklenmemiş</string>
+
+    <!-- Empty State -->
+    <string name="empty_state_add_hint">Eklemek için + butonuna dokunun</string>
+
+    <!-- ScheduledPaymentItem -->
+    <string name="mark_as_paid_short">Öde</string>
+
+    <!-- Overdue Payments -->
+    <string name="overdue_payments">Gecikmiş Ödemeler</string>
+    <string name="pay_all_overdue">Tümünü Öde</string>
+    <string name="pay_now">Şimdi Öde</string>
+    <string name="and_more_payments">ve %d ödeme daha…</string>
+    <plurals name="overdue_payments_count">
+        <item quantity="one">%d gecikmiş ödeme</item>
+        <item quantity="other">%d gecikmiş ödeme</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">%d gün gecikti</item>
+        <item quantity="other">%d gün gecikti</item>
+    </plurals>
+    <plurals name="payment_due_in_days">
+        <item quantity="one">%d gün içinde ödeme</item>
+        <item quantity="other">%d gün içinde ödeme</item>
+    </plurals>
+
+    <!-- Monthly Fixed Expenses -->
+    <string name="monthly_fixed_expenses">Aylık Sabit Giderler</string>
+    <string name="fixed_expenses_label">Sabit Giderler</string>
+    <string name="remaining_budget_label">Kalan Bütçe</string>
+    <string name="fixed_expenses_warning">Sabit giderler bütçenizin %%%d\'ini kullanıyor</string>
+</resources>

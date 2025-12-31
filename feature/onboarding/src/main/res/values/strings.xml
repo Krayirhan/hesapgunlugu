@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_title_1">Finanslarınızı Kontrol Altına Alın</string>
+    <string name="onboarding_desc_1">Gelir ve giderlerinizi kolayca takip edin. Paranızın nereye gittiğini her zaman bilin.</string>
+    <string name="onboarding_title_2">Detaylı İstatistikler</string>
+    <string name="onboarding_desc_2">Harcamalarınızı grafiklerle analiz edin. Kategori bazlı raporlarla tasarruf fırsatlarını keşfedin.</string>
+    <string name="onboarding_title_3">Güvenli ve Özel</string>
+    <string name="onboarding_desc_3">Verileriniz cihazınızda güvenle saklanır. PIN koruması ile gizliliğinizi sağlayın.</string>
+    <string name="onboarding_title_4">Hedeflerinize Ulaşın</string>
+    <string name="onboarding_desc_4">Bütçe limitleri belirleyin ve planlı ödemelerinizi takip edin. Finansal hedeflerinize bir adım daha yaklaşın!</string>
+
+    <string name="skip">Atla</string>
+    <string name="back">Geri</string>
+    <string name="next">İleri</string>
+    <string name="get_started">Başlayın</string>
+</resources>

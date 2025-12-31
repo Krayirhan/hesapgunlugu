@@ -1,0 +1,13 @@
+# Replace placeholders with real GitHub users or teams.
+# Format: @org/team or @username
+
+* @krayirhan
+
+/app/ @krayirhan
+/core/ @krayirhan
+/feature/ @krayirhan
+/benchmark-macro/ @krayirhan
+/baselineprofile/ @krayirhan
+/docs/ @krayirhan
+/scripts/ @krayirhan
+/.github/ @krayirhan

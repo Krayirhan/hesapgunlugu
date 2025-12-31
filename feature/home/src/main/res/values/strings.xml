@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Finansal Görüşler -->
+    <string name="insight_budget_exceeded">Bütçe aşıldı!</string>
+    <string name="insight_budget_exceeded_desc">Bu ay %1$d ₺ fazla harcadınız</string>
+    <string name="insight_going_great">Harika gidiyorsunuz!</string>
+    <string name="insight_under_budget">Bütçe hedefinizin altındasınız</string>
+    <string name="insight_last_transaction">Son işlem: %1$s</string>
+    <string name="insight_amount_format">%1$d ₺</string>
+
+    <!-- Ana Ekran -->
+    <string name="add_transaction_fab">İşlem Ekle</string>
+    <string name="budget_status">Bütçe Durumu</string>
+    <string name="monthly_spending_limit_subtitle">Aylık harcama limiti</string>
+    <string name="quick_actions">Hızlı İşlemler</string>
+    <string name="quick_actions_subtitle">Finanslarınızı yönetin</string>
+    <string name="recent_transactions">Son İşlemler</string>
+    <string name="last_5_transactions">Son 5 işlem</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="no_transaction_yet">Henüz işlem yok</string>
+    <string name="add_first_transaction">İlk işleminizi ekleyin</string>
+
+    <!-- Bu Ay Özeti -->
+    <string name="this_month_summary">Bu Ay</string>
+    <string name="transaction_count_format">%d işlem yapıldı</string>
+    <string name="no_transactions_this_month">Henüz işlem yapılmadı</string>
+    <string name="see_statistics">İstatistikler</string>
+
+    <!-- Yaklaşan Ödemeler -->
+    <string name="upcoming_payments_title">Yaklaşan Ödemeler</string>
+    <string name="manage">Yönet</string>
+    <string name="no_upcoming_payments">Yaklaşan ödeme yok</string>
+    <string name="add_scheduled_payment_hint">Düzenli ödemelerinizi ekleyin</string>
+
+    <!-- Tasarruf Hedefi -->
+    <string name="savings_goal_vacation">Tatil</string>
+    <string name="empty_transaction_emoji">🧾</string>
+    <string name="empty_upcoming_payments_emoji">🗓️</string>
+</resources>

@@ -1,0 +1,152 @@
+name: Macrobenchmark
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Nightly benchmark gate
+  workflow_dispatch:
+    inputs:
+      variant:
+        description: "App variant to benchmark (debug/release)"
+        required: false
+        default: "release"
+      api-level:
+        description: "AVD API level"
+        required: false
+        default: "34"
+      profile:
+        description: "AVD profile"
+        required: false
+        default: "pixel_6"
+
+jobs:
+  run-macrobenchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+
+      - name: Start emulator and run macrobenchmark
+        uses: reactivecircus/android-emulator-runner@v2.30.1
+        with:
+          api-level: ${{ github.event.inputs.api-level || '34' }}
+          target: google_apis
+          arch: x86_64
+          profile: ${{ github.event.inputs.profile || 'pixel_6' }}
+          ram-size: 4096M
+          disk-size: 12G
+          script: |
+            VARIANT=${{ github.event.inputs.variant || 'release' }}
+            if [ "$VARIANT" = "debug" ]; then
+              ./gradlew :app:assembleDebug :benchmark-macro:connectedCheck --build-cache \
+                -Pandroid.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=class \
+                -Pandroid.experimental.testOptions.managedDevices.emulator.gpu=swiftshader_indirect
+            else
+              ./gradlew :app:assembleRelease :benchmark-macro:connectedCheck --build-cache \
+                -Pandroid.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=class \
+                -Pandroid.experimental.testOptions.managedDevices.emulator.gpu=swiftshader_indirect
+            fi
+          emulator-options: -no-snapshot -noaudio -no-boot-anim -gpu swiftshader_indirect -camera-back none -camera-front none
+          disable-animations: true
+        env:
+          BILLING_BACKEND_URL: ${{ secrets.BILLING_BACKEND_URL || 'https://example.invalid' }}
+          BILLING_BACKEND_API_KEY: ${{ secrets.BILLING_BACKEND_API_KEY || 'placeholder-key' }}
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 || '' }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD || '' }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS || '' }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || '' }}
+
+      - name: Analyze Benchmark Results
+        if: always()
+        run: |
+          echo "Analyzing macrobenchmark results..."
+          BENCHMARK_JSON="benchmark-macro/build/outputs/androidTest-results/connected/benchmarkData.json"
+
+          if [ -f "$BENCHMARK_JSON" ]; then
+            python - <<'PY'
+import json
+import sys
+from pathlib import Path
+
+path = Path("benchmark-macro/build/outputs/androidTest-results/connected/benchmarkData.json")
+data = json.loads(path.read_text())
+
+budgets = {
+    "cold_p50_ms": 400,
+    "cold_p90_ms": 700,
+    "warm_p50_ms": 500,
+}
+
+
+def collect_metric(metric_name):
+    values = []
+    for bench in data.get("benchmarks", []):
+        for metric in bench.get("metrics", []):
+            if metric.get("name") == metric_name:
+                values.extend(metric.get("values", []))
+    return values
+
+
+cold_values = collect_metric("startupCold")
+warm_values = collect_metric("startupWarm")
+
+if not cold_values or not warm_values:
+    print("Benchmark metrics not found for startupCold/startupWarm", file=sys.stderr)
+    sys.exit(1)
+
+cold_p50 = sorted(cold_values)[len(cold_values) // 2]
+warm_p50 = sorted(warm_values)[len(warm_values) // 2]
+sorted_cold = sorted(cold_values)
+p90_index = max(int(len(sorted_cold) * 0.9) - 1, 0)
+cold_p90 = sorted_cold[p90_index]
+
+
+def status(value, budget):
+    return "PASS" if value <= budget else "FAIL"
+
+
+summary = []
+summary.append("## Performance Budgets")
+summary.append("| Metric | Value | Budget | Status |")
+summary.append("|--------|-------|--------|--------|")
+summary.append(
+    f"| Cold Start P50 | {cold_p50}ms | <{budgets['cold_p50_ms']}ms | {status(cold_p50, budgets['cold_p50_ms'])} |"
+)
+summary.append(
+    f"| Cold Start P90 | {cold_p90}ms | <{budgets['cold_p90_ms']}ms | {status(cold_p90, budgets['cold_p90_ms'])} |"
+)
+summary.append(
+    f"| Warm Start P50 | {warm_p50}ms | <{budgets['warm_p50_ms']}ms | {status(warm_p50, budgets['warm_p50_ms'])} |"
+)
+
+Path(Path.home() / "summary.md").write_text("\n".join(summary) + "\n")
+
+failed = (
+    (cold_p50 > budgets["cold_p50_ms"])
+    or (cold_p90 > budgets["cold_p90_ms"])
+    or (warm_p50 > budgets["warm_p50_ms"])
+)
+sys.exit(1 if failed else 0)
+PY
+            cat "$HOME/summary.md" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Benchmark results not found at $BENCHMARK_JSON"
+            exit 1
+          fi
+
+      - name: Upload Benchmark Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: macrobenchmark-results-${{ github.event.inputs.variant || 'release' }}
+          path: |
+            benchmark-macro/build/outputs/androidTest-results/
+            benchmark-macro/build/reports/
+          retention-days: 30

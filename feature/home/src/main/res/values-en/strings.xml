@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Financial Insights -->
+    <string name="insight_budget_exceeded">Budget exceeded!</string>
+    <string name="insight_budget_exceeded_desc">You spent %1$d ₺ more this month</string>
+    <string name="insight_going_great">You're doing great!</string>
+    <string name="insight_under_budget">You're under your budget target</string>
+    <string name="insight_last_transaction">Last transaction: %1$s</string>
+    <string name="insight_amount_format">%1$d ₺</string>
+
+    <!-- Home Screen -->
+    <string name="add_transaction_fab">Add Transaction</string>
+    <string name="budget_status">Budget Status</string>
+    <string name="monthly_spending_limit_subtitle">Monthly spending limit</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="quick_actions_subtitle">Manage your finances</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="last_5_transactions">Last 5 transactions</string>
+    <string name="see_all">See All</string>
+    <string name="no_transaction_yet">No transactions yet</string>
+    <string name="add_first_transaction">Add your first transaction</string>
+
+    <!-- This Month Summary -->
+    <string name="this_month_summary">This Month</string>
+    <string name="transaction_count_format">%d transactions</string>
+    <string name="no_transactions_this_month">No transactions yet</string>
+    <string name="see_statistics">Statistics</string>
+
+    <!-- Upcoming Payments -->
+    <string name="upcoming_payments_title">Upcoming Payments</string>
+    <string name="manage">Manage</string>
+    <string name="no_upcoming_payments">No upcoming payments</string>
+    <string name="add_scheduled_payment_hint">Add your recurring payments</string>
+
+    <!-- Savings Goal -->
+    <string name="savings_goal_vacation">Vacation</string>
+    <string name="empty_transaction_emoji">🧾</string>
+    <string name="empty_upcoming_payments_emoji">🗓️</string>
+</resources>

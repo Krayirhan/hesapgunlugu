@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Category Management -->
+    <string name="category_management">Category Management</string>
+    <string name="custom_categories_add_edit">Add/edit custom categories</string>
+    <string name="back">Back</string>
+    <string name="add_category">Add Category</string>
+    <string name="your_categories">Your Categories</string>
+    <string name="default_category">Default category</string>
+    <string name="delete">Delete</string>
+    <string name="new_category">New Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="save">Save</string>
+    <string name="select_emoji">Select Emoji</string>
+    <string name="select_color">Select Color</string>
+
+    <!-- Data Deletion -->
+    <string name="delete_data">Delete Data</string>
+    <string name="delete_placeholder">DELETE</string>
+    <string name="permanently_delete_all_data">Permanently Delete All Data</string>
+    <string name="warning">Warning</string>
+    <string name="gdpr_delete_external_cancelled">External file deletion cancelled</string>
+    <string name="gdpr_delete_success">All data permanently deleted</string>
+    <string name="gdpr_delete_error_prefix">Error: %1$s</string>
+    <string name="gdpr_delete_title">Delete All Data</string>
+    <string name="gdpr_delete_warning_title">WARNING: This action cannot be undone!</string>
+    <string name="gdpr_delete_warning_body">The following data will be permanently deleted:\n- All financial transaction records\n- PIN and security settings\n- Application preferences\n- Database files\n- Export files\n- Cache data\n\nThis action is performed under GDPR \"Right to be Forgotten\" (Article 17).</string>
+    <string name="gdpr_delete_confirm_prompt">Type \'%1$s\' to confirm:</string>
+    <string name="gdpr_delete_info_text">This operation completely deletes app data. You will need to restart the application.</string>
+
+    <!-- Profile -->
+    <string name="user_placeholder">User</string>
+    <string name="personal_account">Personal Account</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <!-- Financial Management -->
+    <string name="financial_management">Financial Management</string>
+    <string name="monthly_spending_limit">Monthly Spending Limit</string>
+    <string name="current_limit">Current: %1$s</string>
+    <string name="currency">Currency</string>
+    <string name="currency_try">Turkish Lira (₺)</string>
+    <string name="currency_tl">Turkish Lira (₺)</string>
+    <string name="currency_usd">US Dollar ($)</string>
+    <string name="currency_eur">Euro (€)</string>
+    <string name="currency_gbp">British Pound (£)</string>
+    <string name="currency_selection">Select Currency</string>
+
+    <!-- Appearance -->
+    <string name="appearance_theme">Appearance</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="light_theme_subtitle">Bright and clean look</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="dark_theme_subtitle">Easy on the eyes dark mode</string>
+
+    <!-- Notifications -->
+    <string name="notifications_section">Notifications</string>
+    <string name="push_notifications_desc">Instant notifications and reminders</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="budget_reminders">Budget reminders and alerts</string>
+
+    <!-- Security -->
+    <string name="security">Security</string>
+    <string name="app_lock_desc">Protect your app with PIN</string>
+    <string name="app_lock_title">App Lock</string>
+    <string name="pin_active">PIN active</string>
+    <string name="pin_not_set">PIN not set</string>
+    <string name="fingerprint_desc">Login with fingerprint or face recognition</string>
+    <string name="enable_biometric">Fingerprint / Face</string>
+    <string name="quick_login">Fast and secure login</string>
+    <string name="pin_change_desc">Change your current PIN code</string>
+    <string name="change_pin">Change PIN</string>
+
+    <!-- Data Management -->
+    <string name="data_management">Data Management</string>
+    <string name="export_desc">Backup your data</string>
+    <string name="export_json">Export Data</string>
+    <string name="export_json_desc">Save your data in JSON format</string>
+    <string name="export_data">Export Data</string>
+    <string name="export_data_subtitle">Backup your data to device</string>
+    <string name="import_data_desc">Restore data from backup</string>
+    <string name="import_json">Import Data</string>
+    <string name="import_json_desc">Restore from previously created backup</string>
+    <string name="import_data">Import Data</string>
+    <string name="import_data_subtitle">Restore your data from backup file</string>
+    <string name="import_data_title">Import Data</string>
+    <string name="import_data_question">How should the data from the backup file be imported?</string>
+    <string name="clear_data">Delete Data</string>
+    <string name="clear_all_data">Clear all app data</string>
+    <string name="clear_data_subtitle">Permanently delete all data</string>
+    <string name="add_to_existing">Add to existing data</string>
+    <string name="replace_all_data">Delete and replace all data</string>
+    <string name="replace_existing">Replace existing data</string>
+
+    <!-- Google Drive Backup -->
+    <string name="cloud_backup_title">Google Drive Backup</string>
+    <string name="cloud_backup_signed_in">Google Drive connected</string>
+    <string name="cloud_backup_signed_out">Google Drive not connected</string>
+    <string name="cloud_sign_in">Sign In</string>
+    <string name="cloud_sign_out">Sign Out</string>
+    <string name="cloud_sign_in_success">Signed in to Google Drive</string>
+    <string name="cloud_sign_in_error">Unable to sign in to Google Drive</string>
+    <string name="cloud_sign_out_success">Signed out from Google Drive</string>
+    <string name="cloud_backup_upload">Upload Backup</string>
+    <string name="cloud_backup_refresh">Refresh List</string>
+    <string name="cloud_backup_empty">No backups found on Google Drive</string>
+    <string name="cloud_backup_meta">%1$s • %2$s</string>
+    <string name="cloud_backup_restore">Restore</string>
+    <string name="cloud_backup_delete">Delete</string>
+    <string name="cloud_backup_upload_success">Google Drive backup uploaded (%1$d transactions, %2$d scheduled payments)</string>
+    <string name="cloud_backup_upload_error">Unable to upload Google Drive backup</string>
+    <string name="cloud_backup_export_error">Backup could not be prepared</string>
+    <string name="cloud_backup_list_error">Unable to load Google Drive backups</string>
+    <string name="cloud_backup_download_error">Unable to download Google Drive backup</string>
+    <string name="cloud_backup_restore_success">Google Drive backup restored (%1$d transactions, %2$d scheduled payments)</string>
+    <string name="cloud_backup_restore_error">Unable to restore Google Drive backup</string>
+    <string name="cloud_backup_delete_success">Google Drive backup deleted</string>
+    <string name="cloud_backup_delete_error">Unable to delete Google Drive backup</string>
+    <string name="cloud_backup_restore_title">Restore Google Drive Backup</string>
+    <string name="cloud_backup_restore_question">How would you like to restore this backup? (%1$s)</string>
+    <string name="cloud_backup_delete_title">Delete Google Drive Backup</string>
+    <string name="cloud_backup_delete_confirm">Are you sure you want to delete this backup? (%1$s)</string>
+
+    <!-- Application -->
+    <string name="application">Application</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_center">View all your notifications</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="gdpr_info">Learn how we protect your data</string>
+    <string name="about">About</string>
+    <string name="version_info">App version and information</string>
+    <string name="help_support">Help and Support</string>
+    <string name="faq_contact">Frequently asked questions and contact</string>
+
+    <!-- Dialogs -->
+    <string name="set_limit">Set Limit</string>
+    <string name="new_monthly_limit">Enter your new monthly spending limit.</string>
+    <string name="amount_tl">Amount (₺)</string>
+    <string name="amount_currency">Amount (%1$s)</string>
+    <string name="pin_setup">Set PIN</string>
+    <string name="pin_confirm">Confirm PIN</string>
+    <string name="enter_pin_4_digit">Enter 4-digit PIN</string>
+    <string name="enter_4_digit_pin">Enter 4-digit PIN</string>
+    <string name="reenter_pin">Re-enter your PIN</string>
+    <string name="pin_label">PIN</string>
+    <string name="pin_must_be_4_digits">PIN must be 4 digits</string>
+    <string name="pins_do_not_match">PINs do not match</string>
+    <string name="next">Next</string>
+    <string name="forward">Next</string>
+    <string name="change_name">Change Name</string>
+    <string name="enter_display_name">Enter your display name.</string>
+    <string name="name">Name</string>
+    <string name="name_label">Name</string>
+    <string name="name_updated">Name updated</string>
+
+    <!-- Budget Alerts -->
+    <string name="budget_alert_threshold">Budget Alert Threshold</string>
+    <string name="budget_alert_question">At what percentage of your budget should we warn you?</string>
+    <string name="quick_select">Quick Select</string>
+    <string name="percentage_value">%1$d%%</string>
+    <string name="budget_alert_desc_critical">Very late warning - high risk of exceeding the budget</string>
+    <string name="budget_alert_desc_recommended">Recommended - balanced warning level</string>
+    <string name="budget_alert_desc_early">Early warning - good for saving</string>
+    <string name="budget_alert_desc_very_early">Very early warning - maximum control</string>
+
+    <!-- Settings Components -->
+    <string name="go_to_option">Go to %1$s option</string>
+    <string name="navigate_to_option">Go to %1$s option</string>
+
+    <!-- Language -->
+    <string name="language">Language</string>
+    <string name="language_selection">Select Language</string>
+    <string name="language_name_tr">Turkish</string>
+    <string name="language_name_en">English</string>
+    <string name="user_initial_placeholder">?</string>
+    <string name="error_generic_unknown">An unknown error occurred</string>
+    <string name="backup_password">Backup password</string>
+    <string name="backup_password_title">Set backup password</string>
+    <string name="backup_password_confirm">Confirm password</string>
+    <string name="backup_password_mismatch">Passwords do not match</string>
+    <string name="backup_password_required">Password required</string>
+</resources>

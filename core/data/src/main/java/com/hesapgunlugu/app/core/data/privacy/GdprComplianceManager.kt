@@ -1,0 +1,203 @@
+package com.hesapgunlugu.app.core.data.privacy
+
+import android.content.Context
+import com.hesapgunlugu.app.core.data.local.AppDatabase
+import com.hesapgunlugu.app.core.domain.repository.SettingsRepository
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import timber.log.Timber
+import javax.inject.Inject
+import javax.inject.Singleton
+
+/**
+ * KVKK/GDPR Compliance Manager
+ *
+ * Handles user data privacy rights according to:
+ * - KVKK (Kişisel Verilerin Korunması Kanunu - Turkey)
+ * - GDPR (General Data Protection Regulation - EU)
+ *
+ * ## User Rights
+ * 1. **Right to Access**: Export all user data
+ * 2. **Right to Erasure**: Delete all user data (Right to be Forgotten)
+ * 3. **Right to Rectification**: Update/correct user data
+ * 4. **Right to Portability**: Download data in machine-readable format
+ * 5. **Right to Object**: Opt-out of analytics/tracking
+ *
+ * @see [KVKK Law](https://www.kvkk.gov.tr/)
+ * @see [GDPR Article 17](https://gdpr-info.eu/art-17-gdpr/)
+ */
+@Singleton
+class GdprComplianceManager
+    @Inject
+    constructor(
+        @ApplicationContext private val context: Context,
+        private val database: AppDatabase,
+        private val settingsRepository: SettingsRepository,
+    ) {
+        /**
+         * Export all user data to JSON format
+         *
+         * **GDPR Article 20**: Right to data portability
+         * **KVKK Article 11**: Right to access personal data
+         *
+         * @return JSON string containing all user data
+         */
+        suspend fun exportAllUserData(): String =
+            withContext(Dispatchers.IO) {
+                try {
+                    val data =
+                        buildString {
+                            appendLine("{")
+                            appendLine("  \"export_date\": \"${System.currentTimeMillis()}\",")
+                            appendLine("  \"app_version\": \"1.0.0\",")
+                            appendLine("  \"data\": {")
+
+                            // Transactions
+                            val transactions = database.transactionDao().getAllTransactionsForExport()
+                            appendLine("    \"transactions\": [")
+                            transactions.forEachIndexed { index, transaction ->
+                                appendLine("      {")
+                                appendLine("        \"id\": ${transaction.id},")
+                                appendLine("        \"title\": \"${transaction.title}\" ,")
+                                appendLine("        \"amount\": ${transaction.amount},")
+                                appendLine("        \"timestamp\": ${transaction.date},")
+                                appendLine("        \"type\": \"${transaction.type}\",")
+                                appendLine("        \"category\": \"${transaction.category}\"")
+                                append("      }")
+                                if (index < transactions.size - 1) {
+                                    appendLine(",")
+                                } else {
+                                    appendLine()
+                                }
+                            }
+                            appendLine("    ],")
+
+                            // Scheduled Payments
+                            val scheduledPayments = database.scheduledPaymentDao().getAllScheduledPaymentsForExport()
+                            appendLine("    \"scheduled_payments\": [")
+                            scheduledPayments.forEachIndexed { index, payment ->
+                                appendLine("      {")
+                                appendLine("        \"id\": ${payment.id},")
+                                appendLine("        \"title\": \"${payment.title}\",")
+                                appendLine("        \"amount\": ${payment.amount},")
+                                appendLine("        \"next_due_date\": ${payment.dueDate}")
+                                append("      }")
+                                if (index < scheduledPayments.size - 1) {
+                                    appendLine(",")
+                                } else {
+                                    appendLine()
+                                }
+                            }
+                            appendLine("    ]")
+
+                            appendLine("  }")
+                            appendLine("}")
+                        }
+
+                    Timber.i("User data exported successfully (GDPR compliance)")
+                    data
+                } catch (e: Exception) {
+                    Timber.e(e, "Failed to export user data")
+                    throw GdprException.ExportFailed("Data export failed: ${e.message}")
+                }
+            }
+
+        /**
+         * Delete ALL user data permanently (Right to be Forgotten)
+         *
+         * **GDPR Article 17**: Right to erasure
+         * **KVKK Article 7**: Right to request deletion
+         *
+         * ⚠️ WARNING: This action is IRREVERSIBLE!
+         *
+         * @param userConfirmation User must confirm deletion by typing "DELETE ALL DATA"
+         * @return Result of deletion operation
+         */
+        suspend fun deleteAllUserData(userConfirmation: String): Result<Unit> =
+            withContext(Dispatchers.IO) {
+                try {
+                    // Safety check: User must explicitly confirm
+                    if (userConfirmation != "DELETE ALL DATA") {
+                        return@withContext Result.failure(
+                            GdprException.InvalidConfirmation("User confirmation does not match"),
+                        )
+                    }
+
+                    Timber.w("Starting GDPR data deletion - ALL user data will be erased")
+
+                    // 1. Delete database data
+                    database.clearAllTables()
+
+                    // 2. Clear cached files
+                    context.cacheDir.deleteRecursively()
+
+                    // 3. Delete exported files
+                    val filesDir = context.filesDir
+                    filesDir.listFiles()?.forEach { file ->
+                        if (file.name.endsWith(".csv") ||
+                            file.name.endsWith(".pdf") ||
+                            file.name.endsWith(".backup")
+                        ) {
+                            file.delete()
+                        }
+                    }
+
+                    // 4. Clear shared preferences (legacy)
+                    context.getSharedPreferences("security_prefs", Context.MODE_PRIVATE)
+                        .edit().clear().apply()
+
+                    Timber.i("GDPR data deletion completed successfully")
+                    Result.success(Unit)
+                } catch (e: Exception) {
+                    Timber.e(e, "GDPR data deletion failed")
+                    Result.failure(GdprException.DeletionFailed("Data deletion failed: ${e.message}"))
+                }
+            }
+
+        /**
+         * Get privacy policy text (required by GDPR)
+         *
+         * @param language Language code (tr, en)
+         * @return Privacy policy text
+         */
+        fun getPrivacyPolicy(language: String = "tr"): String {
+            return when (language) {
+                "en" -> loadPrivacyPolicy("privacy_policy_en.txt")
+                else -> loadPrivacyPolicy("privacy_policy_tr.txt")
+            }
+        }
+
+        /**
+         * Get terms of service text
+         *
+         * @param language Language code
+         * @return Terms of service text
+         */
+        fun getTermsOfService(language: String = "tr"): String {
+            return when (language) {
+                "en" -> loadPrivacyPolicy("terms_of_service_en.txt")
+                else -> loadPrivacyPolicy("terms_of_service_tr.txt")
+            }
+        }
+
+        private fun loadPrivacyPolicy(filename: String): String {
+            return try {
+                context.assets.open(filename).bufferedReader().use { it.readText() }
+            } catch (e: Exception) {
+                Timber.e(e, "Failed to load privacy policy: $filename")
+                "Privacy policy not available"
+            }
+        }
+    }
+
+/**
+ * GDPR-specific exceptions
+ */
+sealed class GdprException(message: String) : Exception(message) {
+    class ExportFailed(message: String) : GdprException(message)
+
+    class DeletionFailed(message: String) : GdprException(message)
+
+    class InvalidConfirmation(message: String) : GdprException(message)
+}

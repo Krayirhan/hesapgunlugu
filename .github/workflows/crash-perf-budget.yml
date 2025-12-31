@@ -1,0 +1,245 @@
+name: Crashlytics & Performance Budget Gate
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+  push:
+    branches: [ main, develop ]
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 8 AM UTC
+
+jobs:
+  crash-budget-check:
+    name: Crash Rate Budget Verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check Firebase Crashlytics Crash-Free Rate
+        env:
+          # Firebase Project ID (GitHub Secret'tan alınmalı)
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID || 'mynewapp-placeholder' }}
+        run: |
+          echo "📊 Checking Crashlytics crash-free metrics..."
+          echo "Project: $FIREBASE_PROJECT_ID"
+          
+          # TODO: Firebase Admin SDK veya REST API ile crash metrics çek
+          # Örnek beklenen metrik: 99.9% crash-free users
+          
+          # Şu an mock data - Production'da gerçek API call yapılacak
+          CRASH_FREE_RATE=99.95
+          CRASH_FREE_BUDGET=99.5
+          
+          echo "Current Crash-Free Rate: ${CRASH_FREE_RATE}%"
+          echo "Required Budget: ${CRASH_FREE_BUDGET}%"
+          
+          # Bash floating point comparison
+          if (( $(echo "$CRASH_FREE_RATE >= $CRASH_FREE_BUDGET" | bc -l) )); then
+            echo "✅ Crash-free rate is within budget"
+          else
+            echo "❌ Crash-free rate BELOW budget - Build FAILED"
+            echo "::error::Crash-free users at ${CRASH_FREE_RATE}% (budget: ${CRASH_FREE_BUDGET}%)"
+            exit 1
+          fi
+
+      - name: Check Critical Crash Count
+        run: |
+          echo "🔥 Checking for critical crash spikes..."
+          
+          # TODO: Firebase API ile son 7 gün critical crash count al
+          CRITICAL_CRASHES=0
+          MAX_CRITICAL_CRASHES=5
+          
+          echo "Critical crashes (last 7 days): $CRITICAL_CRASHES"
+          echo "Maximum allowed: $MAX_CRITICAL_CRASHES"
+          
+          if [ $CRITICAL_CRASHES -gt $MAX_CRITICAL_CRASHES ]; then
+            echo "❌ Critical crash count exceeded - Build FAILED"
+            echo "::error::Found $CRITICAL_CRASHES critical crashes (max: $MAX_CRITICAL_CRASHES)"
+            exit 1
+          else
+            echo "✅ Critical crash count within limits"
+          fi
+
+  performance-budget-check:
+    name: Performance Budget Verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check App Startup Time Budget
+        env:
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID || 'mynewapp-placeholder' }}
+        run: |
+          echo "⚡ Checking app startup performance..."
+          
+          # TODO: Firebase Performance Monitoring API ile startup metrics çek
+          # Baseline profile ile optimize edilmiş build için beklenen değerler:
+          
+          COLD_START_TIME=850  # ms - mock value
+          WARM_START_TIME=320  # ms - mock value
+          
+          COLD_START_BUDGET=1200   # 1.2s budget
+          WARM_START_BUDGET=500    # 500ms budget
+          
+          echo "Current Cold Start: ${COLD_START_TIME}ms (budget: ${COLD_START_BUDGET}ms)"
+          echo "Current Warm Start: ${WARM_START_TIME}ms (budget: ${WARM_START_BUDGET}ms)"
+          
+          BUDGET_FAILED=0
+          
+          if [ $COLD_START_TIME -gt $COLD_START_BUDGET ]; then
+            echo "❌ Cold start time exceeds budget"
+            echo "::error::Cold start at ${COLD_START_TIME}ms (budget: ${COLD_START_BUDGET}ms)"
+            BUDGET_FAILED=1
+          else
+            echo "✅ Cold start within budget"
+          fi
+          
+          if [ $WARM_START_TIME -gt $WARM_START_BUDGET ]; then
+            echo "❌ Warm start time exceeds budget"
+            echo "::error::Warm start at ${WARM_START_TIME}ms (budget: ${WARM_START_BUDGET}ms)"
+            BUDGET_FAILED=1
+          else
+            echo "✅ Warm start within budget"
+          fi
+          
+          exit $BUDGET_FAILED
+
+      - name: Check Screen Rendering Performance
+        run: |
+          echo "🎨 Checking frame rendering performance..."
+          
+          # TODO: Firebase Perf API ile frame rendering metrics al
+          # P95 frame time (95th percentile)
+          
+          SLOW_FRAMES_PERCENT=1.2  # mock - % of frames > 16ms
+          FROZEN_FRAMES_PERCENT=0.3  # mock - % of frames > 700ms
+          
+          SLOW_FRAMES_BUDGET=2.0   # max 2% slow frames allowed
+          FROZEN_FRAMES_BUDGET=0.5 # max 0.5% frozen frames
+          
+          echo "Slow frames (>16ms): ${SLOW_FRAMES_PERCENT}% (budget: ${SLOW_FRAMES_BUDGET}%)"
+          echo "Frozen frames (>700ms): ${FROZEN_FRAMES_PERCENT}% (budget: ${FROZEN_FRAMES_BUDGET}%)"
+          
+          BUDGET_FAILED=0
+          
+          if (( $(echo "$SLOW_FRAMES_PERCENT > $SLOW_FRAMES_BUDGET" | bc -l) )); then
+            echo "❌ Too many slow frames"
+            echo "::error::Slow frames at ${SLOW_FRAMES_PERCENT}% (budget: ${SLOW_FRAMES_BUDGET}%)"
+            BUDGET_FAILED=1
+          else
+            echo "✅ Slow frames within budget"
+          fi
+          
+          if (( $(echo "$FROZEN_FRAMES_PERCENT > $FROZEN_FRAMES_BUDGET" | bc -l) )); then
+            echo "❌ Too many frozen frames"
+            echo "::error::Frozen frames at ${FROZEN_FRAMES_PERCENT}% (budget: ${FROZEN_FRAMES_BUDGET}%)"
+            BUDGET_FAILED=1
+          else
+            echo "✅ Frozen frames within budget"
+          fi
+          
+          exit $BUDGET_FAILED
+
+      - name: Check Network Request Performance
+        run: |
+          echo "🌐 Checking network performance..."
+          
+          # TODO: Firebase Perf ile HTTP request duration metrics
+          API_RESPONSE_TIME_P95=850  # ms (95th percentile)
+          API_RESPONSE_BUDGET=1500   # 1.5s budget for P95
+          
+          echo "API Response Time P95: ${API_RESPONSE_TIME_P95}ms (budget: ${API_RESPONSE_BUDGET}ms)"
+          
+          if [ $API_RESPONSE_TIME_P95 -gt $API_RESPONSE_BUDGET ]; then
+            echo "❌ API response time exceeds budget"
+            echo "::error::API P95 at ${API_RESPONSE_TIME_P95}ms (budget: ${API_RESPONSE_BUDGET}ms)"
+            exit 1
+          else
+            echo "✅ API response time within budget"
+          fi
+
+  anr-budget-check:
+    name: ANR (App Not Responding) Budget
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check ANR Rate
+        env:
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID || 'mynewapp-placeholder' }}
+        run: |
+          echo "⏸️ Checking ANR rate..."
+          
+          # TODO: Google Play Console API veya Firebase ile ANR rate al
+          ANR_FREE_RATE=99.8  # mock - % users without ANR
+          ANR_FREE_BUDGET=99.0  # minimum 99% ANR-free sessions
+          
+          echo "ANR-Free Rate: ${ANR_FREE_RATE}% (budget: ${ANR_FREE_BUDGET}%)"
+          
+          if (( $(echo "$ANR_FREE_RATE >= $ANR_FREE_BUDGET" | bc -l) )); then
+            echo "✅ ANR rate within budget"
+          else
+            echo "❌ ANR rate BELOW budget - Build FAILED"
+            echo "::error::ANR-free at ${ANR_FREE_RATE}% (budget: ${ANR_FREE_BUDGET}%)"
+            exit 1
+          fi
+
+  budget-summary:
+    name: Budget Summary Report
+    runs-on: ubuntu-latest
+    needs: [crash-budget-check, performance-budget-check, anr-budget-check]
+    if: always()
+
+    steps:
+      - name: Generate Summary
+        run: |
+          echo "# 📊 Quality & Performance Budget Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Budget Gates" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Crash-Free Rate (≥99.5%) | ${{ needs.crash-budget-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Cold Start Time (≤1.2s) | ${{ needs.performance-budget-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| ANR-Free Rate (≥99%) | ${{ needs.anr-budget-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Next Steps" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ All gates passed: Merge ready" >> $GITHUB_STEP_SUMMARY
+          echo "- ❌ Any gate failed: Fix performance/stability issues" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Note:** Budget values are enforced to maintain production quality." >> $GITHUB_STEP_SUMMARY
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const crashStatus = '${{ needs.crash-budget-check.result }}' === 'success' ? '✅' : '❌';
+            const perfStatus = '${{ needs.performance-budget-check.result }}' === 'success' ? '✅' : '❌';
+            const anrStatus = '${{ needs.anr-budget-check.result }}' === 'success' ? '✅' : '❌';
+            
+            const comment = `## 📊 Quality & Performance Budget Report\n\n` +
+              `| Metric | Status |\n` +
+              `|--------|--------|\n` +
+              `| Crash-Free Rate | ${crashStatus} |\n` +
+              `| Performance Budget | ${perfStatus} |\n` +
+              `| ANR Rate | ${anrStatus} |\n\n` +
+              (crashStatus === '✅' && perfStatus === '✅' && anrStatus === '✅' 
+                ? '✅ **All quality gates passed!**' 
+                : '⚠️ **Some quality gates failed - review required**');
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });

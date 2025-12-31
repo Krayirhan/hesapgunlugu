@@ -1,0 +1,142 @@
+name: Release Build
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version name (e.g., 1.0.0)'
+        required: true
+        default: '1.0.0'
+
+env:
+  JAVA_VERSION: '17'
+
+jobs:
+  release:
+    name: Create Release Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Resolve version info
+        run: |
+          VERSION_NAME="${{ github.event.inputs.version }}"
+          if [ -z "$VERSION_NAME" ]; then
+            VERSION_NAME="${{ github.ref_name }}"
+          fi
+          VERSION_CODE="${{ github.run_number }}"
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          echo "VERSION_CODE=$VERSION_CODE" >> $GITHUB_ENV
+
+      - name: Generate release notes from CHANGELOG
+        run: |
+          python - <<'PY'
+import re
+from pathlib import Path
+
+changelog = Path("CHANGELOG.md").read_text()
+
+
+def extract_section(title):
+    pattern = re.compile(rf"^##\\s+\\[?{re.escape(title)}\\]?(?:\\s+\\([^\\)]*\\))?\\s*$", re.MULTILINE)
+    match = pattern.search(changelog)
+    if not match:
+        return None
+    start = match.end()
+    next_match = re.search(r"^##\\s+", changelog[start:], re.MULTILINE)
+    end = start + next_match.start() if next_match else len(changelog)
+    return changelog[start:end].strip()
+
+version_name = "${{ env.VERSION_NAME }}"
+content = extract_section(version_name) or extract_section("Unreleased")
+
+if not content:
+    raise SystemExit("No release notes found in CHANGELOG.md")
+
+Path("release_notes.md").write_text(content + "\n")
+PY
+
+      - name: Verify required secrets
+        run: |
+          if [ -z "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" ]; then echo "Missing secret RELEASE_KEYSTORE_BASE64"; exit 1; fi
+          if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; then echo "Missing secret KEYSTORE_PASSWORD"; exit 1; fi
+          if [ -z "${{ secrets.KEY_ALIAS }}" ]; then echo "Missing secret KEY_ALIAS"; exit 1; fi
+          if [ -z "${{ secrets.KEY_PASSWORD }}" ]; then echo "Missing secret KEY_PASSWORD"; exit 1; fi
+          echo "All release secrets present"
+
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Run Unit Tests
+        run: ./gradlew --build-cache testReleaseUnitTest -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Run Lint
+        run: ./gradlew --build-cache lintRelease -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Run Detekt
+        run: ./gradlew --build-cache detekt -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Run KtLint
+        run: ./gradlew --build-cache ktlintCheck -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Check TODO/FIXME in code
+        run: |
+          if grep -R --line-number -E "TODO|FIXME" app core feature --include="*.kt" --include="*.kts"; then
+            echo "TODO/FIXME found in code. Please move to backlog."
+            exit 1
+          fi
+
+      - name: Architecture Boundary Guard
+        run: ./scripts/boundary-guard.sh
+
+      - name: ADR Required Check
+        run: ./scripts/check-adr.sh
+
+      - name: Build Release APK
+        run: ./gradlew --build-cache assembleRelease -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Build Release Bundle
+        run: ./gradlew --build-cache bundleRelease -PversionName=${{ env.VERSION_NAME }} -PversionCode=${{ env.VERSION_CODE }}
+
+      - name: Sign APK
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          alias: ${{ secrets.KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-apk-${{ env.VERSION_NAME }}
+          path: app/build/outputs/apk/release/*.apk
+
+      - name: Upload Release Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-bundle-${{ env.VERSION_NAME }}
+          path: app/build/outputs/bundle/release/*.aab
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: github.event_name == 'release'
+        with:
+          body_path: release_notes.md
+          files: |
+            app/build/outputs/apk/release/*.apk
+            app/build/outputs/bundle/release/*.aab
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

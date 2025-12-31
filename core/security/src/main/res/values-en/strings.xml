@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_enter_title">Enter PIN</string>
+    <string name="pin_enter_subtitle">Enter your PIN to access the app</string>
+    <string name="pin_biometric_cd">Sign in with fingerprint</string>
+    <string name="pin_backspace_cd">Delete</string>
+    <string name="pin_forgot_action">Forgot PIN</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backup results -->
+    <string name="backup_export_success">%1$d işlem ve %2$d planlı ödeme dışa aktarıldı</string>
+    <string name="backup_export_error">Dışa aktarma başarısız: %1$s</string>
+    <string name="backup_export_error_generic">Dışa aktarma başarısız</string>
+    <string name="backup_export_encrypted_success">%1$d işlem ve %2$d planlı ödeme şifreli olarak dışa aktarıldı</string>
+    <string name="backup_export_encrypted_error">Şifreli dışa aktarma başarısız: %1$s</string>
+    <string name="backup_export_encrypted_error_generic">Şifreli dışa aktarma başarısız</string>
+
+    <string name="backup_import_success">%1$d işlem ve %2$d planlı ödeme içe aktarıldı</string>
+    <string name="backup_import_error">İçe aktarma başarısız: %1$s</string>
+    <string name="backup_import_error_generic">İçe aktarma başarısız</string>
+    <string name="backup_import_encrypted_error">Şifreli içe aktarma başarısız: %1$s</string>
+    <string name="backup_import_encrypted_error_generic">Şifreli içe aktarma başarısız</string>
+    <string name="backup_version_unsupported">Desteklenmeyen yedek formatı sürümü: %1$d</string>
+    <string name="backup_import_validation_error">Yedek doğrulama hatası: %1$d geçersiz kayıt</string>
+
+    <string name="backup_file_read_error">Dosya okunamadı</string>
+    <string name="backup_file_write_error">Yedek dosyası yazılamadı</string>
+    <string name="backup_encrypt_error">Şifreleme başarısız</string>
+    <string name="backup_decrypt_error">Şifre çözme başarısız - yanlış şifre veya bozuk dosya</string>
+
+    <!-- Password change -->
+    <string name="backup_password_invalid">Şifre gereksinimlerini karşılamıyor</string>
+    <string name="backup_password_invalid_detail">Şifre gereksinimlerini karşılamıyor: %1$s</string>
+    <string name="backup_password_change_success">Yedek şifresi başarıyla değiştirildi ve dosya yeniden şifrelendi</string>
+    <string name="backup_password_change_error">Şifre değiştirme hatası: %1$s</string>
+    <string name="backup_password_change_error_generic">Şifre değiştirme hatası</string>
+    <string name="backup_password_reencrypt_error">Şifre değiştirilemedi - eski şifre yanlış veya dosya bozuk</string>
+    <string name="backup_file_read_error_detailed">Yedek dosyası okunamadı</string>
+
+    <!-- Password strength validation -->
+    <string name="backup_password_min_length_error">Şifre en az %1$d karakter olmalıdır</string>
+    <string name="backup_password_recommended_length">%1$d+ karakter önerilir</string>
+    <string name="backup_password_diversity_required">Şifre büyük/küçük harf, rakam ve sembol içermelidir</string>
+    <string name="backup_password_diversity_min_types">Şifre en az 3 farklı karakter tipi içermelidir</string>
+    <string name="backup_password_add_symbol">Sembol karakteri eklemek güvenliği artırır</string>
+    <string name="backup_password_common_error">Bu şifre çok yaygın ve tahmin edilebilir</string>
+    <string name="backup_password_keyboard_pattern_error">Klavye dizilimi içeren şifreler güvensizdir</string>
+    <string name="backup_password_repetition_error">Tekrarlayan karakterler güvenliği azaltır</string>
+    <string name="backup_password_sequence_suggestion">Ardışık karakterlerden kaçının (abc, 123)</string>
+
+    <string name="backup_password_strength_very_weak">Çok Zayıf</string>
+    <string name="backup_password_strength_weak">Zayıf</string>
+    <string name="backup_password_strength_medium">Orta</string>
+    <string name="backup_password_strength_strong">Güçlü</string>
+    <string name="backup_password_strength_very_strong">Çok Güçlü</string>
+    <string name="backup_password_strength_advice_very_weak">Çok zayıf - Başka bir şifre seçin</string>
+    <string name="backup_password_strength_advice_weak">Zayıf - Daha karmaşık bir şifre önerilir</string>
+    <string name="backup_password_strength_advice_medium">Orta - Kabul edilebilir ama iyileştirilebilir</string>
+    <string name="backup_password_strength_advice_strong">Güçlü şifre</string>
+</resources>

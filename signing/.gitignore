@@ -1,0 +1,7 @@
+# Signing directory
+*.keystore
+*.jks
+*.pepk
+*.pem
+*.p12
+local.signing.properties

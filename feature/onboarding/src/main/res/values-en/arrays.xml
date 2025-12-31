@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onboarding_features_1">
+        <item>Track your income and expenses easily</item>
+        <item>Organize by categories</item>
+        <item>Real-time balance view</item>
+    </string-array>
+
+    <string-array name="onboarding_features_2">
+        <item>Interactive charts and analytics</item>
+        <item>Category-based reports</item>
+        <item>Monthly/yearly comparison</item>
+    </string-array>
+
+    <string-array name="onboarding_features_3">
+        <item>PIN code protection</item>
+        <item>Biometric sign-in support</item>
+        <item>Your data stays on your device</item>
+    </string-array>
+
+    <string-array name="onboarding_features_4">
+        <item>Set savings goals</item>
+        <item>Automatic recurring payments</item>
+        <item>PDF/CSV export</item>
+    </string-array>
+</resources>

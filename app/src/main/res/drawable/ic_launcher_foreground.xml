@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Cüzdan gövdesi -->
+    <path
+        android:pathData="M30,38 L30,70 C30,73 32,75 35,75 L73,75 C76,75 78,73 78,70 L78,38 C78,35 76,33 73,33 L35,33 C32,33 30,35 30,38 Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Cüzdan üst kapağı -->
+    <path
+        android:pathData="M30,38 L30,45 L78,45 L78,38 C78,35 76,33 73,33 L35,33 C32,33 30,35 30,38 Z"
+        android:fillColor="#E3F2FD"/>
+    
+    <!-- Kart yuvası çizgisi -->
+    <path
+        android:pathData="M36,52 L56,52"
+        android:strokeColor="#1976D2"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+    
+    <path
+        android:pathData="M36,60 L50,60"
+        android:strokeColor="#64B5F6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+    
+    <!-- Para birimi simgesi (₺ benzeri) -->
+    <path
+        android:pathData="M66,52 L66,68 M62,56 L70,56 M62,62 L70,62"
+        android:strokeColor="#1E88E5"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+    
+    <!-- Artı işareti (gelir göstergesi) - sağ üst -->
+    <path
+        android:pathData="M72,28 L72,22 M69,25 L75,25"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+
+</vector>

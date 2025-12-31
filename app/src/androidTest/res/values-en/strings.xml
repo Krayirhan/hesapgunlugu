@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_transaction_title">Test Transaction</string>
+    <string name="test_user_name">Test User</string>
+    <string name="test_error_message">Test error message</string>
+    <string name="test_title_simple">Test</string>
+    <string name="test_item_title_coffee">Coffee</string>
+    <string name="test_export_format_csv">CSV</string>
+
+    <string name="test_amount_150">150</string>
+    <string name="test_amount_5000">5000</string>
+    <string name="test_amount_8000">8000</string>
+    <string name="test_amount_100">100</string>
+    <string name="test_amount_10000">10000</string>
+</resources>

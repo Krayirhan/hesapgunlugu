@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="110dp"
+    android:viewportWidth="180"
+    android:viewportHeight="110">
+
+    <!-- Background -->
+    <path
+        android:pathData="M16,0L164,0A16,16 0,0 1,180 16L180,94A16,16 0,0 1,164 110L16,110A16,16 0,0 1,0 94L0,16A16,16 0,0 1,16 0z"
+        android:fillColor="#1E3A5F"/>
+
+    <!-- Title -->
+    <path
+        android:pathData="M20,25L60,25"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.6"/>
+
+    <!-- Balance -->
+    <path
+        android:pathData="M20,50L100,50"
+        android:strokeWidth="6"
+        android:strokeColor="#FFFFFF"/>
+
+    <!-- Income indicator -->
+    <path
+        android:pathData="M30,80L60,80"
+        android:strokeWidth="3"
+        android:strokeColor="#10B981"/>
+
+    <!-- Expense indicator -->
+    <path
+        android:pathData="M100,80L130,80"
+        android:strokeWidth="3"
+        android:strokeColor="#EF4444"/>
+</vector>
+

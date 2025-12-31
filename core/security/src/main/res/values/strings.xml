@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_enter_title">PIN Girin</string>
+    <string name="pin_enter_subtitle">Uygulamaya erişmek için PIN\'inizi girin</string>
+    <string name="pin_biometric_cd">Parmak izi ile giriş</string>
+    <string name="pin_backspace_cd">Sil</string>
+    <string name="pin_forgot_action">PIN\'imi Unuttum</string>
+</resources>

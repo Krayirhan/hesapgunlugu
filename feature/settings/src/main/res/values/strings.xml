@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kategori Yönetimi -->
+    <string name="category_management">Kategori Yönetimi</string>
+    <string name="custom_categories_add_edit">Özel kategorileri ekle/düzenle</string>
+    <string name="back">Geri</string>
+    <string name="add_category">Kategori Ekle</string>
+    <string name="your_categories">Kategorileriniz</string>
+    <string name="default_category">Varsayılan kategori</string>
+    <string name="delete">Sil</string>
+    <string name="new_category">Yeni Kategori</string>
+    <string name="category_name">Kategori Adı</string>
+    <string name="add">Ekle</string>
+    <string name="cancel">İptal</string>
+    <string name="edit_category">Kategoriyi Düzenle</string>
+    <string name="save">Kaydet</string>
+    <string name="select_emoji">Emoji Seç</string>
+    <string name="select_color">Renk Seç</string>
+
+    <!-- Veri Silme Ekranı -->
+    <string name="delete_data">Verileri Sil</string>
+    <string name="delete_placeholder">SİL</string>
+    <string name="permanently_delete_all_data">Tüm Verileri Kalıcı Olarak Sil</string>
+    <string name="warning">Uyarı</string>
+    <string name="gdpr_delete_external_cancelled">Dışa aktarılan dosya silme işlemi iptal edildi</string>
+    <string name="gdpr_delete_success">Tüm veriler kalıcı olarak silindi</string>
+    <string name="gdpr_delete_error_prefix">Hata: %1$s</string>
+    <string name="gdpr_delete_title">Tüm Verileri Sil</string>
+    <string name="gdpr_delete_warning_title">UYARI: Bu işlem geri alınamaz!</string>
+    <string name="gdpr_delete_warning_body">Aşağıdaki veriler kalıcı olarak silinir:\n- Tüm finansal işlem kayıtları\n- PIN ve güvenlik ayarları\n- Uygulama tercihleri\n- Veritabanı dosyaları\n- Dışa aktarım dosyaları\n- Önbellek verileri\n\nBu işlem GDPR \"Unutulma Hakkı\" (Madde 17) kapsamındadır.</string>
+    <string name="gdpr_delete_confirm_prompt">Onaylamak için \'%1$s\' yazın:</string>
+    <string name="gdpr_delete_info_text">Bu işlem uygulama verilerini tamamen siler. Uygulamayı yeniden başlatmanız gerekir.</string>
+
+    <!-- Profil -->
+    <string name="user_placeholder">Kullanıcı</string>
+    <string name="personal_account">Kişisel Hesap</string>
+    <string name="edit_profile">Profili Düzenle</string>
+
+    <!-- Finansal Yönetim -->
+    <string name="financial_management">Finansal Yönetim</string>
+    <string name="monthly_spending_limit">Aylık Harcama Limiti</string>
+    <string name="current_limit">Mevcut: %1$s</string>
+    <string name="currency">Para Birimi</string>
+    <string name="currency_try">Türk Lirası (₺)</string>
+    <string name="currency_tl">Türk Lirası (₺)</string>
+    <string name="currency_usd">Amerikan Doları ($)</string>
+    <string name="currency_eur">Euro (€)</string>
+    <string name="currency_gbp">İngiliz Sterlini (£)</string>
+    <string name="currency_selection">Para Birimi Seçin</string>
+
+    <!-- Görünüm -->
+    <string name="appearance_theme">Görünüm</string>
+    <string name="light_theme">Açık Tema</string>
+    <string name="light_theme_subtitle">Aydınlık ve ferah görünüm</string>
+    <string name="dark_theme">Koyu Tema</string>
+    <string name="dark_theme_subtitle">Göz yormayan karanlık mod</string>
+
+    <!-- Bildirimler -->
+    <string name="notifications_section">Bildirimler</string>
+    <string name="push_notifications_desc">Anlık bildirimler ve hatırlatmalar</string>
+    <string name="push_notifications">Push Bildirimler</string>
+    <string name="budget_reminders">Bütçe hatırlatıcıları ve uyarılar</string>
+
+    <!-- Güvenlik -->
+    <string name="security">Güvenlik</string>
+    <string name="app_lock_desc">Uygulamanızı PIN ile koruyun</string>
+    <string name="app_lock_title">Uygulama Kilidi</string>
+    <string name="pin_active">PIN aktif</string>
+    <string name="pin_not_set">PIN ayarlanmamış</string>
+    <string name="fingerprint_desc">Parmak izi veya yüz tanıma ile giriş</string>
+    <string name="enable_biometric">Parmak izi / Yüz</string>
+    <string name="quick_login">Hızlı ve güvenli giriş</string>
+    <string name="pin_change_desc">Mevcut PIN kodunuzu değiştirin</string>
+    <string name="change_pin">PIN Değiştir</string>
+
+    <!-- Veri Yönetimi -->
+    <string name="data_management">Veri Yönetimi</string>
+    <string name="export_desc">Verilerinizi yedekleyin</string>
+    <string name="export_json">Veriyi Dışa Aktar</string>
+    <string name="export_json_desc">Verilerinizi JSON formatında kaydedin</string>
+    <string name="export_data">Veriyi Dışa Aktar</string>
+    <string name="export_data_subtitle">Verilerinizi cihazınıza yedekleyin</string>
+    <string name="import_data_desc">Yedekten veri geri yükleyin</string>
+    <string name="import_json">Veri İçe Aktar</string>
+    <string name="import_json_desc">Daha önce oluşturulan yedekten geri yükle</string>
+    <string name="import_data">Veri İçe Aktar</string>
+    <string name="import_data_subtitle">Yedek dosyasından verilerinizi geri yükleyin</string>
+    <string name="import_data_title">Veri İçe Aktar</string>
+    <string name="import_data_question">Yedek dosyasındaki veriler nasıl içe aktarılsın?</string>
+    <string name="clear_data">Verileri Sil</string>
+    <string name="clear_all_data">Tüm uygulama verilerini temizle</string>
+    <string name="clear_data_subtitle">Tüm verileri kalıcı olarak sil</string>
+    <string name="add_to_existing">Mevcut verilere ekle</string>
+    <string name="replace_all_data">Tüm verileri sil ve değiştir</string>
+    <string name="replace_existing">Mevcut verileri değiştir</string>
+
+    <!-- Google Drive Yedekleme -->
+    <string name="cloud_backup_title">Google Drive Yedekleme</string>
+    <string name="cloud_backup_signed_in">Google Drive bağlı</string>
+    <string name="cloud_backup_signed_out">Google Drive bağlı değil</string>
+    <string name="cloud_sign_in">Giriş Yap</string>
+    <string name="cloud_sign_out">Çıkış Yap</string>
+    <string name="cloud_sign_in_success">Google Drive oturumu açıldı</string>
+    <string name="cloud_sign_in_error">Google Drive oturumu açılamadı</string>
+    <string name="cloud_sign_out_success">Google Drive oturumu kapatıldı</string>
+    <string name="cloud_backup_upload">Yedek Yükle</string>
+    <string name="cloud_backup_refresh">Listeyi Yenile</string>
+    <string name="cloud_backup_empty">Google Drive üzerinde yedek bulunamadı</string>
+    <string name="cloud_backup_meta">%1$s • %2$s</string>
+    <string name="cloud_backup_restore">Geri Yükle</string>
+    <string name="cloud_backup_delete">Sil</string>
+    <string name="cloud_backup_upload_success">Google Drive yedeği yüklendi (%1$d işlem, %2$d planlı ödeme)</string>
+    <string name="cloud_backup_upload_error">Google Drive yedeği yüklenemedi</string>
+    <string name="cloud_backup_export_error">Yedek hazırlanamadı</string>
+    <string name="cloud_backup_list_error">Google Drive yedekleri alınamadı</string>
+    <string name="cloud_backup_download_error">Google Drive yedeği indirilemedi</string>
+    <string name="cloud_backup_restore_success">Google Drive yedeği geri yüklendi (%1$d işlem, %2$d planlı ödeme)</string>
+    <string name="cloud_backup_restore_error">Google Drive yedeği geri yüklenemedi</string>
+    <string name="cloud_backup_delete_success">Google Drive yedeği silindi</string>
+    <string name="cloud_backup_delete_error">Google Drive yedeği silinemedi</string>
+    <string name="cloud_backup_restore_title">Google Drive Yedeğini Geri Yükle</string>
+    <string name="cloud_backup_restore_question">Bu yedeği nasıl geri yüklemek istersiniz? (%1$s)</string>
+    <string name="cloud_backup_delete_title">Google Drive Yedeğini Sil</string>
+    <string name="cloud_backup_delete_confirm">Bu yedeği silmek istediğinize emin misiniz? (%1$s)</string>
+
+    <!-- Uygulama -->
+    <string name="application">Uygulama</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="notification_center">Tüm bildirimlerinizi görüntüleyin</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="gdpr_info">Verilerinizi nasıl koruduğumuzu öğrenin</string>
+    <string name="about">Hakkında</string>
+    <string name="version_info">Uygulama sürümü ve bilgileri</string>
+    <string name="help_support">Yardım ve Destek</string>
+    <string name="faq_contact">Sık sorulan sorular ve iletişim</string>
+
+    <!-- Diyaloglar -->
+    <string name="set_limit">Limit Belirle</string>
+    <string name="new_monthly_limit">Yeni aylık harcama limitinizi girin.</string>
+    <string name="amount_tl">Tutar (₺)</string>
+    <string name="amount_currency">Tutar (%1$s)</string>
+    <string name="pin_setup">PIN Ayarla</string>
+    <string name="pin_confirm">PIN Onayla</string>
+    <string name="enter_pin_4_digit">4 haneli PIN girin</string>
+    <string name="enter_4_digit_pin">4 haneli PIN girin</string>
+    <string name="reenter_pin">PIN\'inizi tekrar girin</string>
+    <string name="pin_label">PIN</string>
+    <string name="pin_must_be_4_digits">PIN 4 haneli olmalı</string>
+    <string name="pins_do_not_match">PIN\'ler eşleşmiyor</string>
+    <string name="next">İleri</string>
+    <string name="forward">İleri</string>
+    <string name="change_name">İsim Değiştir</string>
+    <string name="enter_display_name">Görüntülenecek isminizi girin.</string>
+    <string name="name">İsim</string>
+    <string name="name_label">İsim</string>
+    <string name="name_updated">İsim güncellendi</string>
+
+    <!-- Bütçe Uyarıları -->
+    <string name="budget_alert_threshold">Bütçe Uyarı Eşiği</string>
+    <string name="budget_alert_question">Bütçenizin yüzde kaçında sizi uyaralım?</string>
+    <string name="quick_select">Hızlı Seçim</string>
+    <string name="percentage_value">%1$d%%</string>
+    <string name="budget_alert_desc_critical">Çok geç uyarı - bütçeyi aşma riski yüksek</string>
+    <string name="budget_alert_desc_recommended">Önerilen - dengeli uyarı seviyesi</string>
+    <string name="budget_alert_desc_early">Erken uyarı - tasarruf için iyi</string>
+    <string name="budget_alert_desc_very_early">Çok erken uyarı - maksimum kontrol</string>
+
+    <!-- Ayarlar Bileşenleri -->
+    <string name="go_to_option">%1$s seçeneğine git</string>
+    <string name="navigate_to_option">%1$s seçeneğine git</string>
+
+    <!-- Dil -->
+    <string name="language">Dil</string>
+    <string name="language_selection">Dil Seçin</string>
+    <string name="language_name_tr">Türkçe</string>
+    <string name="language_name_en">English</string>
+    <string name="user_initial_placeholder">?</string>
+    <string name="error_generic_unknown">Bilinmeyen bir hata oluştu</string>
+    <string name="backup_password">Yedek sifresi</string>
+    <string name="backup_password_title">Yedek sifresi belirle</string>
+    <string name="backup_password_confirm">Sifreyi onayla</string>
+    <string name="backup_password_mismatch">Sifreler eslesmiyor</string>
+    <string name="backup_password_required">Sifre gerekli</string>
+
+</resources>

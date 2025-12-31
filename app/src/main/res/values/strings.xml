@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hesap Günlüğü</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_transactions">İşlemler</string>
+    <string name="nav_scheduled">Planlı</string>
+    <string name="nav_statistics">İstatistik</string>
+    <string name="nav_settings">Ayarlar</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_message">Hoş Geldiniz</string>
+    <string name="total_balance">Toplam Bakiye</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="total_income">Toplam Gelir</string>
+    <string name="total_expense">Toplam Gider</string>
+    <string name="recent_transactions">Son İşlemler</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="no_transactions">Henüz işlem yok</string>
+    <string name="add_first_transaction">İlk işleminizi ekleyin</string>
+    <string name="add_transaction_fab">İşlem ekle</string>
+    <string name="budget_status">Bütçe Durumu</string>
+    <string name="monthly_spending_limit">Aylık harcama limitiniz</string>
+    <string name="monthly_spending_limit_subtitle">Aylık harcama limiti</string>
+    <string name="last_5_transactions">Son 5 işlem</string>
+    <string name="no_transaction_yet">Henüz işlem yok</string>
+
+    <!-- Transaction Form -->
+    <string name="add_transaction">İşlem Ekle</string>
+    <string name="edit_transaction">İşlemi Düzenle</string>
+    <string name="transaction_title">Başlık</string>
+    <string name="transaction_amount">Tutar</string>
+    <string name="transaction_category">Kategori</string>
+    <string name="transaction_date">Tarih</string>
+    <string name="transaction_type_income">Gelir</string>
+    <string name="transaction_type_expense">Gider</string>
+    <string name="add_transaction_action">İşlem Ekle</string>
+    <string name="transaction_details">İşlem Detayları</string>
+
+    <!-- Common Actions -->
+    <string name="save">Kaydet</string>
+    <string name="cancel">İptal</string>
+    <string name="delete">Sil</string>
+    <string name="edit">Düzenle</string>
+    <string name="add">Ekle</string>
+    <string name="ok">Tamam</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="retry">Tekrar Dene</string>
+    <string name="close">Kapat</string>
+    <string name="search">Ara</string>
+    <string name="filter">Filtrele</string>
+    <string name="sort">Sırala</string>
+    <string name="share">Paylaş</string>
+    <string name="refresh">Yenile</string>
+    <string name="undo">Geri Al</string>
+    <string name="clear">Temizle</string>
+    <string name="next">İleri</string>
+    <string name="back">Geri</string>
+    <string name="forward">İleri</string>
+    <string name="skip">Atla</string>
+    <string name="loading">Yükleniyor...</string>
+
+    <!-- Form Labels -->
+    <string name="title">Başlık</string>
+    <string name="title_label">Başlık</string>
+    <string name="description">Açıklama</string>
+    <string name="amount">Tutar</string>
+    <string name="amount_currency">Tutar (%s)</string>
+    <string name="category">Kategori</string>
+    <string name="date">Tarih</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="note">Not</string>
+    <string name="name">İsim</string>
+    <string name="name_label">İsim</string>
+    <string name="balance">Bakiye</string>
+    <string name="total">Toplam</string>
+    <string name="from">Başlangıç</string>
+    <string name="to">Bitiş</string>
+    <string name="date_range">Tarih Aralığı</string>
+
+    <!-- Categories -->
+    <string name="category_market">Market</string>
+    <string name="category_transport">Ulaşım</string>
+    <string name="category_bills">Fatura</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_food">Yemek</string>
+    <string name="category_health">Sağlık</string>
+    <string name="category_clothing">Giyim</string>
+    <string name="category_education">Eğitim</string>
+    <string name="category_rent">Kira</string>
+    <string name="category_salary">Maaş</string>
+    <string name="category_investment">Yatırım</string>
+    <string name="category_freelance">Serbest Çalışma</string>
+    <string name="category_other">Diğer</string>
+    <string name="category_rent_income">Kira Geliri</string>
+    <string name="category_side_job">Ek İş</string>
+
+    <!-- Category Management -->
+    <string name="add_category">Kategori Ekle</string>
+    <string name="your_categories">Kategorileriniz</string>
+    <string name="default_category">Varsayılan</string>
+    <string name="new_category">Yeni Kategori</string>
+    <string name="category_name">Kategori Adı</string>
+    <string name="edit_category">Kategoriyi Düzenle</string>
+    <string name="enter_category_name">Kategori Adı Giriniz</string>
+    <string name="select_category">Kategori Seçin</string>
+    <string name="all_categories">Tüm Kategoriler</string>
+    <string name="category_management">Kategori Yönetimi</string>
+
+    <!-- Budget -->
+    <string name="category_budgets">Kategori Bütçeleri</string>
+    <string name="add_category_budget">Kategori Bütçesi Ekle</string>
+    <string name="edit_budget">Bütçe Düzenle</string>
+    <string name="monthly_limit">Aylık Limit</string>
+    <string name="limit_amount">Limit Tutarı</string>
+    <string name="set_limit">Limit Belirle</string>
+    <string name="spent">Harcanan</string>
+    <string name="remaining">Kalan</string>
+    <string name="budget_exceeded">Bütçe Aşıldı</string>
+    <string name="no_category_budget_yet">Henüz kategori bütçesi eklenmemiş</string>
+    <string name="budget_warning">Bütçe Uyarısı</string>
+    <string name="budget_alert_threshold">Bütçe Uyarı Eşiği</string>
+    <string name="budget_alert_question">Bütçenizin ne kadarına ulaştığınızda uyarı almak istiyorsunuz?</string>
+    <string name="quick_select">Hızlı Seçim</string>
+    <string name="spending_analysis">Harcama Analizi</string>
+
+    <!-- History Screen -->
+    <string name="search_desc">Ara</string>
+    <string name="clear_search">Aramayı temizle</string>
+    <string name="calendar">Takvim</string>
+    <string name="previous_month">Önceki ay</string>
+    <string name="next_month">Sonraki ay</string>
+    <string name="calendar_view">Takvim Görünümü</string>
+    <string name="list_view">Liste Görünümü</string>
+    <string name="clear_filters">Filtreleri Temizle</string>
+    <string name="no_transactions_yet">Henüz işlem bulunmuyor</string>
+    <string name="no_transactions_desc">Görüntülenecek işlem yok</string>
+    <string name="today">Bugün</string>
+    <string name="yesterday">Dün</string>
+    <string name="account_movements">Hesap Hareketleri</string>
+    <string name="all_income_expense">Tüm gelir ve giderleriniz</string>
+    <string name="search_transaction">İşlem ara...</string>
+    <string name="no_transactions_month">%s ayında işlem yok</string>
+    <string name="not_found">\'%s\' bulunamadı</string>
+    <string name="filter_by_category">Kategoriye göre filtrele</string>
+    <string name="filter_by_type">Türe göre filtrele</string>
+    <string name="sort_by">Sıralama</string>
+    <string name="sort_by_date">Tarihe göre</string>
+    <string name="sort_by_amount">Tutara göre</string>
+    <string name="sort_ascending">Artan</string>
+    <string name="sort_descending">Azalan</string>
+    <string name="all_types">Tümü</string>
+    <string name="month_summary">Bu ay: %1$s gelir, %2$s gider</string>
+
+    <!-- Scheduled Payments -->
+    <string name="scheduled_payments">Planlı Ödemeler</string>
+    <string name="recurring_incomes">Düzenli Gelirler</string>
+    <string name="recurring_expenses">Düzenli Giderler</string>
+    <string name="add_scheduled">Planlı Ödeme Ekle</string>
+    <string name="add_scheduled_transaction">Yeni planlı işlem ekle</string>
+    <string name="add_scheduled_payment_action">Planlı İşlem Ekle</string>
+    <string name="payment_frequency">Tekrar Sıklığı</string>
+    <string name="recurrence_frequency">Tekrarlama Sıklığı</string>
+    <string name="payment_due_date">Vade Tarihi</string>
+    <string name="payment_day_of_month">Ödeme Günü (Ayın)</string>
+    <string name="days_left">%d gün kaldı</string>
+    <string name="days_remaining">%d gün</string>
+    <string name="due_today">Bugün</string>
+    <string name="overdue">Gecikmiş</string>
+    <string name="mark_as_paid">Ödendi olarak işaretle</string>
+    <string name="no_scheduled_payments">Planlı ödeme yok</string>
+    <string name="total_upcoming">Toplam Yaklaşan</string>
+    <string name="total_recurring">Toplam Düzenli</string>
+    <string name="upcoming_payments">Yaklaşan Ödemeler</string>
+    <string name="upcoming_7_days">Önümüzdeki 7 gün</string>
+    <string name="recurring_income_sources">Düzenli gelir kaynaklarınız</string>
+    <string name="subscriptions_regular">Abonelikler ve düzenli ödemeler</string>
+    <string name="no_upcoming_payment">Yaklaşan ödeme yok</string>
+    <string name="no_recurring_income">Tekrarlayan gelir eklenmemiş</string>
+    <string name="no_recurring_expense">Tekrarlayan gider eklenmemiş</string>
+    <string name="next_payment">Sonraki Ödeme</string>
+    <string name="recurring_add">Otomatik tekrar ekle</string>
+    <string name="upcoming_payment_notification">Yaklaşan ödeme bildirimi</string>
+    <string name="recurring_payments">Tekrarlayan Ödemeler</string>
+    <string name="payment_reminder">Ödeme Hatırlatıcısı</string>
+    <string name="upcoming_payment">Yaklaşan Ödeme</string>
+
+    <!-- Frequency -->
+    <string name="frequency_weekly">Haftalık</string>
+    <string name="frequency_monthly">Aylık</string>
+    <string name="frequency_yearly">Yıllık</string>
+    <string name="repeat_period">Tekrar Periyodu</string>
+    <string name="daily">Günlük</string>
+    <string name="weekly">Haftalık</string>
+    <string name="weekly_label">Haftalık</string>
+    <string name="monthly">Aylık</string>
+    <string name="monthly_label">Aylık</string>
+    <string name="yearly">Yıllık</string>
+    <string name="yearly_label">Yıllık</string>
+    <string name="every_period">Her %1$s</string>
+    <string name="interval_placeholder">1</string>
+    <string name="day_of_month_label">Ayın hangi günü (1-31)</string>
+    <string name="repeat_count_label">Kaç kere tekrarlanacak? (opsiyonel)</string>
+    <string name="unlimited">Sınırsız</string>
+    <string name="auto_transaction_info">Otomatik işlemler günlük kontrol edilip oluşturulacak</string>
+
+    <!-- Statistics -->
+    <string name="statistics">İstatistikler</string>
+    <string name="your_financial_analysis">Mali durumunuzun analizi</string>
+    <string name="period_weekly">Haftalık</string>
+    <string name="period_monthly">Aylık</string>
+    <string name="period_yearly">Yıllık</string>
+    <string name="income_expense_chart">Gelir/Gider Grafiği</string>
+    <string name="category_distribution">Kategori Dağılımı</string>
+    <string name="category_based_spending">Kategori Bazlı Harcama</string>
+    <string name="month_comparison">Ay Karşılaştırması</string>
+    <string name="weekly_comparison">Haftalık karşılaştırma</string>
+    <string name="this_month">Bu Ay</string>
+    <string name="last_month">Geçen Ay</string>
+    <string name="spending_increased">Harcamalar %s arttı</string>
+    <string name="spending_decreased">Harcamalar %s azaldı</string>
+    <string name="spending_up">Harcamalar %s arttı</string>
+    <string name="spending_down">Harcamalar %s azaldı</string>
+    <string name="trend_analysis">Trend Analizi</string>
+    <string name="compared_to_last_month">Geçen aya göre</string>
+    <string name="no_data_yet">Henüz veri yok</string>
+    <string name="add_transactions_to_see">İşlem ekleyerek istatistiklerinizi görün</string>
+    <string name="income_icon">Gelir ikonu</string>
+    <string name="expense_icon">Gider ikonu</string>
+    <string name="monthly_trend">Aylık Trend</string>
+    <string name="weekly_trend">Haftalık Trend</string>
+    <string name="increase_trend">Artış trendi</string>
+    <string name="decrease_trend">Azalış trendi</string>
+    <string name="income_vs_expense">Gelir vs Gider</string>
+    <string name="weekly_income_expense">Haftalık Gelir/Gider</string>
+    <string name="monthly_balance_trend">Aylık Bakiye Trendi</string>
+    <string name="no_statistics">İstatistik Yok</string>
+    <string name="no_expenses_yet">Henüz harcama yok</string>
+    <string name="savings_rate">Tasarruf Oranı</string>
+    <string name="most">En Çok</string>
+    <string name="financial_health">Finansal Sağlık</string>
+    <string name="health_score">Sağlık Skoru</string>
+
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="user_name">Kullanıcı Adı</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="enable_notifications">Bildirimleri Aç</string>
+    <string name="dark_mode">Karanlık Mod</string>
+    <string name="language">Dil</string>
+    <string name="currency">Para Birimi</string>
+    <string name="export_data">Veriyi Dışa Aktar</string>
+    <string name="import_data">Veri İçe Aktar</string>
+    <string name="backup">Yedekle</string>
+    <string name="restore">Geri Yükle</string>
+    <string name="about">Hakkında</string>
+    <string name="version">Sürüm</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="edit_profile">Profili düzenle</string>
+    <string name="import_data_desc">İçe aktar</string>
+    <string name="financial_management">Finansal Yönetim</string>
+    <string name="current_limit">Mevcut: %s</string>
+    <string name="appearance_theme">Görünüm ve Tema</string>
+    <string name="light_theme">Açık Tema</string>
+    <string name="light_theme_desc">Aydınlık ve ferah görünüm</string>
+    <string name="light_theme_subtitle">Aydınlık ve ferah görünüm</string>
+    <string name="dark_theme">Koyu Tema</string>
+    <string name="dark_theme_desc">Göz yormayan karanlık mod</string>
+    <string name="dark_theme_subtitle">Göz yormayan karanlık mod</string>
+    <string name="push_notifications">Push Bildirimler</string>
+    <string name="push_notifications_desc">Push bildirimler</string>
+    <string name="budget_reminders">Bütçe ve hatırlatmalar</string>
+    <string name="app_lock_desc">Uygulama kilidi</string>
+    <string name="fingerprint_desc">Parmak izi</string>
+    <string name="quick_login">Hızlı giriş</string>
+    <string name="pin_change_desc">PIN değiştir</string>
+    <string name="export_desc">Dışa aktar</string>
+    <string name="data_management">Veri Yönetimi</string>
+    <string name="export_json">Veriyi Dışa Aktar</string>
+    <string name="export_json_desc">JSON formatında yedekle</string>
+    <string name="export_data_subtitle">JSON formatında yedekle</string>
+    <string name="import_json">Veri İçe Aktar</string>
+    <string name="import_json_desc">Yedekten geri yükle</string>
+    <string name="import_data_subtitle">Yedekten geri yükle</string>
+    <string name="clear_data">Verileri Temizle</string>
+    <string name="clear_all_data">Tüm verileri sil</string>
+    <string name="clear_data_subtitle">Tüm verileri sil</string>
+    <string name="application">Uygulama</string>
+    <string name="notification_center">Bildirim merkezi</string>
+    <string name="gdpr_info">KVKK ve GDPR bilgileri</string>
+    <string name="help_support">Yardım ve Destek</string>
+    <string name="help_support_desc">SSS ve iletişim</string>
+    <string name="faq_contact">SSS ve iletişim</string>
+    <string name="personal_account">Kişisel Hesap</string>
+    <string name="user_placeholder">Kullanıcı</string>
+    <string name="enter_new_limit">Yeni aylık harcama limitinizi giriniz.</string>
+    <string name="new_monthly_limit">Yeni aylık harcama limitinizi giriniz.</string>
+    <string name="notification_permission_required">Bildirim izni gerekli</string>
+    <string name="notification_settings">Bildirim Ayarları</string>
+    <string name="delete_all_data">Verileri Temizle</string>
+    <string name="delete_all_data_desc">Tüm verileri sil</string>
+    <string name="about_version">Hakkında</string>
+    <string name="about_version_desc">Sürüm 1.0.0</string>
+    <string name="privacy_gdpr">Gizlilik Politikası</string>
+    <string name="privacy_gdpr_desc">KVKK ve GDPR bilgileri</string>
+    <string name="help_support_faq">Yardım ve Destek</string>
+    <string name="help_support_faq_desc">SSS ve iletişim</string>
+    <string name="go_to_option">%1$s seçeneğine git</string>
+
+    <!-- Currency -->
+    <string name="currency_selection">Para Birimi</string>
+    <string name="currency_try">Türk Lirası (₺)</string>
+    <string name="currency_tl">Türk Lirası (₺)</string>
+    <string name="currency_usd">Amerikan Doları ($)</string>
+    <string name="currency_eur">Euro (€)</string>
+    <string name="currency_gbp">İngiliz Sterlini (£)</string>
+    <string name="currency_format">%s ₺</string>
+    <string name="currency_symbol">₺</string>
+    <string name="currency_short_million_format">%.1fM ₺</string>
+    <string name="currency_short_thousand_format">%.1fK ₺</string>
+    <string name="currency_short_default_format">%.0f ₺</string>
+
+    <!-- User Profile -->
+    <string name="change_name">İsim Değiştir</string>
+    <string name="enter_your_name">Adınızı girin</string>
+    <string name="enter_display_name">Görüntülenecek isminizi giriniz.</string>
+    <string name="name_updated">İsim güncellendi</string>
+
+    <!-- Security -->
+    <string name="security">Güvenlik</string>
+    <string name="app_lock">Uygulama Kilidi</string>
+    <string name="app_lock_title">Uygulama Kilidi</string>
+    <string name="enable_biometric">Parmak izi / Yüz Tanıma</string>
+    <string name="enable_pin">PIN Kilidi</string>
+    <string name="set_pin">PIN Ayarla</string>
+    <string name="change_pin">PIN Değiştir</string>
+    <string name="enter_pin">PIN Girin</string>
+    <string name="confirm_pin">PIN Onaylayın</string>
+    <string name="pin_setup">PIN Ayarla</string>
+    <string name="pin_confirm">PIN Onayla</string>
+    <string name="enter_pin_4_digit">4 haneli PIN girin</string>
+    <string name="enter_4_digit_pin">4 haneli PIN girin</string>
+    <string name="reenter_pin">PIN\'inizi tekrar girin</string>
+    <string name="pin_label">PIN</string>
+    <string name="pin_mismatch">PIN eşleşmiyor</string>
+    <string name="pins_do_not_match">PIN\'ler eşleşmiyor</string>
+    <string name="pin_must_be_4_digits">PIN 4 haneli olmalı</string>
+    <string name="wrong_pin">Yanlış PIN</string>
+    <string name="pin_active">PIN aktif</string>
+    <string name="pin_not_set">PIN ayarlanmamış</string>
+    <string name="fast_login">Hızlı giriş</string>
+    <string name="biometric_title">Kimlik Doğrulama</string>
+    <string name="biometric_subtitle">Parmak izinizi kullanarak giriş yapın</string>
+    <string name="biometric_failed">Kimlik doğrulama başarısız</string>
+    <string name="biometric_not_available">Biyometrik doğrulama kullanılamıyor</string>
+    <string name="fingerprint_face">Parmak izi / Yüz</string>
+    <string name="fingerprint_face_unlock">Parmak izi / Yüz</string>
+
+    <!-- Import/Export Dialog -->
+    <string name="import_data_title">Veri İçe Aktar</string>
+    <string name="import_data_question">Yedek dosyasındaki veriler nasıl içe aktarılsın?</string>
+    <string name="add_to_existing">Mevcut verilere ekle</string>
+    <string name="replace_all_data">Mevcut verileri sil ve değiştir</string>
+    <string name="replace_existing">Mevcut verileri sil ve değiştir</string>
+
+    <!-- Data Deletion -->
+    <string name="delete_data">Verileri Sil</string>
+    <string name="delete_placeholder">SİL</string>
+    <string name="permanently_delete_all_data">TÜM VERİLERİ KALICI OLARAK SİL</string>
+
+    <!-- Notifications -->
+    <string name="no_notifications">Bildirim yok</string>
+    <string name="mark_all_read">Tümünü okundu işaretle</string>
+    <string name="clear_all">Tümünü temizle</string>
+    <string name="notification_channel_budget">Bütçe Uyarıları</string>
+    <string name="notification_channel_budget_desc">Bütçe uyarıları için bildirimler</string>
+    <string name="notification_channel_payment">Ödeme Hatırlatıcıları</string>
+    <string name="notification_channel_payment_desc">Planlı ödeme hatırlatıcıları için bildirimler</string>
+    <string name="notification_channel_general">Genel Bildirimler</string>
+    <string name="notification_channel_general_desc">Genel uygulama bildirimleri</string>
+    <string name="budget_warning_title">Bütçe Uyarısı: %1$s</string>
+    <string name="budget_warning_message">%2$s bütçenizin %1$d%%\'ini harcadınız (%3$s / %4$s).</string>
+    <string name="budget_warning_exceeded_title">Bütçe aşıldı!</string>
+    <string name="budget_warning_exceeded_message">Aylık limitinizi aştınız (%1$s).</string>
+    <string name="budget_warning_critical_title">Kritik uyarı</string>
+    <string name="budget_warning_critical_message">%1$d%% limite ulaştınız. Dikkatli olun!</string>
+    <string name="budget_warning_warning_title">Bütçe uyarısı</string>
+    <string name="budget_warning_warning_message">%1$d%% limite ulaştınız.</string>
+
+    <!-- Pull to Refresh -->
+    <string name="pull_to_refresh">Yenilemek için çekin</string>
+    <string name="refreshing">Yenileniyor...</string>
+
+    <!-- Success Messages -->
+    <string name="transaction_added">İşlem eklendi</string>
+    <string name="transaction_updated">İşlem güncellendi</string>
+    <string name="transaction_deleted">İşlem silindi</string>
+    <string name="scheduled_added">Planlı işlem eklendi</string>
+    <string name="scheduled_deleted">Planlı işlem silindi</string>
+    <string name="payment_completed">Ödeme tamamlandı</string>
+    <string name="payments_completed">%d ödeme tamamlandı</string>
+    <string name="some_payments_failed">%d ödeme başarısız oldu</string>
+    <string name="settings_saved">Ayarlar kaydedildi</string>
+    <string name="category_budget_updated">Bütçe güncellendi</string>
+    <string name="category_budget_added">Kategori bütçesi eklendi</string>
+
+    <!-- Error Messages -->
+    <string name="error_generic">Bir hata oluştu</string>
+    <string name="error_generic_unknown">Bilinmeyen bir hata oluştu</string>
+    <string name="error_title">Hata</string>
+    <string name="error_occurred">Bir hata oluştu</string>
+    <string name="error_loading">Yüklenirken hata oluştu</string>
+    <string name="error_saving">Kaydedilirken hata oluştu</string>
+    <string name="error_deleting">Silinirken hata oluştu</string>
+    <string name="error_network">İnternet bağlantınızı kontrol edin</string>
+    <string name="error_database">Veritabanı hatası</string>
+    <string name="error_empty_title">Başlık boş olamaz</string>
+    <string name="error_invalid_amount">Geçersiz tutar</string>
+    <string name="error_select_category">Kategori seçin</string>
+    <string name="error_statistics_load">İstatistikler yüklenemedi</string>
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="no_search_results">Sonuç bulunamadı</string>
+
+    <!-- Confirmations -->
+    <string name="confirm_delete">Silmek istediğinize emin misiniz?</string>
+    <string name="delete_confirm">Silme Onayı</string>
+    <string name="confirm_delete_transaction">"%1$s" işlemini silmek istediğinize emin misiniz?</string>
+    <string name="delete_transaction_title">İşlemi Sil</string>
+    <string name="delete_transaction_confirm">"%1$s" işlemini silmek istediğinize emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="confirm_discard">Değişiklikleri iptal etmek istiyor musunuz?</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Finanslarınızı Kontrol Altına Alın</string>
+    <string name="onboarding_desc_1">Gelir ve giderlerinizi kolayca takip edin. Paranızın nereye gittiğini her zaman bilin.</string>
+    <string name="onboarding_title_2">Detaylı İstatistikler</string>
+    <string name="onboarding_desc_2">Harcamalarınızı grafiklerle analiz edin. Kategori bazlı raporlarla tasarruf fırsatlarını keşfedin.</string>
+    <string name="onboarding_title_3">Güvenli ve Özel</string>
+    <string name="onboarding_desc_3">Verileriniz cihazınızda güvenle saklanır. PIN koruması ile gizliliğinizi sağlayın.</string>
+    <string name="onboarding_title_4">Hedeflerinize Ulaşın</string>
+    <string name="onboarding_desc_4">Bütçe limitleri belirleyin ve planlı ödemelerinizi takip edin. Finansal hedeflerinize bir adım daha yaklaşın!</string>
+    <string name="get_started">Başlayın</string>
+
+    <!-- Quick Actions -->
+    <string name="quick_actions">Hızlı İşlemler</string>
+    <string name="quick_actions_subtitle">Tek tıkla erişim</string>
+    <string name="transfer_money">Para Transferi</string>
+    <string name="transfer_between_accounts">Hesaplar arası</string>
+    <string name="qr_pay">QR ile Öde</string>
+    <string name="quick_payment">Hızlı Ödeme</string>
+    <string name="pay_bills">Fatura Öde</string>
+    <string name="bills_description">Elektrik, su, doğalgaz</string>
+    <string name="reports">Raporlar</string>
+    <string name="detailed_analysis">Detaylı analiz</string>
+
+    <!-- Dashboard -->
+    <string name="total_assets">Toplam Varlıklar</string>
+    <string name="cash_flow">Nakit Akışı</string>
+
+    <!-- Days of Week -->
+    <string name="day_monday">Pzt</string>
+    <string name="day_tuesday">Sal</string>
+    <string name="day_wednesday">Çar</string>
+    <string name="day_thursday">Per</string>
+    <string name="day_friday">Cum</string>
+    <string name="day_saturday">Cmt</string>
+    <string name="day_sunday">Paz</string>
+
+    <!-- Widget -->
+    <string name="widget_description">Bakiye, gelir ve gider özetinizi ana ekranda görün</string>
+    <string name="widget_name">Finans Özeti</string>
+
+    <!-- Crash Reporting -->
+    <string name="crash_dialog_title">Uygulama Hatası</string>
+    <string name="crash_dialog_text">Üzgünüz, uygulama beklenmedik bir hatayla karşılaştı. Hata raporunu göndererek uygulamayı geliştirmemize yardımcı olabilirsiniz. Rapor kişisel veri içermez.</string>
+    <string name="crash_dialog_ok">Rapor Gönder</string>
+    <string name="crash_dialog_cancel">İptal</string>
+    <string name="crash_toast_text">Bir hata oluştu. Rapor kaydedildi.</string>
+
+    <!-- Greeting Messages -->
+    <string name="greeting_morning">Günaydın</string>
+    <string name="greeting_afternoon">İyi günler</string>
+    <string name="greeting_evening">İyi akşamlar</string>
+    <string name="greeting_night">İyi geceler</string>
+    <string name="greeting_hello">Merhaba</string>
+
+    <!-- Auth -->
+    <string name="auth_sign_in">Giriş Yap</string>
+    <string name="auth_sign_out">Çıkış Yap</string>
+    <string name="auth_signed_in_as">Oturum açıldı:</string>
+    <string name="auth_default_user">Kullanıcı</string>
+
+    <!-- Google Sign-In -->
+    <string name="default_web_client_id" translatable="false">88691952528-02rcd5ssgpq6qsanun1mjean3j6urfmf.apps.googleusercontent.com</string>
+
+    <!-- Accessibility -->
+    <string name="cd_add_button">Yeni işlem ekle</string>
+    <string name="cd_add_button_state">Yeni işlem ekleme ekranını açar</string>
+    <string name="cd_back_button">Geri git</string>
+    <string name="cd_close_button">Kapat</string>
+    <string name="cd_delete_button">Sil</string>
+    <string name="cd_edit_button">Düzenle</string>
+    <string name="cd_income_icon">Gelir ikonu</string>
+    <string name="cd_expense_icon">Gider ikonu</string>
+    <string name="cd_calendar_icon">Takvim ikonu</string>
+    <string name="cd_settings_icon">Ayarlar ikonu</string>
+    <string name="cd_notification_icon">Bildirim ikonu</string>
+    <string name="cd_biometric_button">Parmak izi ile giriş</string>
+    <string name="cd_pin_input">PIN girişi</string>
+    <string name="cd_category_icon">%s kategori ikonu</string>
+    <string name="cd_transaction_item">%1$s: %2$s TL</string>
+    <string name="cd_balance_card">Toplam bakiye %s TL</string>
+    <string name="cd_income_card">Toplam gelir %s TL</string>
+    <string name="cd_expense_card">Toplam gider %s TL</string>
+    <string name="cd_menu_button">Menüyü aç</string>
+    <string name="cd_search_button">Arama yap</string>
+    <string name="cd_filter_button">Filtre uygula</string>
+    <string name="cd_chart">Grafik</string>
+    <string name="cd_progress_bar">İlerleme çubuğu, yüzde %d</string>
+    <string name="cd_loading">Yükleniyor</string>
+    <string name="cd_refresh">Yenile</string>
+    <string name="cd_date_picker">Tarih seç</string>
+    <string name="cd_amount_input">Tutar girişi</string>
+    <string name="cd_title_input">Başlık girişi</string>
+    <string name="cd_swipe_to_delete">Silmek için kaydır</string>
+    <string name="cd_tap_to_edit">Düzenlemek için dokun</string>
+    <string name="cd_budget_warning">Bütçe uyarısı</string>
+    <string name="cd_budget_exceeded">Bütçe aşıldı</string>
+
+    <!-- Accessibility States -->
+    <string name="a11y_state_on">Açık</string>
+    <string name="a11y_state_off">Kapalı</string>
+    <string name="a11y_state_selected">Seçili</string>
+    <string name="a11y_state_not_selected">Seçili değil</string>
+    <string name="a11y_state_expanded">açık</string>
+    <string name="a11y_state_collapsed">kapalı</string>
+    <string name="a11y_dropdown">açılır liste</string>
+    <string name="a11y_date_picker">tarih seçici</string>
+    <string name="a11y_required_field">zorunlu alan</string>
+    <string name="a11y_current_value">mevcut değer: %s</string>
+    <string name="a11y_hint">ipucu: %s</string>
+    <string name="a11y_error">hata: %s</string>
+    <string name="a11y_percentage_complete">Yüzde %d tamamlandı</string>
+    <string name="a11y_success">Başarı: %s</string>
+    <string name="a11y_warning">Uyarı: %s</string>
+    <string name="a11y_error_prefix">Hata: %s</string>
+    <string name="a11y_info">Bilgi: %s</string>
+    <string name="a11y_chart_description">%1$s grafiği. %2$s</string>
+    <string name="a11y_list_position">%1$s, %2$d / %3$d</string>
+</resources>

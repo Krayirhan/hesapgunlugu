@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_back_button">Geri</string>
+    <string name="notification_center">Bildirim Merkezi</string>
+    <string name="clear_all">Tümünü temizle</string>
+    <string name="no_notifications">Bildirim yok</string>
+    <string name="delete">Sil</string>
+    <string name="budget_warning">Bütçe Uyarısı</string>
+    <string name="upcoming_payment">Yaklaşan Ödeme</string>
+    <string name="payment_completed">Ödeme Tamamlandı</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backup results -->
+    <string name="backup_export_success">%1$d transactions and %2$d scheduled payments exported</string>
+    <string name="backup_export_error">Export failed: %1$s</string>
+    <string name="backup_export_error_generic">Export failed</string>
+    <string name="backup_export_encrypted_success">%1$d transactions and %2$d scheduled payments exported (encrypted)</string>
+    <string name="backup_export_encrypted_error">Encrypted export failed: %1$s</string>
+    <string name="backup_export_encrypted_error_generic">Encrypted export failed</string>
+
+    <string name="backup_import_success">%1$d transactions and %2$d scheduled payments imported</string>
+    <string name="backup_import_error">Import failed: %1$s</string>
+    <string name="backup_import_error_generic">Import failed</string>
+    <string name="backup_import_encrypted_error">Encrypted import failed: %1$s</string>
+    <string name="backup_import_encrypted_error_generic">Encrypted import failed</string>
+    <string name="backup_version_unsupported">Unsupported backup format version: %1$d</string>
+    <string name="backup_import_validation_error">Backup validation failed: %1$d invalid records</string>
+
+    <string name="backup_file_read_error">File could not be read</string>
+    <string name="backup_file_write_error">Backup file could not be written</string>
+    <string name="backup_encrypt_error">Encryption failed</string>
+    <string name="backup_decrypt_error">Decryption failed - wrong password or corrupted file</string>
+
+    <!-- Password change -->
+    <string name="backup_password_invalid">Password does not meet requirements</string>
+    <string name="backup_password_invalid_detail">Password does not meet requirements: %1$s</string>
+    <string name="backup_password_change_success">Backup password updated and file re-encrypted</string>
+    <string name="backup_password_change_error">Password change failed: %1$s</string>
+    <string name="backup_password_change_error_generic">Password change failed</string>
+    <string name="backup_password_reencrypt_error">Password change failed - wrong old password or corrupted file</string>
+    <string name="backup_file_read_error_detailed">Backup file could not be read</string>
+
+    <!-- Password strength validation -->
+    <string name="backup_password_min_length_error">Password must be at least %1$d characters</string>
+    <string name="backup_password_recommended_length">%1$d+ characters recommended</string>
+    <string name="backup_password_diversity_required">Password must include upper/lowercase letters, numbers, and symbols</string>
+    <string name="backup_password_diversity_min_types">Password must include at least 3 character types</string>
+    <string name="backup_password_add_symbol">Adding a symbol increases security</string>
+    <string name="backup_password_common_error">This password is too common and easy to guess</string>
+    <string name="backup_password_keyboard_pattern_error">Keyboard patterns are insecure</string>
+    <string name="backup_password_repetition_error">Repeated characters reduce security</string>
+    <string name="backup_password_sequence_suggestion">Avoid sequential characters (abc, 123)</string>
+
+    <string name="backup_password_strength_very_weak">Very Weak</string>
+    <string name="backup_password_strength_weak">Weak</string>
+    <string name="backup_password_strength_medium">Medium</string>
+    <string name="backup_password_strength_strong">Strong</string>
+    <string name="backup_password_strength_very_strong">Very Strong</string>
+    <string name="backup_password_strength_advice_very_weak">Very weak - choose a different password</string>
+    <string name="backup_password_strength_advice_weak">Weak - a more complex password is recommended</string>
+    <string name="backup_password_strength_advice_medium">Medium - acceptable but can be improved</string>
+    <string name="backup_password_strength_advice_strong">Strong password</string>
+</resources>

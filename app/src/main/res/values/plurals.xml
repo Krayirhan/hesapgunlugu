@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Plurals Resources for Turkish
+
+    Turkish plural rules:
+    - one: 1
+    - other: 0, 2-999...
+    -->
+
+    <!-- Transaction counts -->
+    <plurals name="transaction_count">
+        <item quantity="one">%d işlem</item>
+        <item quantity="other">%d işlem</item>
+    </plurals>
+
+    <!-- Day counts -->
+    <plurals name="days_remaining">
+        <item quantity="one">%d gün kaldı</item>
+        <item quantity="other">%d gün kaldı</item>
+    </plurals>
+
+    <plurals name="days_ago">
+        <item quantity="one">%d gün önce</item>
+        <item quantity="other">%d gün önce</item>
+    </plurals>
+
+    <plurals name="days_overdue">
+        <item quantity="one">%d gün gecikmiş</item>
+        <item quantity="other">%d gün gecikmiş</item>
+    </plurals>
+
+    <!-- Month counts -->
+    <plurals name="months">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+
+    <!-- Year counts -->
+    <plurals name="years">
+        <item quantity="one">%d yıl</item>
+        <item quantity="other">%d yıl</item>
+    </plurals>
+
+    <!-- Item counts -->
+    <plurals name="items">
+        <item quantity="one">%d öğe</item>
+        <item quantity="other">%d öğe</item>
+    </plurals>
+
+    <!-- Category item counts -->
+    <plurals name="category_items">
+        <item quantity="one">%d kategori</item>
+        <item quantity="other">%d kategori</item>
+    </plurals>
+
+    <!-- Payment counts -->
+    <plurals name="scheduled_payment_count">
+        <item quantity="one">%d planlı ödeme</item>
+        <item quantity="other">%d planlı ödeme</item>
+    </plurals>
+
+    <plurals name="upcoming_payment_count">
+        <item quantity="one">%d yaklaşan ödeme</item>
+        <item quantity="other">%d yaklaşan ödeme</item>
+    </plurals>
+
+    <!-- Notification counts -->
+    <plurals name="notification_count">
+        <item quantity="one">%d bildirim</item>
+        <item quantity="other">%d bildirim</item>
+    </plurals>
+
+    <!-- Attempt counts (for PIN/security) -->
+    <plurals name="remaining_attempts">
+        <item quantity="one">%d deneme hakkınız kaldı</item>
+        <item quantity="other">%d deneme hakkınız kaldı</item>
+    </plurals>
+
+    <!-- Budget items -->
+    <plurals name="budget_items">
+        <item quantity="one">%d bütçe</item>
+        <item quantity="other">%d bütçe</item>
+    </plurals>
+
+    <!-- Selected items -->
+    <plurals name="selected_items">
+        <item quantity="one">%d öğe seçildi</item>
+        <item quantity="other">%d öğe seçildi</item>
+    </plurals>
+
+    <!-- Hour counts -->
+    <plurals name="hours">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+
+    <!-- Minute counts -->
+    <plurals name="minutes">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+
+    <!-- Second counts (for lockout) -->
+    <plurals name="seconds">
+        <item quantity="one">%d saniye</item>
+        <item quantity="other">%d saniye</item>
+    </plurals>
+
+    <!-- Week counts -->
+    <plurals name="weeks">
+        <item quantity="one">%d hafta</item>
+        <item quantity="other">%d hafta</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_back_button">Back</string>
+    <string name="notification_center">Notification Center</string>
+    <string name="clear_all">Clear all</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="delete">Delete</string>
+    <string name="budget_warning">Budget Warning</string>
+    <string name="upcoming_payment">Upcoming Payment</string>
+    <string name="payment_completed">Payment Completed</string>
+</resources>

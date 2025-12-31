@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Error Handling -->
+    <string name="error_generic_unknown">An unknown error occurred</string>
+    <string name="error_title">Error</string>
+    <string name="action_retry">Retry</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="loading">Loading...</string>
+    <string name="refresh">Refresh</string>
+    <string name="network_error_title">Connection Error</string>
+    <string name="network_error_description">Check your internet connection</string>
+
+    <!-- Greeting / Sign In -->
+    <string name="greeting_hello">Hello</string>
+    <string name="auth_default_user">User</string>
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_sign_out">Sign Out</string>
+
+    <!-- Dashboard -->
+    <string name="total_balance">Total Balance</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="balance_short">Balance</string>
+    <string name="savings_short">Savings</string>
+    <string name="budget_short">Budget</string>
+
+    <!-- Transaction Categories -->
+    <string name="category_salary">Salary</string>
+    <string name="category_rent_income">Rent Income</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_side_job">Side Job</string>
+    <string name="category_other">Other</string>
+    <string name="category_market">Market</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_food">Food</string>
+    <string name="category_rent">Rent</string>
+    <string name="category_gift">Gift</string>
+    <string name="category_sales">Sales</string>
+    <string name="category_subscription">Subscription</string>
+    <string name="category_loan">Loan</string>
+    <string name="category_insurance">Insurance</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_health">Health</string>
+    <string name="category_clothing">Clothing</string>
+
+    <!-- Budget Components -->
+    <string name="add_category_budget">Add Category Budget</string>
+    <string name="select_category">Select Category</string>
+    <string name="monthly_limit">Monthly Limit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="limit_amount">Limit Amount</string>
+    <string name="spent">Spent</string>
+    <string name="remaining">Remaining</string>
+    <string name="budget_exceeded">Budget Exceeded</string>
+    <string name="monthly_spending_title">Monthly Spending</string>
+    <string name="limit_exceeded">Limit exceeded!</string>
+    <string name="category_budgets">Category Budgets</string>
+    <string name="add_category">Add Category</string>
+    <string name="no_category_budget_yet">No category budget yet</string>
+
+    <!-- Scheduled Transactions -->
+    <string name="add_scheduled_transaction">Add Scheduled Transaction</string>
+    <string name="upcoming_payments">Upcoming Payments</string>
+    <string name="recurring_incomes">Recurring Incomes</string>
+    <string name="recurrence_frequency">Recurrence Frequency</string>
+    <string name="payment_day_of_month">Payment Day (of Month)</string>
+    <string name="payment_day_of_week">Payment Day (of Week)</string>
+    <string name="enter_category_name">Enter category name</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="no_scheduled_payments">No scheduled payments</string>
+    <string name="add_scheduled_payment_action">Add Scheduled Transaction</string>
+    <string name="frequency_weekly">Weekly</string>
+    <string name="frequency_monthly">Monthly</string>
+    <string name="frequency_yearly">Yearly</string>
+    <string name="day_number_label">%1$d</string>
+
+    <!-- Transaction Form -->
+    <string name="category">Category</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="add_transaction_action">Add Transaction</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="new_transaction">Add New Transaction</string>
+
+    <!-- Empty States -->
+    <string name="no_transactions_yet">No transactions yet</string>
+    <string name="add_first_transaction">Add your first transaction</string>
+    <string name="no_search_results">No results found</string>
+    <string name="no_statistics">No statistics</string>
+    <string name="no_expenses_yet">No expenses yet</string>
+    <string name="empty_transactions_description">Start by adding your first transaction.\nEasily track your income and expenses.</string>
+    <string name="empty_scheduled_description">Plan recurring payments and incomes\nto automate your schedule.</string>
+    <string name="empty_notifications_title">No Notifications</string>
+    <string name="empty_notifications_description">Important financial events and reminders\nwill appear here.</string>
+    <string name="no_search_results_description">No results for \"%1$s\".\nTry a different search.</string>
+    <string name="no_statistics_description">Not enough data for this period.\nAdd transactions to see your stats.</string>
+
+    <!-- Charts and Statistics -->
+    <string name="weekly_income_expense">Weekly Income/Expense</string>
+    <string name="monthly_balance_trend">Monthly Balance Trend</string>
+    <string name="category_distribution">Category Distribution</string>
+    <string name="monthly_comparison">Monthly Comparison</string>
+    <string name="trend_analysis">Trend Analysis</string>
+    <string name="calendar_previous_month">Previous month</string>
+    <string name="calendar_next_month">Next month</string>
+
+    <!-- Financial Insights -->
+    <string name="financial_health">Financial Health</string>
+    <string name="weekly_trend">Weekly Trend</string>
+    <string name="savings_rate">Savings Rate</string>
+    <string name="most">Most</string>
+    <string name="financial_insights_title">Financial Insights</string>
+    <string name="score_label_excellent">Excellent</string>
+    <string name="score_label_good">Good</string>
+    <string name="score_label_average">Average</string>
+    <string name="score_label_needs_improvement">Needs improvement</string>
+    <string name="trend_increasing">Increasing</string>
+    <string name="trend_decreasing">Decreasing</string>
+    <string name="trend_stable">Stable</string>
+    <string name="daily_avg_short">Daily Avg.</string>
+    <string name="savings_rate_reco_excellent">Great! You exceeded your savings goal</string>
+    <string name="savings_rate_reco_good">Very good! Target 20%+</string>
+    <string name="savings_rate_reco_ok">Good progress! Target 20%</string>
+    <string name="savings_rate_reco_keep_going">Keep going! Target 20%</string>
+    <string name="savings_rate_reco_warning">Caution! Reduce spending</string>
+    <string name="savings_rate_emoji_excellent">💚</string>
+    <string name="savings_rate_emoji_good">💪</string>
+    <string name="savings_rate_emoji_ok">👍</string>
+    <string name="savings_rate_emoji_low">🙂</string>
+    <string name="savings_rate_emoji_negative">⚠️</string>
+    <string name="insight_emoji_success">✅</string>
+    <string name="insight_emoji_warning">⚠️</string>
+    <string name="insight_emoji_alert">🚨</string>
+    <string name="insight_emoji_info">ℹ️</string>
+    <string name="insight_emoji_reminder">🔔</string>
+    <string name="quick_actions_title">Quick Actions</string>
+    <string name="quick_action_add_transaction">Add Transaction</string>
+    <string name="quick_action_reports">Reports</string>
+    <string name="quick_action_history">History</string>
+    <string name="quick_action_scheduled">Scheduled</string>
+    <string name="savings_goal_title">Goal: %1$s</string>
+    <string name="savings_current_label">Current</string>
+    <string name="savings_target_label">Target</string>
+    <string name="daily_target_label">Daily target:</string>
+    <string name="daily_target_format">%1$s%2$s/day</string>
+
+    <!-- Transaction Item -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete_transaction">Are you sure you want to delete "%1$s"?</string>
+    <string name="delete_transaction_title">Delete Transaction</string>
+    <string name="transaction_item_description">Type: %1$s, Title: %2$s, Amount: %3$s, Category: %4$s, Date: %5$s</string>
+    <string name="transaction_item_double_tap">Double-tap for details</string>
+    <string name="category_with_value">Category: %1$s</string>
+    <string name="transaction_amount_with_sign">%1$s%2$s</string>
+    <string name="preview_title_market_shopping">Grocery Shopping</string>
+    <string name="preview_title_salary">Salary</string>
+    <string name="preview_title_electric_bill">Electricity Bill</string>
+
+    <!-- Currency -->
+    <string name="currency_symbol">₺</string>
+    <string name="currency_code_try">TRY</string>
+    <string name="amount_with_currency">%1$s %2$s</string>
+    <string name="amount_pair">%1$s / %2$s</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_amount_description">%1$s: %2$s %3$s</string>
+    <string name="accessibility_date_description">Date: %1$s</string>
+    <string name="accessibility_percentage_description">%1$s: %2$d percent</string>
+    <string name="accessibility_progress_state">%1$.0f / %2$.0f</string>
+    <string name="accessibility_transaction_description">Type: %1$s, Title: %2$s, %3$s: %4$s, %5$s: %6$s</string>
+    <string name="accessibility_button_action">%1$s, %2$s</string>
+    <string name="accessibility_label_value">%1$s: %2$s</string>
+    <string name="accessibility_positive_state">Positive</string>
+    <string name="accessibility_negative_state">Negative</string>
+    <string name="accessibility_chart_suffix">chart</string>
+    <string name="accessibility_chart_description">%1$s %2$s. %3$s</string>
+    <string name="accessibility_state_on">On</string>
+    <string name="accessibility_state_off">Off</string>
+    <string name="accessibility_selected">Selected</string>
+    <string name="accessibility_not_selected">Not selected</string>
+    <string name="accessibility_hint_prefix">Hint</string>
+    <string name="accessibility_error_prefix">Error</string>
+    <string name="accessibility_list_position">%1$s, %2$d / %3$d</string>
+    <string name="accessibility_percentage_format">%d percent</string>
+    <string name="accessibility_completed_format">%d percent completed</string>
+    <string name="accessibility_success_prefix">Success</string>
+    <string name="accessibility_warning_prefix">Warning</string>
+    <string name="accessibility_info_prefix">Info</string>
+    <string name="accessibility_alert_message">%1$s: %2$s</string>
+    <string name="accessibility_negative_prefix">minus</string>
+    <string name="accessibility_negative_amount">%1$s %2$s</string>
+    <string name="accessibility_amount_with_currency">%1$s %2$s</string>
+    <string name="accessibility_value_current">Current value: %1$s</string>
+    <string name="accessibility_value_range">Range: %1$s</string>
+
+    <!-- Header -->
+    <string name="notifications">Notifications</string>
+
+    <!-- Financial Health Card -->
+    <string name="health_excellent">Excellent condition!</string>
+    <string name="health_good">Going well!</string>
+    <string name="health_fair">Be careful</string>
+    <string name="health_needs_attention">Needs attention</string>
+    <string name="savings_label">Savings</string>
+    <string name="trend_label">Trend</string>
+
+    <!-- Upcoming Payments Card -->
+    <string name="upcoming_payments_title">Upcoming Payments</string>
+    <string name="see_all">See All</string>
+    <string name="no_upcoming_payments_home">No upcoming payments</string>
+    <string name="this_week_total">This week total</string>
+    <string name="overdue">Overdue</string>
+</resources>

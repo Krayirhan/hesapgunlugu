@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_greeting_morning">Günaydın</string>
+    <string name="test_transaction_title_market">Market</string>
+    <string name="test_transaction_title_salary">Maaş</string>
+    <string name="test_error_message">Veriler yüklenirken hata oluştu</string>
+</resources>

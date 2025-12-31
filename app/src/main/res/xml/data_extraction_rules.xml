@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Data extraction rules for Android 12+ backups and device-to-device transfer.
+   Sensitive user data is excluded to align with GDPR/KVKK requirements.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="my_money_db_v2" />
+        <exclude domain="database" path="my_money_db_v2-wal" />
+        <exclude domain="database" path="my_money_db_v2-shm" />
+        <exclude domain="sharedpref" path="backend_auth_prefs.xml" />
+        <exclude domain="sharedpref" path="security_encrypted_prefs.xml" />
+        <exclude domain="sharedpref" path="encrypted_settings.xml" />
+        <exclude domain="sharedpref" path="finance_prefs.xml" />
+        <exclude domain="sharedpref" path="app_prefs.xml" />
+        <exclude domain="sharedpref" path="security_prefs.xml" />
+        <exclude domain="file" path="datastore/" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="database" path="my_money_db_v2" />
+        <exclude domain="database" path="my_money_db_v2-wal" />
+        <exclude domain="database" path="my_money_db_v2-shm" />
+        <exclude domain="sharedpref" path="backend_auth_prefs.xml" />
+        <exclude domain="sharedpref" path="security_encrypted_prefs.xml" />
+        <exclude domain="sharedpref" path="encrypted_settings.xml" />
+        <exclude domain="sharedpref" path="finance_prefs.xml" />
+        <exclude domain="sharedpref" path="app_prefs.xml" />
+        <exclude domain="sharedpref" path="security_prefs.xml" />
+        <exclude domain="file" path="datastore/" />
+    </device-transfer>
+</data-extraction-rules>

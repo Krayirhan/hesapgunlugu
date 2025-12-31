@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onboarding_features_1">
+        <item>Gelir ve giderlerinizi kolayca takip edin</item>
+        <item>Kategorilere göre düzenleyin</item>
+        <item>Anlık bakiye görünümü</item>
+    </string-array>
+
+    <string-array name="onboarding_features_2">
+        <item>İnteraktif grafik ve analizler</item>
+        <item>Kategori bazlı raporlar</item>
+        <item>Aylık/yıllık karşılaştırma</item>
+    </string-array>
+
+    <string-array name="onboarding_features_3">
+        <item>PIN kodu koruması</item>
+        <item>Biyometrik giriş desteği</item>
+        <item>Verileriniz cihazınızda kalır</item>
+    </string-array>
+
+    <string-array name="onboarding_features_4">
+        <item>Tasarruf hedefleri belirleyin</item>
+        <item>Otomatik tekrarlayan ödemeler</item>
+        <item>PDF/CSV dışa aktarım</item>
+    </string-array>
+</resources>

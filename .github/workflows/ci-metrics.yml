@@ -1,0 +1,50 @@
+name: CI Metrics
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # Daily CI health check
+  workflow_dispatch:
+
+jobs:
+  ci-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Calculate CI success rate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflows = ['android-ci.yml', 'quality-gate.yml'];
+            const perWorkflow = 20;
+
+            let total = 0;
+            let success = 0;
+
+            for (const wf of workflows) {
+              const runs = await github.rest.actions.listWorkflowRuns({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: wf,
+                branch: 'main',
+                per_page: perWorkflow,
+              });
+
+              for (const run of runs.data.workflow_runs) {
+                if (run.conclusion) {
+                  total += 1;
+                  if (run.conclusion === 'success') {
+                    success += 1;
+                  }
+                }
+              }
+            }
+
+            const rate = total === 0 ? 0 : Math.round((success / total) * 100);
+            core.summary
+              .addHeading('CI Health')
+              .addTable([
+                ['Metric', 'Value'],
+                ['Success Rate', `${rate}%`],
+                ['Evaluated Runs', `${total}`],
+              ])
+              .addRaw(rate >= 95 ? 'Target met (>=95%).' : 'Target missed (<95%).')
+              .write();

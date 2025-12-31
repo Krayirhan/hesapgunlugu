@@ -1,0 +1,102 @@
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = "0.8.11"
+}
+
+tasks.register('jacocoTestReport', JacocoReport) {
+    dependsOn = ['testDebugUnitTest']
+
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports"
+
+    reports {
+        xml.required = true
+        html.required = true
+        csv.required = false
+    }
+
+    def fileFilter = [
+        '**/R.class',
+        '**/R$*.class',
+        '**/BuildConfig.*',
+        '**/Manifest*.*',
+        '**/*Test*.*',
+        'android/**/*.*',
+        '**/MainActivity*.*',
+        '**/MyApplication*.*',
+        '**/auth/*.*',
+        '**/core/common/*.*',
+        '**/core/crash/*.*',
+        '**/core/error/*.*',
+        '**/di/*Module*.*',
+        '**/di/*Dispatcher*.*',
+        '**/widget/*.*',
+        '**/worker/*.*',
+        '**/*$ViewInjector*.*',
+        '**/*$ViewBinder*.*',
+        '**/databinding/*',
+        '**/android/databinding/*',
+        '**/androidx/databinding/*',
+        '**/di/module/*',
+        '**/*MapperImpl*.*',
+        '**/*$Lambda$*.*',
+        '**/*Companion*.*',
+        '**/*Module*.*',
+        '**/*Dagger*.*',
+        '**/*MembersInjector*.*',
+        '**/*_Factory*.*',
+        '**/*_Provide*.*',
+        '**/*Extensions*.*',
+        // Hilt generated
+        '**/*_HiltModules*.*',
+        '**/*_ComponentTreeDeps*.*',
+        '**/*Hilt_*.*',
+        // Compose
+        '**/*ComposableSingletons*.*',
+        '**/ui/theme/*.*'
+    ]
+
+    def debugTree = fileTree(dir: "${project.buildDir}/intermediates/javac/debug/classes", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories.setFrom(files([mainSrc]))
+    classDirectories.setFrom(files([debugTree]))
+    executionData.setFrom(fileTree(dir: project.buildDir, includes: [
+        'jacoco/testDebugUnitTest.exec',
+        'outputs/code-coverage/connected/*coverage.ec'
+    ]))
+}
+
+tasks.register('jacocoTestCoverageVerification', JacocoCoverageVerification) {
+    dependsOn = ['jacocoTestReport']
+
+    violationRules {
+        def lineMinimum = project.hasProperty('coverageMinimum') ?
+            project.property('coverageMinimum').toBigDecimal() :
+            0.70
+
+        rule {
+            limit {
+                minimum = lineMinimum
+            }
+        }
+
+        rule {
+            element = 'CLASS'
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.90
+            }
+            excludes = [
+                '*.BuildConfig',
+                '*.R',
+                '*.R$*',
+                '*.*Test',
+                '*.di.*',
+                '*.ui.theme.*'
+            ]
+        }
+    }
+}

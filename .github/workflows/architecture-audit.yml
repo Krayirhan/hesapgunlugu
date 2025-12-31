@@ -1,0 +1,135 @@
+name: Architecture Audit
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+  push:
+    branches: [ main ]
+
+jobs:
+  boundary-check:
+    name: Clean Architecture Boundary Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Feature → Data Import Check
+        run: |
+          echo "🔍 Checking for feature → data imports..."
+          if grep -r "import com\.example\.mynewapp\.core\.data" feature/**/*.kt 2>/dev/null; then
+            echo "❌ BOUNDARY VIOLATION: Feature modules importing core.data"
+            echo "Feature modules should only depend on core:domain"
+            exit 1
+          fi
+          echo "✅ No import violations found"
+
+      - name: Feature → Data Dependency Check
+        run: |
+          echo "🔍 Checking for feature → data gradle dependencies..."
+          if grep -r 'project(":core:data")' feature/**/build.gradle.kts 2>/dev/null; then
+            echo "❌ DEPENDENCY VIOLATION: Feature modules depending on core:data"
+            echo "Feature modules should only depend on core:domain"
+            exit 1
+          fi
+          echo "✅ No dependency violations found"
+
+      - name: Room Schema Validation
+        run: |
+          echo "🔍 Checking Room schema directory..."
+          if [ ! -d "core/data/schemas" ]; then
+            echo "❌ Room schema directory missing"
+            echo "Run: ./gradlew :core:data:kspDebugKotlin to generate schemas"
+            exit 1
+          fi
+          echo "✅ Room schema directory exists"
+
+      - name: Single NavHost Validation
+        run: |
+          echo "🔍 Checking for single NavHost..."
+          NAVHOST_COUNT=$(grep -r "NavHost(" app/**/*.kt 2>/dev/null | wc -l)
+          if [ $NAVHOST_COUNT -ne 1 ]; then
+            echo "❌ NAVIGATION VIOLATION: Found $NAVHOST_COUNT NavHost definitions"
+            echo "Should have exactly 1 NavHost (single source of truth)"
+            exit 1
+          fi
+          echo "✅ Single NavHost validation passed"
+
+      - name: Run Boundary Guard Script
+        run: |
+          chmod +x scripts/boundary-guard.sh
+          ./scripts/boundary-guard.sh
+
+      - name: Verify Room Schema Files Exist
+        run: |
+          echo "🔍 Verifying Room schema files..."
+          SCHEMA_DIR="core/data/schemas"
+          
+          if [ ! -d "$SCHEMA_DIR" ]; then
+            echo "❌ Room schema directory missing: $SCHEMA_DIR"
+            echo "Run: ./gradlew :core:data:kspDebugKotlin to generate schemas"
+            exit 1
+          fi
+          
+          SCHEMA_COUNT=$(find $SCHEMA_DIR -name "*.json" | wc -l)
+          
+          if [ $SCHEMA_COUNT -eq 0 ]; then
+            echo "❌ No Room schema files found in $SCHEMA_DIR"
+            exit 1
+          fi
+          
+          echo "✅ Found $SCHEMA_COUNT Room schema file(s)"
+          ls -la $SCHEMA_DIR
+
+      - name: Validate Keystore Security Configuration
+        run: |
+          echo "🔐 Validating keystore and encryption setup..."
+          
+          # Run keystore integrity tests
+          ./gradlew :core:security:testDebugUnitTest --tests "*KeystoreIntegrityTest" || {
+            echo "❌ Keystore validation tests failed"
+            exit 1
+          }
+          
+          # Verify backup encryption tests
+          ./gradlew :app:testDebugUnitTest --tests "*BackupEncryptionTest" || {
+            echo "❌ Backup encryption tests failed"
+            exit 1
+          }
+          
+          echo "✅ Keystore and encryption validated"
+
+  module-graph:
+    name: Module Dependency Graph
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Check Module Dependencies
+        run: |
+          echo "🔍 Analyzing module dependency graph..."
+          ./gradlew dependencies --configuration debugCompileClasspath | tee dependencies.txt
+          
+          echo "📊 Module structure validated"
+
+      - name: Upload Dependency Report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: dependency-report
+          path: dependencies.txt

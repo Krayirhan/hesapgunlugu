@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_back">Back</string>
+
+    <string name="privacy_section_1_title">1. Data Collection</string>
+    <string name="privacy_section_1_content">Our application collects the following data:\n\n- Financial transaction records (title, amount, category, date)\n- PIN code (stored encrypted)\n- Biometric authentication preferences\n- Application settings and preferences\n\nALL DATA IS STORED ONLY ON YOUR DEVICE.\nNo data is sent to our servers.</string>
+
+    <string name="privacy_section_2_title">2. Data Usage</string>
+    <string name="privacy_section_2_content">We use the collected data only for the following purposes:\n\n- To track your financial transactions\n- To provide income/expense analysis\n- To personalize your app experience\n- To provide security and authentication\n\nYour data is NEVER shared with third parties.</string>
+
+    <string name="privacy_section_3_title">3. Data Security</string>
+    <string name="privacy_section_3_content">For your data security:\n\n- PIN codes are protected with AES-256 encryption\n- Biometric authentication uses Android Keystore\n- Database can be encrypted with SQLCipher (optional)\n- All data is stored locally on your device\n\nNo internet connection required, data is not stored in the cloud.</string>
+
+    <string name="privacy_section_4_title">4. User Rights (GDPR/KVKK)</string>
+    <string name="privacy_section_4_content">You have full control over your data:\n\n- Right to access: You can view all your data\n- Right to rectification: You can edit your data at any time\n- Right to erasure: You can permanently delete all your data using the \"Delete All Data\" option\n- Right to data portability: You can export your data via CSV export\n\nData deletion is IRREVERSIBLE.</string>
+
+    <string name="privacy_section_5_title">5. Permissions</string>
+    <string name="privacy_section_5_content">The app may request the following permissions:\n\n- Notification permission: For reminder notifications\n- Biometric permission: For fingerprint/face recognition\n- Storage permission: For CSV export (Android 12 and below)\n\nAll permissions are OPTIONAL and the app can perform its core functions without them.</string>
+
+    <string name="privacy_section_6_title">6. Cookies and Tracking</string>
+    <string name="privacy_section_6_content">This application:\n\n- Does NOT use cookies\n- Does NOT track user behavior\n- Does NOT use analytics services\n- Does NOT show advertisements\n\nOffers a completely ad-free and tracking-free experience.</string>
+
+    <string name="privacy_section_7_title">7. Children\'s Privacy</string>
+    <string name="privacy_section_7_content">Our app does not knowingly collect data from children under 13.\n\nShould not be used by users under 13 without parental consent.</string>
+
+    <string name="privacy_section_8_title">8. Policy Changes</string>
+    <string name="privacy_section_8_content">This privacy policy may be updated from time to time.\n\nSignificant changes will be announced via in-app notifications.\n\nLast updated: %1$s</string>
+
+    <string name="privacy_section_9_title">9. Contact</string>
+    <string name="privacy_section_9_content">For privacy-related questions:\n\nEmail: privacy@HesapGunlugu.com\n\nWe try to respond within 48 hours.</string>
+</resources>

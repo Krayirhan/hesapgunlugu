@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_movements">Account Movements</string>
+    <string name="all_income_expense">All your income and expenses</string>
+
+    <string name="search">Search</string>
+    <string name="search_transaction">Search transaction</string>
+    <string name="search_desc">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="filter">Filter</string>
+
+    <string name="filter_by_type">Filter by type</string>
+    <string name="sort_by">Sorting</string>
+
+    <string name="all_types">All</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+
+    <string name="sort_by_date">By date</string>
+    <string name="sort_by_amount">By amount</string>
+    <string name="sort_ascending">Ascending</string>
+    <string name="sort_descending">Descending</string>
+
+    <string name="no_transaction_in_filter">No transactions found in filter</string>
+    <string name="no_transactions_yet">No transactions yet</string>
+    <string name="change_filter_to_see">Try selecting a different filter</string>
+    <string name="add_first_transaction">Add your first transaction</string>
+    <string name="clear_filter">Clear filter</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="no_search_results">No search results found</string>
+    <string name="error_loading_transactions">Error loading transactions</string>
+    <string name="retry">Retry</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="delete_transaction_confirm">Are you sure you want to delete this transaction?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="amount">Amount</string>
+    <string name="filter_and_sort">Filter and sort</string>
+    <string name="apply">Apply</string>
+
+    <string name="transaction_details">Transaction Details</string>
+    <string name="transaction_not_found">Transaction not found</string>
+    <string name="back">Back</string>
+    <string name="category">Category</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="transaction_date">Date</string>
+    <string name="all">All</string>
+    <string name="newest_first">Newest</string>
+    <string name="oldest_first">Oldest</string>
+    <string name="highest_amount">Highest</string>
+    <string name="lowest_amount">Lowest</string>
+    <string name="calendar_view">Calendar View</string>
+    <string name="calendar">Calendar</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+
+    <string name="not_found">'%s' not found</string>
+    <string name="no_transactions_in_month">No transactions in %s</string>
+    <string name="transaction_updated">Transaction updated</string>
+    <string name="transaction_deleted">Transaction deleted</string>
+    <string name="error_update_transaction">Error updating transaction</string>
+    <string name="error_delete_transaction">Error deleting transaction</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="empty_inbox_emoji">:)</string>
+    <string name="month_year_format">MMMM yyyy</string>
+
+    <!-- Month Summary -->
+    <string name="month_summary">Month Summary</string>
+    <string name="transaction_count">%d transactions</string>
+    <string name="net_balance">Net Balance</string>
+</resources>

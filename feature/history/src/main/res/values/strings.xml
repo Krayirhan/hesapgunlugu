@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_movements">Hesap Hareketleri</string>
+    <string name="all_income_expense">Tüm gelir ve giderleriniz</string>
+
+    <string name="search">Ara</string>
+    <string name="search_transaction">İşlem ara</string>
+    <string name="search_desc">Arama</string>
+    <string name="clear_search">Aramayı temizle</string>
+    <string name="filter">Filtrele</string>
+
+    <string name="filter_by_type">Türe göre filtrele</string>
+    <string name="sort_by">Sıralama</string>
+
+    <string name="all_types">Tümü</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+
+    <string name="sort_by_date">Tarihe göre</string>
+    <string name="sort_by_amount">Tutara göre</string>
+    <string name="sort_ascending">Artan</string>
+    <string name="sort_descending">Azalan</string>
+
+    <string name="no_transaction_in_filter">Filtrede işlem bulunamadı</string>
+    <string name="no_transactions_yet">Henüz işlem yok</string>
+    <string name="change_filter_to_see">Farklı bir filtre seçerek deneyin</string>
+    <string name="add_first_transaction">İlk işleminizi ekleyin</string>
+    <string name="clear_filter">Filtreyi temizle</string>
+    <string name="clear_filters">Filtreleri temizle</string>
+    <string name="no_search_results">Arama sonucu bulunamadı</string>
+    <string name="error_loading_transactions">İşlemler yüklenirken hata oluştu</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="edit_transaction">İşlemi düzenle</string>
+    <string name="delete_transaction">İşlemi sil</string>
+    <string name="delete_transaction_confirm">Bu işlemi silmek istediğinize emin misiniz?</string>
+    <string name="delete">Sil</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="close">Kapat</string>
+    <string name="amount">Tutar</string>
+    <string name="filter_and_sort">Filtre ve sıralama</string>
+    <string name="apply">Uygula</string>
+
+    <string name="transaction_details">İşlem Detayı</string>
+    <string name="transaction_not_found">İşlem bulunamadı</string>
+    <string name="back">Geri</string>
+    <string name="category">Kategori</string>
+    <string name="transaction_type">İşlem Türü</string>
+    <string name="transaction_date">Tarih</string>
+    <string name="all">Tümü</string>
+    <string name="newest_first">En yeni</string>
+    <string name="oldest_first">En eski</string>
+    <string name="highest_amount">En yüksek</string>
+    <string name="lowest_amount">En düşük</string>
+    <string name="calendar_view">Takvim Görünümü</string>
+    <string name="calendar">Takvim</string>
+    <string name="previous_month">Önceki ay</string>
+    <string name="next_month">Sonraki ay</string>
+
+    <string name="not_found">'%s' bulunamadı</string>
+    <string name="no_transactions_in_month">%s ayında işlem yok</string>
+    <string name="transaction_updated">İşlem güncellendi</string>
+    <string name="transaction_deleted">İşlem silindi</string>
+    <string name="error_update_transaction">İşlem güncellenirken hata oluştu</string>
+    <string name="error_delete_transaction">İşlem silinirken hata oluştu</string>
+    <string name="today">Bugün</string>
+    <string name="yesterday">Dün</string>
+    <string name="empty_inbox_emoji">:)</string>
+    <string name="month_year_format">MMMM yyyy</string>
+
+    <!-- Ay Özeti -->
+    <string name="month_summary">Ay Özeti</string>
+    <string name="transaction_count">%d işlem</string>
+    <string name="net_balance">Net Bakiye</string>
+</resources>

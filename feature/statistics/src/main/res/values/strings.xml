@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- İstatistik Ekranı -->
+    <string name="statistics">İstatistikler</string>
+    <string name="your_financial_analysis">Mali durumunuzun analizi</string>
+
+    <!-- Dönem Seçici -->
+    <string name="weekly">Haftalık</string>
+    <string name="monthly">Aylık</string>
+    <string name="yearly">Yıllık</string>
+    <string name="period_selector">Dönem seçici: %s</string>
+
+    <!-- Gelir Gider Özeti -->
+    <string name="income_icon">Gelir ikonu</string>
+    <string name="expense_icon">Gider ikonu</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="income_expense_summary">Gelir-Gider Özeti</string>
+    <string name="total_income">Toplam Gelir</string>
+    <string name="total_expense">Toplam Gider</string>
+
+    <!-- Grafikler -->
+    <string name="category_distribution">Kategori Dağılımı</string>
+    <string name="income_vs_expense">Gelir ve Gider</string>
+    <string name="weekly_comparison">Haftalık Karşılaştırma</string>
+    <string name="income_expense_comparison">Son 7 günlük gelir ve gider karşılaştırması</string>
+
+    <!-- Trend Analizi -->
+    <string name="monthly_trend">Aylık Trend</string>
+    <string name="this_month">Bu Ay</string>
+    <string name="last_month">Geçen Ay</string>
+    <string name="increase_trend">Artış trendi</string>
+    <string name="decrease_trend">Azalış trendi</string>
+    <string name="trend_increase_message">Harcamalarınız %1$d%% arttı</string>
+    <string name="trend_decrease_message">Harcamalarınız %1$d%% azaldı</string>
+
+    <!-- Boş Durumlar -->
+    <string name="no_data_yet">Henüz Veri Yok</string>
+    <string name="empty_statistics_description">İstatistikleriniz işlemler ekledikçe burada görünecek</string>
+    <string name="empty_statistics_tip">Ana sayfadan gelir/gider ekleyebilirsiniz</string>
+    <string name="no_data">Veri Yok</string>
+    <string name="no_cash_flow_data">Gelir ve gider verisi bulunmuyor</string>
+    <string name="no_category_data">Kategori bazlı harcama verisi yok</string>
+    <string name="no_chart_data">Grafik için yeterli veri yok</string>
+    <string name="no_trend_data">Trend analizi için veri yok</string>
+
+    <!-- Kategori Dağılımı -->
+    <string name="category_based_spending">Kategori Bazlı Harcama</string>
+
+    <!-- Kategori İsimleri -->
+    <string name="category_food">Yemek</string>
+    <string name="category_transportation">Ulaşım</string>
+    <string name="category_shopping">Alışveriş</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_health">Sağlık</string>
+
+    <!-- Accessibility -->
+    <string name="bar_chart">Çubuk Grafik</string>
+
+    <!-- Cash Flow Card -->
+    <string name="cash_flow_title">Para Akışı</string>
+    <string name="income_label">Gelir</string>
+    <string name="expense_label">Gider</string>
+    <string name="net_flow_label">Net Durum</string>
+
+    <!-- Top Spending Category -->
+    <string name="top_spending_label">En Çok Harcama</string>
+    <string name="percentage_of_total">Toplam harcamanın %%%d\'i</string>
+    <string name="planned_vs_actual_expense_title">Planli vs Gercek Gider</string>
+    <string name="planned_vs_actual_income_title">Planli vs Gercek Gelir</string>
+    <string name="planned_vs_actual_subtitle">Haftalik planli ve gercek karsilastirma</string>
+    <string name="planned_label">Planli</string>
+    <string name="actual_label">Gercek</string>
+</resources>
